@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://dialogic/portraits/princess_layered_portrait.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://art/characters/princese/body/princess_DH.png" id="2_body"]
+[ext_resource type="Texture2D" path="res://art/characters/princese/face/princess_SM.png" id="3_face_smile"]
+[ext_resource type="Texture2D" path="res://art/characters/princese/face/princess_SAD.png" id="4_face_sad"]
+[ext_resource type="Texture2D" path="res://art/characters/princese/hand/princess_HD.png" id="5_hand_folded"]
+[ext_resource type="Texture2D" path="res://art/characters/princese/hand/princess_OH.png" id="6_hand_open"]
+
+[node name="PrincessLayeredPortrait" type="CanvasGroup"]
+script = ExtResource("1_script")
+
+[node name="Body" type="Sprite2D" parent="."]
+position = Vector2(0, 0)
+texture = ExtResource("2_body")
+centered = false
+
+[node name="Face" type="Node2D" parent="."]
+
+[node name="Smile" type="Sprite2D" parent="Face"]
+position = Vector2(0, 0)
+texture = ExtResource("3_face_smile")
+centered = false
+
+[node name="Sad" type="Sprite2D" parent="Face"]
+visible = false
+position = Vector2(0, 0)
+texture = ExtResource("4_face_sad")
+centered = false
+
+[node name="Hands" type="Node2D" parent="."]
+
+[node name="Folded" type="Sprite2D" parent="Hands"]
+position = Vector2(0, 0)
+texture = ExtResource("5_hand_folded")
+centered = false
+
+[node name="Open" type="Sprite2D" parent="Hands"]
+visible = false
+position = Vector2(0, 0)
+texture = ExtResource("6_hand_open")
+centered = false

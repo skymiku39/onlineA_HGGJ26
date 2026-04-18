@@ -55,6 +55,20 @@
 "scale": 1.0,
 "scene": ""
 },
+"layer_test_default": {
+"export_overrides": {},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": "res://dialogic/portraits/princess_layered_portrait.tscn"
+},
+"layer_test_shocked": {
+"export_overrides": {},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": "res://dialogic/portraits/princess_layered_portrait.tscn"
+},
 "determined": {
 "export_overrides": {
 "image": "res://art/characters/princess_determined.png"
