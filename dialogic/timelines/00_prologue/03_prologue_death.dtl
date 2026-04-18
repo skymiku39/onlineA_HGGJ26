@@ -1,6 +1,6 @@
 # 序章：死亡結算 → 輪迴啟動
 
-[background arg="res://art/backgrounds/darkness.png" fade="2.5"]
+[background arg="res://art/backgrounds/ending_Images/ed_01.png" fade="2.5"]
 
 [wait time="3.0"]
 
