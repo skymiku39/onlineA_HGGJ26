@@ -8,12 +8,30 @@ princess: （回城路上，我不再只看人。我開始看站位。）
 
 [wait time="0.8"]
 
-- 注意人群裡格格不入的人
-	princess: （有幾個人走得太整齊，不像平民，像把巡邏藏進了人群。）
-- 注意窄巷的流民
-	princess: （流民走到某個巷口就自動繞開，像那裡劃著一條線。）
+- 先注意人群裡格格不入的人
+	princess: （先撞進眼裡的，是幾個走得太整齊的人；不像平民，像把巡邏藏進了人群。）
+	jump anomaly_after_crowd
 
+- 先注意窄巷的流民
+	princess: （先不對勁的，是那條窄巷；流民走到巷口就自動繞開，像那裡劃著一條線。）
+	jump anomaly_after_alley
+
+label anomaly_after_crowd
+- 再看窄巷的流民
+	princess: （人群裡有眼，窄巷口就像線。流民一走到那裡便自動繞開，像誰都知道不能踩進去。）
+	jump anomaly_both_done
+
+label anomaly_after_alley
+- 再看人群裡格格不入的人
+	princess: （巷口像有界線，我再回頭看人群，就更看得出那幾個人走得太整齊，像巡邏被塞進了平民裡。）
+	jump anomaly_both_done
+
+label anomaly_both_done
 [wait time="0.6"]
+
+princess (determined): （人是眼，巷是線。這一路根本不是護送，是看守。）
+
+[wait time="0.4"]
 
 npc: 不要看那邊。除非你想死。
 

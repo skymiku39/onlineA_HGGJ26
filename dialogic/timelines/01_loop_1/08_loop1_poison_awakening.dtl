@@ -60,31 +60,33 @@ label choice_loop
 
 if {option_explored:a_v2_chancellor} and {option_explored:a_v2_cyras} and {option_explored:a_v2_king}:
 	princess: （……沒有別的路了。）
-	jump choice_menu
+	jump final_decision
 
 princess: （再想也不會長出第四條路。）
 
 label choice_menu
 
-- 找宰相
+- 找宰相 | [if not {option_explored:a_v2_chancellor}]
 	[wait time="0.3"]
 	princess: （不。）
 	[signal arg="option_explored:a_v2_chancellor"]
 	jump choice_loop
 
-- 找賽拉斯
+- 找賽拉斯 | [if not {option_explored:a_v2_cyras}]
 	[wait time="0.5"]
 	princess: （他多半還守在父王旁邊。想先找他，等於還是得見父王。）
 	[signal arg="option_explored:a_v2_cyras"]
 	jump choice_loop
 
-- 問父王
+- 問父王 | [if not {option_explored:a_v2_king}]
 	[wait time="0.5"]
 	princess: （這次不能偷偷摸摸。我得正面走進去。）
 	[signal arg="option_explored:a_v2_king"]
 	jump choice_loop
 
-- 【決定去見父王】 | [if {option_explored:a_v2_chancellor} and {option_explored:a_v2_cyras} and {option_explored:a_v2_king}]
+label final_decision
+
+- 【決定去見父王】
 	[wait time="0.6"]
 	princess: （宰相不能碰，賽拉斯也繞不開父王……那就直接去見他。）
 	princess: 莉娜，幫我換正式的禮服。我要去見父王。
@@ -92,4 +94,4 @@ label choice_menu
 	leave maid
 	leave princess
 	[signal arg="day_counter:180"]
-jump 09_loop1_poison_chancellor_visit/
+	jump 09_loop1_poison_chancellor_visit/

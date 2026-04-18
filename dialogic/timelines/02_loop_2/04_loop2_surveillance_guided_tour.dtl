@@ -46,23 +46,41 @@ princess: （侍衛貼著我走。街上的人都知道，今天有個公主來�
 
 [wait time="0.8"]
 
-# --- 三個視察站 ---
+# --- 兩個視察站（兩個都看完才能繼續）---
 
-- 糧食分發點
-	princess: （隊伍排得很長，發糧的人嗓門也特別大，像生怕別人聽不清。）
+- 先去糧食分發點
+	princess: （我先被帶到糧食分發點。隊伍排得很長，發糧的人嗓門也特別大，像生怕別人聽不清。）
 	npc: 這些都是宰相大人從自己的庫存撥出來的！王上不管我們死活，只有宰相大人還記得我們！
 	princess: （太順了，順得像先演過。）
-	jump station_hospital
+	jump tour_after_food
 
-- 傷兵收容所
-	princess: （有個老婦人哭到聲音都啞了。）
+- 先去傷兵收容所
+	princess: （我先被帶到傷兵收容所。有個老婦人哭到聲音都啞了。）
 	old_woman: 都是王上要打仗，我兒子才會變成這樣……
 	princess: （她的痛是真的。可那句怪誰，也像有人早就塞給她了。）
+	jump tour_after_hospital
+
+label tour_after_food
+- 再去傷兵收容所
+	princess: （剛看完那邊整齊的口號，再看這裡啞掉的哭聲，像被人硬擺成一組對照。）
+	old_woman: 都是王上要打仗，我兒子才會變成這樣……
+	princess: （她的痛是真的。可那句怪誰，被塞進她嘴裡的痕跡也更明顯了。）
+	jump station_hospital
+
+label tour_after_hospital
+- 再去糧食分發點
+	princess: （剛聽完那個老婦人的哭聲，再看這條排得太整齊的隊，像有人把「感激」也排練好了。）
+	npc: 這些都是宰相大人從自己的庫存撥出來的！王上不管我們死活，只有宰相大人還記得我們！
+	princess: （一邊是真痛，一邊是口號。擺得太剛好了。）
 	jump station_hospital
 
 label station_hospital
 
 [wait time="0.6"]
+
+princess: （糧與傷，被放成一前一後給我看。越像照顧，越像挑給我看的。）
+
+[wait time="0.4"]
 
 # --- 鐵匠鋪 ---
 

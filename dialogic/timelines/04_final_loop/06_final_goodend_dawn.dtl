@@ -12,16 +12,31 @@ princess: （定性以後，事情才真正開始。）
 
 # --- 第一個月 ---
 
-- 翻到第一個月
-	princess: （賽拉斯守著陣區，達爾終於能把數字寫在紙上，也有人守著他。那道光一點一點穩回來。）
-	jump month_one_cont
+- 先翻到第一個月
+	princess: （先翻回第一個月。賽拉斯守著陣區，達爾終於能把數字寫在紙上，也有人守著他。那道光一點一點穩回來。）
+	jump month_after_first
+
 - 先看最先穩下來的是什麼
-	princess: （最先穩下來的不是朝堂，是人心。至少有人開始相信，明天真的會來。）
+	princess: （先看的不是朝堂，是人心。至少有人開始相信，明天真的會來。）
+	jump month_after_spirit
+
+label month_after_first
+- 再看最先穩下來的是什麼
+	princess: （陣光穩住只是第一層。再往下看，最先真正穩下來的，其實是人心。）
+	jump month_one_cont
+
+label month_after_spirit
+- 再翻回第一個月
+	princess: （人心先穩住之後，我回頭再看第一個月，才看清那道光也是怎麼一點一點穩回來的。）
 	jump month_one_cont
 
 label month_one_cont
 
 [wait time="0.6"]
+
+princess: （人心和陣光，原來是一起慢慢穩回來的。）
+
+[wait time="0.4"]
 
 princess: （糧車一趟一趟往下城走，全都不經第二手。布魯諾站在路邊看了很久，最後只說：「我查過，是真的。」）
 

@@ -37,12 +37,29 @@ princess: （我鑽進試衣間。）
 
 [wait time="0.5"]
 
-- 快速換上粗布
-	princess: （粗布夠寬，也夠不起眼。）
-- 堆好華服製造假象
-	princess: （把裙角掛在外頭，讓人以為我還在裡面慢慢挑。）
+- 先快速換上粗布
+	princess: （先把自己藏起來。粗布夠寬，也夠不起眼。）
+	jump passage_after_cloth
+- 先堆好華服製造假象
+	princess: （先把假人在裡頭留下。把裙角掛在外頭，讓人以為我還在裡面慢慢挑。）
+	jump passage_after_decoy
 
+label passage_after_cloth
+- 再堆好華服製造假象
+	princess: （人先能走，還得把影子留下。把裙角掛在外頭，才像我還在裡面慢慢挑。）
+	jump passage_escape_done
+
+label passage_after_decoy
+- 再快速換上粗布
+	princess: （假象先擺好，接著才輪到我自己消失。粗布一套上，就只剩個不起眼的影子。）
+	jump passage_escape_done
+
+label passage_escape_done
 [wait time="0.5"]
+
+princess: （現在才像真的同時留下了一個公主，又放走了一個路人。）
+
+[wait time="0.4"]
 
 princess: （從側邊溜出去之後，我很快就只是人群裡一個影子。）
 
@@ -128,12 +145,29 @@ princess: （我整個人都僵了一下。）
 
 [wait time="0.6"]
 
-- 順著老人的視線看過去
-	princess: （牆面乍看普通，可那一截厚得不自然。）
-- 蹲下來摸牆面
-	princess: （指尖一刮，石紋跟旁邊對不上。）
+- 先順著老人的視線看過去
+	princess: （先看見的，是牆面乍看普通，可那一截厚得不自然。）
+	jump wall_after_vision
+- 先蹲下來摸牆面
+	princess: （先用手去試。指尖一刮，石紋就和旁邊對不上。）
+	jump wall_after_touch
 
+label wall_after_vision
+- 再蹲下來摸牆面
+	princess: （看起來不對，手一摸就更確定了。指尖一刮，石紋跟旁邊果然對不上。）
+	jump wall_both_done
+
+label wall_after_touch
+- 再順著老人的視線看過去
+	princess: （手底下先摸出破綻，我再順著老人剛剛看的方向望去，那一截牆果然厚得不自然。）
+	jump wall_both_done
+
+label wall_both_done
 [wait time="1.0"]
+
+princess (determined): （眼睛和指尖都對上了。那不是老牆，是被做出來的門面。）
+
+[wait time="0.4"]
 
 princess (determined): （就是這裡。）
 

@@ -71,10 +71,24 @@ maid (forced_smile): ……殿下，怎麼了嗎？
 
 [wait time="1.2"]
 
-- 盯著她的嘴角
+label maid_observe_loop
+
+if {option_explored:maid_observe_mouth} and {option_explored:maid_observe_eyes}:
+	jump maid_observe_done
+
+label maid_observe_menu
+
+- 盯著她的嘴角 | [if not {option_explored:maid_observe_mouth}]
 	princess: （笑得太整齊了，像練過。）
-- 看她的眼睛
+	[signal arg="option_explored:maid_observe_mouth"]
+	jump maid_observe_loop
+
+- 看她的眼睛 | [if not {option_explored:maid_observe_eyes}]
 	princess: （說到賽拉斯時，她目光先躲了。）
+	[signal arg="option_explored:maid_observe_eyes"]
+	jump maid_observe_loop
+
+label maid_observe_done
 
 princess: （我以前到底漏掉了多少東西？）
 

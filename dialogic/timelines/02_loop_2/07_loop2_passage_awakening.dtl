@@ -38,9 +38,10 @@ maid (default): 好～殿下今天真乖呢！來，莉娜幫您扣好。
 [wait time="0.5"]
 
 - 對鏡端詳鍊墜，然後別過臉
-	[wait time="0.3"]
+	princess: （宰相的東西。讓他看見我乖乖戴上就好。盯太久，心裡反而有什麼東西在腐爛。）
+	princess (determined): （別想。今天有比這更重要的事。）
 - 指尖掠過鍊扣，一言不發
-	[wait time="0.3"]
+	princess (determined): （這條鍊子，上次換了一條情報。今天，我要親自走那條路。）
 
 [signal arg="day_counter:180"]
 

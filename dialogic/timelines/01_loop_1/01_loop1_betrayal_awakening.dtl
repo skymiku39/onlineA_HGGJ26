@@ -75,35 +75,37 @@ label choice_loop
 
 if {option_explored:a_v0_cyras} and {option_explored:a_v0_king} and {option_explored:a_v0_chancellor}:
 	princess: （……先找誰，我心裡有數了。）
-	jump choice_menu
+	jump final_decision
 
 princess: （先想清楚。不能亂衝。）
 
 label choice_menu
 
-- 找賽拉斯
+- 找賽拉斯 | [if not {option_explored:a_v0_cyras}]
 	[wait time="0.5"]
 	princess: （一想到他，我胸口就又冷了。現在還不敢去。）
 	[signal arg="option_explored:a_v0_cyras"]
 	jump choice_loop
 
-- 問父王
+- 問父王 | [if not {option_explored:a_v0_king}]
 	[wait time="0.5"]
 	princess: （要怎麼跟父王說？說我夢見自己被殺？他一定只當我嚇壞了。）
 	princess: （而且我連自己知道了什麼，都還說不清。）
 	[signal arg="option_explored:a_v0_king"]
 	jump choice_loop
 
-- 找宰相
+- 找宰相 | [if not {option_explored:a_v0_chancellor}]
 	[wait time="0.5"]
 	princess: （宰相一直對我最好，他懂的事最多。如果有誰能告訴我現在該怎麼辦，應該是他。）
 	[signal arg="option_explored:a_v0_chancellor"]
 	jump choice_loop
 
-- 【決定去找宰相】 | [if {option_explored:a_v0_cyras} and {option_explored:a_v0_king} and {option_explored:a_v0_chancellor}]
+label final_decision
+
+- 【決定去找宰相】
 	[wait time="0.6"]
 	princess: （賽拉斯先不行，父王那裡也還不知道怎麼開口……去找宰相吧。他一定會幫我的。）
 	leave maid
 	leave princess
 	[signal arg="day_counter:180"]
-jump 02_loop1_betrayal_chancellor_visit/
+	jump 02_loop1_betrayal_chancellor_visit/

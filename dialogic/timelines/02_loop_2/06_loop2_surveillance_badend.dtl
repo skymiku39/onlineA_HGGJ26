@@ -15,18 +15,33 @@ princess: （回城後，我先裝作什麼都沒發現。）
 
 [wait time="0.6"]
 
-- 製造偽裝……
-	princess: （我借卷宗、寫讀書心得、去問禮官那些無聊到不行的典制細節。看起來像突然對歷史著迷。）
+- 先製造偽裝……
+	princess: （先把假動作鋪出去。我借卷宗、寫讀書心得、去問禮官那些無聊到不行的典制細節，看起來像突然對歷史著迷。）
 	princess: （能演得多自然，就多自然。）
+	jump badend_after_disguise
+
+- 先看自己真正在讀什麼……
+	princess: （先把眼睛壓回真正要看的地方：牆怎麼做、門怎麼關、術式接在哪，還有那條巷子最後通到哪。）
+	jump badend_after_reading
+
+label badend_after_disguise
+- 再看自己真正在讀什麼……
+	princess: （戲先演夠了，回頭再看，我其實只盯著一件事：牆怎麼做、門怎麼關、術式接在哪，還有那條巷子最後通到哪。）
 	jump real_reading
 
-- 真正在讀什麼……
-	princess: （我只看一件事：牆怎麼做、門怎麼關、術式接在哪，還有那條巷子最後通到哪。）
+label badend_after_reading
+- 再把偽裝做滿一點……
+	princess: （真東西先記進腦子裡，表面上就更得像個突然對歷史著迷的公主。）
+	princess: （能演得多自然，就多自然。）
 	jump real_reading
 
 label real_reading
 
 [wait time="0.8"]
+
+princess: （假動作鋪在外面，真問題藏在頁裡。我只能兩邊一起做。）
+
+[wait time="0.4"]
 
 leave princess
 

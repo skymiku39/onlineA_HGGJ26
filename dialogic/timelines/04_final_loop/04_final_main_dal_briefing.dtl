@@ -74,10 +74,10 @@ leave loyal_retainer
 
 # === 最後決策 ===
 
+label final_choice_menu
+
 if {option_explored:final_rush_arrest}:
 	princess (determined): （上次衝得太快，只看見空掉的房間和開著的門。這次不能再送他先走。）
-
-label final_choice_menu
 
 - 正式請求覲見，在朝堂上揭露宰相
 	princess (determined): （上朝。一次把門關死。）
@@ -87,10 +87,6 @@ label final_choice_menu
 	princess (determined): （賭一把。）
 	[signal arg="option_explored:final_rush_arrest"]
 	jump rush_arrest_bad_explanation
-
-- 趁宰相還不知道，現在直接去拿他 | [if {option_explored:final_rush_arrest}]
-	princess (determined): （不能私下抓。只要我現在衝過去，他還是會沿著預備好的路先跑。）
-	jump final_choice_menu
 
 label rush_arrest_bad_explanation
 

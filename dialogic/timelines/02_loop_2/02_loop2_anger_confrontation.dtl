@@ -48,17 +48,31 @@ princess: （人越來越擠，空氣也越來越難聞。莉娜抓著我的袖�
 
 [wait time="0.8"]
 
-- 看見了什麼……
-	princess: （破布、瘦得見骨的孩子、牆角一堆分不清是垃圾還是家當的東西。還有一個抱著嬰兒的女人，連哭都沒聲音。）
+- 先看清眼前這些人……
+	princess: （先撞進眼裡的，是破布、瘦得見骨的孩子、牆角一堆分不清是垃圾還是家當的東西。還有一個抱著嬰兒的女人，連哭都沒聲音。）
+	jump city_after_see
+
+- 先想起那些帳本……
+	princess (determined): （我先想到那些紙上的數字。可那些數字，根本寫不出這個味道。）
+	jump city_after_ledger
+
+label city_after_see
+- 再回頭想那些帳本……
+	princess (determined): （眼前這些人一擺出來，那些紙上的數字就更像假的了。）
 	jump lower_city_walk
 
-- 這和帳本不一樣……
-	princess (determined): （那些紙上的數字，根本寫不出這個味道。）
+label city_after_ledger
+- 再看清眼前這些人……
+	princess: （先想到帳本，再看這些人，紙上的數字就顯得更薄了。）
 	jump lower_city_walk
 
 label lower_city_walk
 
 [wait time="0.6"]
+
+princess (determined): （數字和眼前的味道一對上，就再也沒辦法把這裡當成傳聞。）
+
+[wait time="0.4"]
 
 princess: （莉娜嘴上一直催我回去，可腳步卻把我往更深的地方帶。）
 

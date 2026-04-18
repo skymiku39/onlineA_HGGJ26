@@ -72,35 +72,37 @@ label choice_loop
 
 if {option_explored:a_v1_chancellor} and {option_explored:a_v1_king} and {option_explored:a_v1_cyras}:
 	princess: （……只剩一條路了。）
-	jump choice_menu
+	jump final_decision
 
 princess: （不能再照上次那樣走。）
 
 label choice_menu
 
-- 找宰相
+- 找宰相 | [if not {option_explored:a_v1_chancellor}]
 	[wait time="0.5"]
 	princess: （不行。只要想到那張桌子，喉嚨就像卡住。）
 	[signal arg="option_explored:a_v1_chancellor"]
 	jump choice_loop
 
-- 問父王
+- 問父王 | [if not {option_explored:a_v1_king}]
 	[wait time="0.5"]
 	princess: （父王那裡……我手上只有碎片，連一句完整的話都拼不出來。）
 	princess: （現在去，只會再被當成胡言亂語。）
 	[signal arg="option_explored:a_v1_king"]
 	jump choice_loop
 
-- 找賽拉斯
+- 找賽拉斯 | [if not {option_explored:a_v1_cyras}]
 	[wait time="0.5"]
 	princess: （我怕他。可我總得先問清楚一件事。）
 	[signal arg="option_explored:a_v1_cyras"]
 	jump choice_loop
 
-- 【決定去找賽拉斯】 | [if {option_explored:a_v1_chancellor} and {option_explored:a_v1_king} and {option_explored:a_v1_cyras}]
+label final_decision
+
+- 【決定去找賽拉斯】
 	[wait time="0.6"]
 	princess: （宰相不能碰，父王那裡也太遠……先去找賽拉斯。至少他站在那一夜的正中央。）
 	leave maid
 	leave princess
 	[signal arg="day_counter:180"]
-jump 06_loop1_ledgers_chancellor_visit/
+	jump 06_loop1_ledgers_chancellor_visit/

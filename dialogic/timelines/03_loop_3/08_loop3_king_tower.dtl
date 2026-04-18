@@ -43,12 +43,33 @@ princess: （城裡卻安靜得可怕。）
 
 princess: （日子一頁一頁翻過去。窗外的屋頂，看久了都像沒變過。）
 
-- 數窗外的屋頂
-	princess: （我數過很多次。數到後來，連哪一塊瓦少了一角都背下來了。）
-- 聽樓下有沒有人聲
-	princess: （我有時把耳朵貼在門邊，想聽見一點活人的聲音。大多時候，什麼都沒有。）
+- 先數窗外的屋頂
+	princess: （先數屋頂。我數過很多次。數到後來，連哪一塊瓦少了一角都背下來了。）
+	jump tower_after_count
+
+- 先聽樓下有沒有人聲
+	princess: （先把耳朵貼到門邊。我想聽見一點活人的聲音，可大多時候，什麼都沒有。）
+	jump tower_after_listen
+
+label tower_after_count
+
+- 再聽樓下有沒有人聲
+	princess: （瓦片都快被我背熟了，我再把耳朵貼回門邊，才發現這裡連活人的聲音都少得可怕。）
+	jump tower_done
+
+label tower_after_listen
+
+- 再數窗外的屋頂
+	princess: （門外聽不見人聲，我只好又回去數屋頂。數著數著，時間就像被釘在瓦上。）
+	jump tower_done
+
+label tower_done
 
 [wait time="0.6"]
+
+princess: （屋頂和寂靜，一起把半年磨成了一種聲音。）
+
+[wait time="0.4"]
 
 princess: （等我回過神，半年已經過去了。）
 

@@ -41,11 +41,25 @@ maid (default): 三月十二日呀～殿下怎麼啦？
 
 [wait time="0.5"]
 
-- 對鏡笑了一下
+- 先對鏡笑了一下
 	princess: （先把這張臉練好。）
-- 整了整鍊子的位置
-	princess: （讓他看見，我今天很乖。）
+	jump surveillance_after_smile
+- 先整了整鍊子的位置
+	princess: （先讓他看見，我今天很乖。）
+	jump surveillance_after_chain
 
+label surveillance_after_smile
+- 再整了整鍊子的位置
+	princess: （笑還不夠。還得讓那條鍊子也待在最顯眼的地方。）
+	jump surveillance_awakening_done
+
+label surveillance_after_chain
+- 再對鏡笑了一下
+	princess: （鍊子擺好了，我又對鏡子練了一個最乖的笑。）
+	jump surveillance_awakening_done
+
+label surveillance_awakening_done
+princess: （臉和鍊子都要對。今天我得像一個什麼都沒發現的人。）
 princess (determined): （先去找宰相。像請教，不像興師問罪。）
 
 [signal arg="day_counter:180"]

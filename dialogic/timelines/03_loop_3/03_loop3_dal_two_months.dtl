@@ -15,16 +15,30 @@ princess: （對我來說，是把每一段路走進腿裡，把每一道縫背�
 
 [wait time="0.8"]
 
-# --- 時間推進：觀察日常 ---
+# --- 時間推進：觀察日常（兩個場景都能選，選過的不再出現）---
 
-- 下一堂課……
+- 先熬到下一堂課……
 	[wait time="0.3"]
-	princess: （達爾在講陣核，我筆尖在紙上晃，心裡卻在數步數。）
+	princess: （先把下一堂課熬過去。達爾在講陣核，我筆尖在紙上晃，心裡卻在數步數。）
+	jump time_after_class
+
+- 先看又過了幾天……
+	[wait time="0.3"]
+	princess: （先把時間往後推幾天。書庫裡只有紙頁聲，我翻一頁，就回頭看一次。）
+	jump time_after_library
+
+label time_after_class
+
+- 再看又過了幾天……
+	[wait time="0.3"]
+	princess: （課上那些步數還在腦子裡轉。到了書庫，我翻一頁，就回頭看一次。）
 	jump notice_assistant
 
-- 又過了幾天……
+label time_after_library
+
+- 再熬到下一堂課……
 	[wait time="0.3"]
-	princess: （書庫裡只有紙頁聲。我翻一頁，就回頭看一次。）
+	princess: （書庫裡那些路線還黏在腦子裡。等到下一堂課，我筆尖一晃，心裡又開始數步數。）
 	jump notice_assistant
 
 label notice_assistant
@@ -39,39 +53,109 @@ princess: （他出聲的時機，太準了。）
 
 [wait time="0.5"]
 
-- 當我問到特定節點時——
-	princess: （我才碰到關鍵詞，他就立刻把話題拐開。）
+# --- 助手三種干預時機（三個都要選過才能繼續，選過的不再出現）---
+
+- 先想起我問到特定節點時——
+	princess: （先被我記住的，是我一碰到關鍵詞，他就立刻把話題拐開。）
+	jump assistant_seen_A_pick_BC
+
+- 先想起達爾準備往下說時——
+	princess: （先浮上來的，是達爾剛要往下說，他就用別的問題把線剪斷。）
+	jump assistant_seen_B_pick_AC
+
+- 先想起我的目光多停一秒時——
+	princess: （先讓我起雞皮疙瘩的，是我只是多看牆一眼，他就馬上開口把空氣填滿。）
+	jump assistant_seen_C_pick_AB
+
+label assistant_seen_A_pick_BC
+
+- 接著想起達爾準備往下說時——
+	princess: （關鍵詞才剛被他岔開，我接著就想起，連達爾要往下說都會被他剪掉。）
+	jump assistant_seen_AB_pick_C
+
+- 接著想起我的目光多停一秒時——
+	princess: （我原本以為他只在堵話。可回頭一想，連我的目光多停一秒，他也會立刻補聲音。）
+	jump assistant_seen_AC_pick_B
+
+label assistant_seen_B_pick_AC
+
+- 回頭想起我問到特定節點時——
+	princess: （他不只截達爾的話。我再回頭一想，連我碰到關鍵詞時，他也總是更快一步。）
+	jump assistant_seen_AB_pick_C
+
+- 再回頭想起我的目光多停一秒時——
+	princess: （他不只堵話，也堵視線。我只是多看牆一眼，他就先把空氣填滿。）
+	jump assistant_seen_BC_pick_A
+
+label assistant_seen_C_pick_AB
+
+- 再想起我問到特定節點時——
+	princess: （我先察覺他追著我的目光跑，回頭再想，我一碰關鍵詞時他也會立刻拐開。）
+	jump assistant_seen_AC_pick_B
+
+- 回頭想起達爾準備往下說時——
+	princess: （我先看出他會撲上我的視線，接著才意識到，連達爾要往下說都會被他剪斷。）
+	jump assistant_seen_BC_pick_A
+
+label assistant_seen_AB_pick_C
+
+- 最後再想起我的目光多停一秒時——
+	princess: （到這裡就夠清楚了。關鍵詞、話頭、連我的目光，他全都盯著。）
 	jump assistant_pattern
 
-- 當達爾準備往下說時——
-	princess: （達爾要談細節，他就用別的問題把線剪斷。）
+label assistant_seen_AC_pick_B
+
+- 最後再想起達爾準備往下說時——
+	princess: （他會追我的目光，也會封我的關鍵詞；剩下那塊空白，就是達爾一開口他也要插手。）
 	jump assistant_pattern
 
-- 當我的目光在某處多停一秒——
-	princess: （我只是多看牆一眼，他就馬上開口，把空氣填滿。）
+label assistant_seen_BC_pick_A
+
+- 最後再想起我問到特定節點時——
+	princess: （他會剪達爾的話，也會追著我的目光跑；剩下那條線，就是我一碰關鍵詞他就先來封口。）
 	jump assistant_pattern
 
 label assistant_pattern
 
 [wait time="0.6"]
 
+princess: （不是巧合。那是規律。）
+
+[wait time="0.4"]
+
 princess: （達爾沒注意到。可我背後一陣一陣發冷。）
 
 [wait time="0.8"]
 
-# --- 時間推進：調閱紀錄 ---
+# --- 時間推進：調閱紀錄（兩個場景都能選，選過的不再出現）---
 
-- 繼續裝作好學的公主……
+- 先繼續裝作好學的公主……
 	[wait time="0.3"]
-	princess: （我借舊紀錄的理由很蠢，說想懂歷史。結果他們還真給我看。）
+	princess: （先把戲演下去。我借舊紀錄的理由很蠢，說想懂歷史。結果他們還真給我看。）
+	jump logs_after_pretend
+
+- 先對照課堂筆記與實際紀錄……
+	[wait time="0.3"]
+	princess: （先把兩邊攤開來看。課上說的「正常」，和紙上記的「實際發生」，怎麼看都不對。）
+	jump logs_after_compare
+
+label logs_after_pretend
+
+- 再對照課堂筆記與實際紀錄……
+	[wait time="0.3"]
+	princess: （戲先演夠了，回頭一對，課上那句「正常」就更像在遮什麼。）
 	jump discover_logs
 
-- 對照課堂筆記與實際紀錄……
+label logs_after_compare
+
+- 再繼續裝作好學的公主……
 	[wait time="0.3"]
-	princess: （課上說的「正常」，和紙上記的「實際發生」，怎麼看都不對。）
+	princess: （我先抓到不對勁，表面上就更得把那張「只是愛學」的臉撐住。）
 	jump discover_logs
 
 label discover_logs
+
+princess: （戲和帳，我兩邊一起對，才把那條線看清楚。）
 
 # --- 察覺維護日誌異常 ---
 
