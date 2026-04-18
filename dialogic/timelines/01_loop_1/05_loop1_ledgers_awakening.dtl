@@ -71,29 +71,28 @@ princess: （鏡子裡那張臉，好像忽然不是我自己的。）
 label choice_loop
 
 if {option_explored:a_v1_chancellor} and {option_explored:a_v1_king} and {option_explored:a_v1_cyras}:
-	princess: （……只剩一條路了。）
 	jump final_decision
 
-princess: （不能再照上次那樣走。）
+if not {option_explored:a_v1_chancellor} and not {option_explored:a_v1_king} and not {option_explored:a_v1_cyras}:
+	princess: （帳本、人證，全是宰相安排好給我看的。我現在手上什麼都沒有。）
 
 label choice_menu
 
 - 找宰相 | [if not {option_explored:a_v1_chancellor}]
 	[wait time="0.5"]
-	princess: （不行。只要想到那張桌子，喉嚨就像卡住。）
+	princess: （他說過「不要怪我」。那杯茶的味道我還記得。不管他的理由是什麼……不行。）
 	[signal arg="option_explored:a_v1_chancellor"]
 	jump choice_loop
 
 - 問父王 | [if not {option_explored:a_v1_king}]
 	[wait time="0.5"]
-	princess: （父王那裡……我手上只有碎片，連一句完整的話都拼不出來。）
-	princess: （現在去，只會再被當成胡言亂語。）
+	princess: （宰相說的那些帳本、那個男人的證詞——就算是假的，我也沒辦法當場反駁。父王課了那麼多稅，宮裡沒人願意跟我說真話……我去了，他會聽我說嗎？）
 	[signal arg="option_explored:a_v1_king"]
 	jump choice_loop
 
 - 找賽拉斯 | [if not {option_explored:a_v1_cyras}]
 	[wait time="0.5"]
-	princess: （我怕他。可我總得先問清楚一件事。）
+	princess: （賽拉斯手上有密令。上一次我太害怕，但現在不一樣了。他就算真的拿著刀，我也需要問他。）
 	[signal arg="option_explored:a_v1_cyras"]
 	jump choice_loop
 
@@ -101,7 +100,7 @@ label final_decision
 
 - 【決定去找賽拉斯】
 	[wait time="0.6"]
-	princess: （宰相不能碰，父王那裡也太遠……先去找賽拉斯。至少他站在那一夜的正中央。）
+	princess: （宰相不能碰，父王那裡說不清楚……那一夜是賽拉斯執行的，密令的源頭一定能從他身上找到。）
 	leave maid
 	leave princess
 	[signal arg="day_counter:180"]

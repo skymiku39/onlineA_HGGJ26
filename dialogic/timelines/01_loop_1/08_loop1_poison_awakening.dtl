@@ -59,10 +59,7 @@ princess: （我坐著讓她梳頭，腦子裡只在想，等等第一句要怎�
 label choice_loop
 
 if {option_explored:a_v2_chancellor} and {option_explored:a_v2_cyras} and {option_explored:a_v2_king}:
-	princess: （……沒有別的路了。）
 	jump final_decision
-
-princess: （再想也不會長出第四條路。）
 
 label choice_menu
 
@@ -74,13 +71,13 @@ label choice_menu
 
 - 找賽拉斯 | [if not {option_explored:a_v2_cyras}]
 	[wait time="0.5"]
-	princess: （他多半還守在父王旁邊。想先找他，等於還是得見父王。）
+	princess: （賽拉斯說過，只有王才知道更多細節。但賽拉斯應該在父王身旁……要見他，就得去那裡。）
 	[signal arg="option_explored:a_v2_cyras"]
 	jump choice_loop
 
 - 問父王 | [if not {option_explored:a_v2_king}]
 	[wait time="0.5"]
-	princess: （這次不能偷偷摸摸。我得正面走進去。）
+	princess: （我需要正式的面見。要打扮成真正去拜訪父王的樣子，不是偷偷摸摸——宰相就算看見，也只能看著。）
 	[signal arg="option_explored:a_v2_king"]
 	jump choice_loop
 
@@ -88,7 +85,7 @@ label final_decision
 
 - 【決定去見父王】
 	[wait time="0.6"]
-	princess: （宰相不能碰，賽拉斯也繞不開父王……那就直接去見他。）
+	princess: （宰相不能碰，賽拉斯也繞不開父王——父王在的地方，宰相沒辦法親自動手。）
 	princess: 莉娜，幫我換正式的禮服。我要去見父王。
 	maid (default): 咦？要見陛下呀！好，莉娜馬上幫殿下準備！
 	leave maid

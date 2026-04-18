@@ -27,11 +27,7 @@ join maid right
 
 maid (default): 殿下～早安呀！今天天氣超好的喔～對了對了，宰相大人昨天送來了一顆好～漂亮的寶石，說是南國進貢的呢！殿下等等一定要看看！
 
-[wait time="0.5"]
-
-princess: （莉娜的眼睛有點紅。是我看錯了嗎？）
-
-[wait time="0.5"]
+[wait time="1.0"]
 
 princess: （賽拉斯為什麼要殺我……他拿著刀站在我面前的樣子，我沒辦法忘。）
 
@@ -74,29 +70,28 @@ princess: （宰相特地讓人送來的……平常看到這種事，我心裡�
 label choice_loop
 
 if {option_explored:a_v0_cyras} and {option_explored:a_v0_king} and {option_explored:a_v0_chancellor}:
-	princess: （……先找誰，我心裡有數了。）
 	jump final_decision
 
-princess: （先想清楚。不能亂衝。）
+if not {option_explored:a_v0_cyras} and not {option_explored:a_v0_king} and not {option_explored:a_v0_chancellor}:
+	princess: （賽拉斯是奉命的嗎——那命令是誰下的？）
 
 label choice_menu
 
 - 找賽拉斯 | [if not {option_explored:a_v0_cyras}]
 	[wait time="0.5"]
-	princess: （一想到他，我胸口就又冷了。現在還不敢去。）
+	princess: （他拿著刀站在我面前的樣子……我不知道那把刀是不是真的，但我現在還沒辦法去面對他。）
 	[signal arg="option_explored:a_v0_cyras"]
 	jump choice_loop
 
 - 問父王 | [if not {option_explored:a_v0_king}]
 	[wait time="0.5"]
-	princess: （要怎麼跟父王說？說我夢見自己被殺？他一定只當我嚇壞了。）
-	princess: （而且我連自己知道了什麼，都還說不清。）
+	princess: （父王……他會保護我嗎？就算去了，我要說什麼？「我夢到你要殺我」？就算我說了，他會相信嗎……現在還沒想清楚。）
 	[signal arg="option_explored:a_v0_king"]
 	jump choice_loop
 
 - 找宰相 | [if not {option_explored:a_v0_chancellor}]
 	[wait time="0.5"]
-	princess: （宰相一直對我最好，他懂的事最多。如果有誰能告訴我現在該怎麼辦，應該是他。）
+	princess: （宰相懂很多事，也一直對我很好。送過那麼多東西，還記得我喜歡什麼……如果有誰能告訴我現在該怎麼辦，應該是他。）
 	[signal arg="option_explored:a_v0_chancellor"]
 	jump choice_loop
 

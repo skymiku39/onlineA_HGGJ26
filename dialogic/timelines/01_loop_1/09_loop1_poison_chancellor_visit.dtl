@@ -191,7 +191,7 @@ princess: （桌上放著一杯茶。）
 [wait time="1.0"]
 
 - 站起來走了好幾圈
-	princess (sad): （我明明已經說出口了。）
+	princess (angry): （我明明已經說出口了。）
 - 坐在椅子上，盯著牆
 	princess (sad): （說了那麼多，還是沒用。）
 
