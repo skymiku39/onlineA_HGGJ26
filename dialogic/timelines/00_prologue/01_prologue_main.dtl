@@ -43,21 +43,22 @@ label door_after_listen
 
 label door_both_done
 
+[wait time="1"]
+
 princess (confused): 莉娜？外面有人嗎？門被堵住了，我出不去呀……
 
 audio "res://audio/sfx/door_knock_hard.ogg" [volume="1.78" bus="SFX"]
 
-[wait time="0.8"]
+[wait time="2"]
 
 princess (confused): 嗯？敲門聲？是莉娜嗎？快進來呀。
-
-[wait time="1.0"]
 
 audio "res://audio/sfx/running_screams_distant.ogg" [volume="0.56" bus="SFX"]
 
 princess (confused): 外面怎麼這麼亂……好多人在亂跑的聲音……到底怎麼了？
 
-[wait time="1.8"]
+[wait time="1.5"]
+
 
 audio "res://audio/sfx/armor_approach_heavy.ogg" [bus="SFX"]
 audio "res://audio/sfx/lock_break_forceful.ogg" [bus="SFX"]
