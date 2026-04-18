@@ -169,7 +169,7 @@ leave king
 # 場景四：小房間（Day 1 下午 → 入夜）
 # ================================================================
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="0.8"]
+[background arg="res://art/backgrounds/window.png" fade="0.8"]
 [music path="res://audio/bgm/music_box_uneasy.ogg" fade="2.0" volume="0.3"]
 
 join princess left

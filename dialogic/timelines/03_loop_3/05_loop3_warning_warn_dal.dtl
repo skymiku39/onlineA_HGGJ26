@@ -52,7 +52,7 @@ leave dal
 
 # === 隔天 ===
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="0.8"]
+[background arg="res://art/backgrounds/window.png" fade="0.8"]
 [music path="res://audio/bgm/music_box_uneasy.ogg" fade="2.5" volume="0.28"]
 
 [wait time="1.0"]

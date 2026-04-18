@@ -44,7 +44,7 @@ leave princess
 # 場景二：詢問女僕（Day 1 下午）
 # ================================================================
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="0.8"]
+[background arg="res://art/backgrounds/window.png" fade="0.8"]
 
 join princess left
 join maid right
@@ -172,7 +172,7 @@ princess: （隔天，莉娜來道別。）
 - ——翌日——
 	[wait time="0.3"]
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="0.8"]
+[background arg="res://art/backgrounds/window.png" fade="0.8"]
 
 join princess left
 join maid right
@@ -216,7 +216,7 @@ princess: （那一夜來得太快，快得像故意不給人準備。）
 - ——某夜——
 	[wait time="0.3"]
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="0.8"]
+[background arg="res://art/backgrounds/window.png" fade="0.8"]
 [music path="res://audio/bgm/music_box_uneasy.ogg" fade="2.0" volume="0.6"]
 
 join princess left

@@ -1,6 +1,6 @@
 # 情境 A — V1：帶著疑惑醒來（公主寢房・清晨）
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="1.2"]
+[background arg="res://art/backgrounds/window.png" fade="1.2"]
 [music path="res://audio/bgm/music_box_uneasy.ogg" fade="3.0" volume="0.37"]
 
 [wait time="2.0"]

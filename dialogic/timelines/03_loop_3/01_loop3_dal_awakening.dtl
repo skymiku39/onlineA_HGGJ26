@@ -1,6 +1,6 @@
 # 調查線 C：醒來 — 公主寢房
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="1.3"]
+[background arg="res://art/backgrounds/window.png" fade="1.3"]
 [music path="res://audio/bgm/music_box_uneasy.ogg" fade="3.5" volume="0.31"]
 
 [wait time="2.0"]

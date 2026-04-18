@@ -10,7 +10,7 @@
 
 # === 前往王座廳 ===
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="0.8"]
+[background arg="res://art/backgrounds/window.png" fade="0.8"]
 
 join princess left
 

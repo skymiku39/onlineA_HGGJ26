@@ -1,6 +1,6 @@
 # 調查線 B — B-2：醒來（地圖觸發，以身代眼）
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="1.2"]
+[background arg="res://art/backgrounds/window.png" fade="1.2"]
 [music path="res://audio/bgm/music_box_uneasy.ogg" fade="3.0" volume="0.39"]
 
 [wait time="1.5"]

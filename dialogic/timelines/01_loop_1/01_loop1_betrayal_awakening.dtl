@@ -1,6 +1,6 @@
 # 情境 A — V0：醒來（公主寢房・清晨）— 無知與死亡的記憶
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="1.2"]
+[background arg="res://art/backgrounds/window.png" fade="1.2"]
 [music path="res://audio/bgm/music_box_uneasy.ogg" fade="3.0" volume="0.37"]
 
 [wait time="2.0"]
@@ -10,6 +10,8 @@ join princess left
 princess (shocked): ——！
 
 [wait time="1.0"]
+
+princess: （好真實的夢……）
 
 princess: （胸口還冷著，像那把劍根本沒離開過。）
 

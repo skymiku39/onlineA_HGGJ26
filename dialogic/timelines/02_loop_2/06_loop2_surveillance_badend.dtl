@@ -2,7 +2,7 @@
 
 # === 回到城堡，連日偽裝 ===
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="0.8"]
+[background arg="res://art/backgrounds/window.png" fade="0.8"]
 [music path="res://audio/bgm/tension_low.ogg" fade="2.0" volume="0.38"]
 
 join princess left
@@ -83,7 +83,7 @@ leave princess
 
 # === 城牆地圖 ===
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="0.7"]
+[background arg="res://art/backgrounds/window.png" fade="0.7"]
 
 [wait time="0.6"]
 
@@ -106,7 +106,7 @@ princess: （地圖一攤開，我的眼睛就黏在那塊牆上。那裡厚得�
 
 leave princess
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="0.6"]
+[background arg="res://art/backgrounds/window.png" fade="0.6"]
 [music path="res://audio/bgm/tension_low.ogg" fade="1.5" volume="0.50"]
 
 [wait time="0.8"]

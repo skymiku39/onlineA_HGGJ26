@@ -157,7 +157,7 @@ leave princess
 # 黃昏・王上書房
 # ================================================================
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="0.7"]
+[background arg="res://art/backgrounds/window.png" fade="0.7"]
 [music path="res://audio/bgm/tension_stealth.ogg" fade="2.0" volume="0.5"]
 
 [wait time="1.2"]

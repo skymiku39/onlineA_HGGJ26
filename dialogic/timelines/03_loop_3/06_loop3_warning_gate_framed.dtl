@@ -56,7 +56,7 @@ princess: （我連門都還沒進。）
 
 # === 父王的「保護」 ===
 
-[background arg="res://art/backgrounds/royal_chamber.png" fade="0.8"]
+[background arg="res://art/backgrounds/window.png" fade="0.8"]
 
 join king center
 
