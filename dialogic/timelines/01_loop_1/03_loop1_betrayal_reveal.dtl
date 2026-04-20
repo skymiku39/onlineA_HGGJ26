@@ -14,7 +14,7 @@ princess: 宰相大人……那份密令，我拿到了。
 
 chancellor (default): ……殿下，您真的做到了。
 
-princess: （他接過去的動作太順了，像早就在等。）
+princess: （他接過密令的動作實在太過流暢，那雙眼睛裡閃過的暗光……他彷彿不是在等這份情報，而是在等我跳進陷阱。）
 
 [wait time="0.7"]
 
@@ -26,7 +26,7 @@ chancellor (concerned): 那就好。坐吧。臣備了花茶，蜂蜜玫瑰的�
 
 [wait time="0.6"]
 
-princess: （香氣很熟，甜甜的，裡頭卻混著一點說不出的苦。）
+princess: （玫瑰的香氣很熟悉，甜甜的，但那股甜味太濃了，反而掩蓋了裡頭混著的一點說不出的苦澀。有什麼地方不對勁。）
 
 princess: 謝謝宰相大人。
 
@@ -34,7 +34,7 @@ princess: 謝謝宰相大人。
 
 princess: （我喝了一口。）
 
-princess: （有點苦……但也許只是配方不同。）
+princess: （這股苦味在舌尖散不開……但也許只是今天安神草放多了吧。我太累了，竟然連他也懷疑。）
 
 chancellor (concerned): 味道如何？
 
@@ -44,14 +44,14 @@ chancellor (concerned): 裡頭加了安神草。殿下最近受了驚，喝了�
 
 [wait time="1.2"]
 
-princess: （……手指怎麼麻了？）
+princess: （……怎麼回事？手指好麻……）
 
-princess: （腿也使不上力。茶杯忽然重得嚇人。）
+princess: （不只是手指，連腿都使不上力了。平時拿慣的茶杯，此刻忽然重得像鐵塊一樣，幾乎要從手中滑落。）
 
 - 扶住桌邊
-	princess: （我下意識去抓桌沿，指尖卻一點力氣都使不上。）
+	princess: （我驚恐地想去抓桌沿穩住身體，指尖卻像是失去了知覺，一點力氣都使不上。）
 - 試著站起來
-	princess: （我想撐著站起來，膝蓋卻先軟了。）
+	princess: （我想撐著椅子站起來逃離，膝蓋卻不聽使喚地發軟，整個人向下癱倒。）
 
 princess (shocked): 宰相大人……我、我怎麼……
 
@@ -59,7 +59,7 @@ chancellor: ……
 
 [wait time="0.8"]
 
-princess: （杯子從手裡滑下去，摔得粉碎。碎裂聲一響，燭光也跟著變得又遠又晃。）
+princess: （茶杯終於從手裡滑落，摔在地上粉碎。清脆的碎裂聲像是敲響了某種喪鐘，眼前的燭光也跟著搖晃起來，變得越來越遙遠。）
 
 chancellor (concerned): 殿下別怕。不會太痛。只是睡過去而已。
 
@@ -73,7 +73,7 @@ chancellor (concerned): 臣也是不得已。
 
 [wait time="1.0"]
 
-princess: （他的聲音還是那麼輕。）
+princess: （即使在殺我的時候，他的聲音竟然還是這麼輕柔，就像平時在教導我一樣。這份溫柔，原來全都是毒藥。）
 
 chancellor (concerned): 殿下從小就懂事，臣一直很喜歡您。
 
@@ -83,15 +83,15 @@ chancellor (concerned): 所以……殿下別怪臣。
 
 [wait time="1.0"]
 
-princess: （不要怪我。）
+princess: （不要怪我……？你讓我去偷父王的密令，然後親手毒殺我，還要我不怪你？）
 
-princess (sad): （他的聲音越來越遠。）
+princess (sad): （憤怒和不甘在胸腔裡翻滾，可他的聲音卻越來越遠，我的意識正在被黑暗吞噬。）
 
-princess (sad): （喉嚨裡只剩那口茶的味道。甜的、香的，最後發苦。）
+princess (sad): （喉嚨裡只剩那口茶的味道。甜膩的玫瑰香，最後化作刺骨的苦澀。這就是背叛的味道嗎？）
 
-princess (sad): （我抓不住更多了。）
+princess (sad): （我什麼都抓不住了。連同這個國家的未來，和我可笑的信任。）
 
-princess (sad): （……）
+princess (sad): （……為什麼……）
 
 [signal arg="cut_to_silence"]
 

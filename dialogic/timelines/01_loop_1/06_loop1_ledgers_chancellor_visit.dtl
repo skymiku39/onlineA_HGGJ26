@@ -9,7 +9,7 @@
 
 join princess left
 
-princess: （快到中午，我才聽見那串熟悉的甲冑聲。）
+princess: （我等了很久。直到快到中午，我才終於聽見那串曾經讓我無比安心、現在卻讓我膽戰心驚的熟悉甲冑聲。）
 
 [wait time="0.8"]
 
@@ -27,15 +27,15 @@ loyal_retainer: ——
 
 loyal_retainer (default): 殿下在說什麼？臣不明白。
 
-princess: （他臉上明明閃過一瞬。）
+princess: （他在撒謊。剛才那短暫的停頓，和他臉上閃過的一瞬錯愕，根本逃不過我的眼睛。）
 
 princess (determined): 你明白。
 
 loyal_retainer (exhausted): 臣不會有事瞞著殿下。
 
-princess: （他答得太快。）
+princess: （他答得太快了，幾乎是條件反射。以前的賽拉斯從不這樣。）
 
-princess: （然後就走了。像在逃。）
+princess: （然後他就匆匆行禮離開了。那背影，就像在逃避著什麼。）
 
 leave loyal_retainer
 leave princess
@@ -55,17 +55,17 @@ maid (forced_smile): 怎麼會呢？騎士長一向最老實了。殿下一定�
 
 [wait time="0.8"]
 
-princess: （我沒接話，只一直看著她。）
+princess: （我沒有接話，也沒有像往常一樣被她糊弄過去，只是直直地看著她。）
 
 maid: ……
 
-princess: （她開始扯點心、扯茶、扯窗外的天氣，越講越快。）
+princess: （她被我看慌了，開始扯點心、扯茶、扯窗外的天氣，語速越講越快，眼神卻始終不敢和我對上。）
 
 maid (forced_smile): 殿下下午想喝什麼茶？莉娜去準備——哎，殿下你怎麼一直看著我呀？
 
 [wait time="1.0"]
 
-princess: （她終於發現我沒移開視線。）
+princess: （她終於發現我根本沒有被她轉移注意力，聲音慢慢弱了下來。）
 
 maid (forced_smile): ……殿下，怎麼了嗎？
 
@@ -79,18 +79,18 @@ if {option_explored:maid_observe_mouth} and {option_explored:maid_observe_eyes}:
 label maid_observe_menu
 
 - 盯著她的嘴角 | [if not {option_explored:maid_observe_mouth}]
-	princess: （笑得太整齊了，像練過。）
+	princess: （她的笑容太過整齊完美，完全像是經過了無數次的刻意練習，沒有一絲真心。）
 	[signal arg="option_explored:maid_observe_mouth"]
 	jump maid_observe_loop
 
 - 看她的眼睛 | [if not {option_explored:maid_observe_eyes}]
-	princess: （說到賽拉斯時，她目光先躲了。）
+	princess: （每當話題觸及賽拉斯或者王宮內的情勢，她的目光總是下意識地閃躲。）
 	[signal arg="option_explored:maid_observe_eyes"]
 	jump maid_observe_loop
 
 label maid_observe_done
 
-princess: （我以前到底漏掉了多少東西？）
+princess: （原來他們每個人都在演戲。我以前到底被保護得有多好，又漏掉了多少顯而易見的東西？）
 
 [signal arg="skill_unlocked:observe_expression"]
 
@@ -104,7 +104,7 @@ leave maid
 
 [wait time="0.8"]
 
-princess: （問誰都只問到半句。）
+princess: （問誰都只能問到半句。這個王宮就像一張巨大的網，每個人都在其中，卻沒有人肯告訴我全貌。）
 
 - 出門走走
 	leave princess
@@ -119,7 +119,7 @@ princess: （問誰都只問到半句。）
 
 join princess left
 
-princess: （我只是想透口氣，沒想到會在這裡撞見他。）
+princess: （我只是覺得寢房悶得讓人發瘋，想出來透口氣，沒想到會在這裡冤家路窄地撞見宰相。）
 
 [wait time="0.8"]
 
@@ -141,7 +141,7 @@ princess: 不是不喜歡，只是今天沒心情。
 
 [wait time="0.6"]
 
-princess: （他的眼神在我身上停了一下，像在點數。）
+princess: （他的眼神冷冷地在我身上停頓了一下，那種感覺，就像是在評估一件隨時可以拋棄的工具。）
 
 chancellor (concerned): 殿下氣色不太好，要不要傳御醫看看？
 
@@ -155,7 +155,7 @@ chancellor (concerned): ……也好。那殿下近來還是少走動些吧，�
 
 leave chancellor
 
-princess: （聽著像關心，落下來卻像警告。）
+princess: （聽起來像是慈祥長輩的關心，但每一個字落下來，都充滿了冰冷的警告與威脅。）
 
 [wait time="0.5"]
 
@@ -185,9 +185,9 @@ maid (forced_smile): 沒事啦，家裡老人而已，莉娜回去看一下就�
 
 [wait time="0.8"]
 
-princess: （她不敢看我。）
+princess: （她說這話時，眼神一直在閃躲，根本不敢看我。）
 
-princess: （這不是全部的實話。）
+princess: （這絕對不是全部的實話。她是在逃避什麼，或者……是被清除了。）
 
 [wait time="0.5"]
 
@@ -199,9 +199,9 @@ leave maid
 
 [wait time="1.5"]
 
-princess: （又過幾天，賽拉斯的身影也不見了。）
+princess: （又過了幾天，連賽拉斯的身影也從我的視線裡徹底消失了。）
 
-princess (sad): （問就是調任。再問，就沒人回我。）
+princess (sad): （我去問守衛，他們只說是調任。如果我再繼續追問，就再也沒有人會回答我。我被徹底孤立了。）
 
 leave princess
 
@@ -212,7 +212,7 @@ leave princess
 [background arg="res://art/backgrounds/darkness.png" fade="0.8"]
 [wait time="0.8"]
 
-princess: （那一夜來得太快，快得像故意不給人準備。）
+princess: （破城的那一夜來得太快了，快得就像是有人故意打開了城門，不給任何人準備的機會。）
 - ——某夜——
 	[wait time="0.3"]
 
@@ -221,7 +221,7 @@ princess: （那一夜來得太快，快得像故意不給人準備。）
 
 join princess left
 
-princess: （金屬撞擊聲很近，不是在城牆外，是在宮裡。）
+princess: （兵器相接的金屬撞擊聲非常近，那絕對不是在城牆外的戰鬥，而是已經殺進了王宮內部。）
 
 [sound path="res://audio/sfx/sword_clash_distant.ogg" bus="SFX"]
 [wait time="0.8"]
@@ -229,9 +229,9 @@ princess: （金屬撞擊聲很近，不是在城牆外，是在宮裡。）
 
 [signal arg="camera_shake" intensity="light"]
 
-princess (shocked): （我想出去，門口的人只伸手攔住我。連一句解釋都沒有。）
+princess (shocked): （我想衝出去看看到底發生了什麼，但門口的守衛只是面無表情地伸手攔住我，連半句解釋都不肯給。）
 
-princess (shocked): （我只能等。）
+princess (shocked): （我被囚禁在這個房間裡，什麼都做不了，只能像個待宰的羔羊一樣等待命運的降臨。）
 
 [wait time="2.0"]
 
@@ -245,11 +245,11 @@ princess (shocked): （我只能等。）
 
 join loyal_retainer right
 
-princess: （門開了。）
+princess: （沉重的木門被猛地撞開。）
 
 [wait time="0.8"]
 
-princess: （賽拉斯幾乎是撐著牆進來的。甲冑裂了，血還在滲，可他還站著。）
+princess: （賽拉斯幾乎是半撐著牆才勉強走進來的。他身上的精鋼甲冑已經碎裂，鮮血不斷從傷口中湧出，可他依然筆直地站著，像一柄折斷但未曾彎曲的劍。）
 
 [wait time="1.0"]
 
@@ -265,7 +265,7 @@ loyal_retainer (tearful): 殿下已經察覺到什麼了吧。……對不起，
 
 [wait time="1.0"]
 
-princess: （我沒有退，反而伸手按住他的肩。燙得嚇人。）
+princess: （看著這個在第一次輪迴中殺了我的男人，我這次竟然沒有後退，反而伸手按住了他沾滿鮮血的肩膀。他的體溫燙得嚇人。）
 
 princess: 謝謝你。
 
@@ -277,7 +277,7 @@ princess: 在我死之前……可以告訴我，到底是誰嗎？
 
 loyal_retainer: ……
 
-princess: （他想避開，可最後還是看著我。）
+princess: （他痛苦地想避開我的視線，但最終，他還是選擇了直視我的雙眼。那裡面充滿了懊悔與絕望。）
 
 loyal_retainer (tearful): 是宰相。大家都被他騙了。
 
@@ -295,7 +295,7 @@ loyal_retainer (tearful): 從什麼時候、滲到多深……那些，只有陛
 
 [wait time="0.8"]
 
-princess: （原來是他。）
+princess: （宰相……原來幕後黑手真的是他。帳本、人證，全是他為了篡權而編造的謊言嗎？）
 
 princess: 我知道了。謝謝你，賽拉斯。
 
@@ -305,7 +305,7 @@ princess: 你是一位溫柔又勇敢的騎士。
 
 [wait time="1.5"]
 
-princess: （我閉上眼，轉過身，把最後一步留給他。）
+princess: （我平靜地閉上雙眼，轉過身去。既然這是無法逃避的結局，至少這一次，我選擇清醒地面對，把這最後的處刑交給他。）
 
 [wait time="2.0"]
 

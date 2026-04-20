@@ -7,17 +7,17 @@
 
 join princess left
 
-princess (determined): ……又回來了。
+princess (determined): ……又回來了。這荒誕的地獄。
 
 [wait time="1.2"]
 
-princess: （不用再確認。這裡就是起點。）
+princess: （不用再確認日期。這裡就是起點，三月十二日。）
 
-princess: （賽拉斯最後那句話還卡在耳邊。）
+princess: （賽拉斯最後那句話還卡在耳邊：「是宰相。」）
 
 [wait time="0.8"]
 
-princess (determined): （這次，只能去找父王。）
+princess (determined): （這一次，我絕不會再重蹈覆轍。宰相一手遮天，底下的人全不可信，只能去找父王。）
 
 [wait time="0.6"]
 
@@ -31,7 +31,7 @@ princess (shocked): 莉娜，你眼睛怎麼紅紅的？
 
 maid (forced_smile): 欸？才沒有呢！就是昨晚小說太好看了嘛，看到太晚而已～殿下別擔心莉娜啦！
 
-princess: （又是同一句。）
+princess: （又是同一句。這不是莉娜的原話，這是一套寫好的劇本。但我現在沒空理會這個。）
 
 [wait time="0.5"]
 
@@ -47,7 +47,7 @@ princess: 隨便。
 
 [wait time="1.0"]
 
-princess: （我坐著讓她梳頭，腦子裡只在想，等等第一句要怎麼說。）
+princess: （我靜靜地坐著讓她梳頭，看著鏡子裡的自己，腦子裡飛速運轉著，盤算等等見到父王時，第一句話要怎麼說才能打破僵局。）
 
 # ================================================================
 # 三個選項 — 玩家需全部探索後，「決定去見父王」才會出現
@@ -65,19 +65,19 @@ label choice_menu
 
 - 找宰相 | [if not {option_explored:a_v2_chancellor}]
 	[wait time="0.3"]
-	princess: （不。）
+	princess: （去找宰相？絕不。我已經死在他手裡兩次了，一次直接，一次間接。去見他等於自投羅網。）
 	[signal arg="option_explored:a_v2_chancellor"]
 	jump choice_loop
 
 - 找賽拉斯 | [if not {option_explored:a_v2_cyras}]
 	[wait time="0.5"]
-	princess: （賽拉斯說過，只有王才知道更多細節。但賽拉斯應該在父王身旁……要見他，就得去那裡。）
+	princess: （去找賽拉斯？賽拉斯說過，只有父王才知道更多細節。而且賽拉斯一直守在父王身旁……要見他，一樣得去見父王。倒不如直接找正主。）
 	[signal arg="option_explored:a_v2_cyras"]
 	jump choice_loop
 
 - 問父王 | [if not {option_explored:a_v2_king}]
 	[wait time="0.5"]
-	princess: （我需要正式的面見。要打扮成真正去拜訪父王的樣子，不是偷偷摸摸——宰相就算看見，也只能看著。）
+	princess: （去找父王？對，我需要一次正式的面見。要打扮成公主真正去拜訪國王的樣子，大張旗鼓，而不是偷偷摸摸——即使宰相的眼線看見，也無權阻攔。）
 	[signal arg="option_explored:a_v2_king"]
 	jump choice_loop
 
@@ -85,7 +85,7 @@ label final_decision
 
 - 【決定去見父王】
 	[wait time="0.6"]
-	princess: （宰相不能碰，賽拉斯也繞不開父王——父王在的地方，宰相沒辦法親自動手。）
+	princess: （宰相絕對不能碰，賽拉斯那條線也繞不開父王——更何況，只要是在父王面前，宰相就算想滅口也沒辦法親自動手。）
 	princess: 莉娜，幫我換正式的禮服。我要去見父王。
 	maid (default): 咦？要見陛下呀！好，莉娜馬上幫殿下準備！
 	leave maid

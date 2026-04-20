@@ -9,9 +9,9 @@
 
 join princess left
 
-princess: （她們把我塞進禮服裡，像塞回一個公主該有的樣子。）
+princess: （女僕們熟練地把我塞進繁複的禮服裡，彷彿把我重新塞回那個無知、天真的「公主」模具中。）
 
-princess: （我往外走，裙擺每晃一下都很吵。）
+princess: （我大步往外走，沉重的裙擺每晃一下都發出吵鬧的摩擦聲，像是為我即將打響的戰爭擂鼓。）
 
 [wait time="0.8"]
 
@@ -43,7 +43,7 @@ chancellor (concerned): ……殿下慢走。
 
 leave chancellor
 
-princess: （我沒回頭，但後頸一直發麻。）
+princess: （我沒有回頭，但他那停留在背後的視線，讓我的後頸一直發麻，像被毒蛇盯上了一樣。）
 
 [wait time="0.5"]
 
@@ -58,7 +58,7 @@ leave princess
 
 join princess left
 
-princess: （廳裡都是說話聲，賽拉斯就站在父王身邊，像一堵牆。）
+princess: （朝議廳裡原本嘈雜的說話聲因為我的闖入瞬間安靜。賽拉斯就站在父王身邊，像一堵沉默而不可逾越的牆。）
 
 [wait time="0.5"]
 
@@ -68,13 +68,13 @@ king (default): 哦？今天吹了什麼風，我們的寶貝公主居然主動�
 
 [wait time="0.5"]
 
-princess: （父王笑得很大聲，像想把所有不對勁都壓下去。）
+princess: （父王笑得特別大聲，像是在群臣面前極力掩飾這份突如其來的不對勁。）
 
-princess: （他張開手，像平常那樣等我走過去。）
+princess: （他張開雙臂，像往常那樣等著他天真的女兒撲進懷裡。）
 
 [wait time="0.8"]
 
-princess: （可我停住了。）
+princess: （但我停住了腳步，沒有像從前那樣配合他的演出。）
 
 king: 怎麼啦？今天不抱抱父王了？
 
@@ -92,11 +92,11 @@ princess (determined): 您是不是給過賽拉斯一道密令？如果守不住
 
 [sound path="res://audio/sfx/armor_approach_heavy.ogg" bus="SFX"]
 
-princess: （賽拉斯整個人都繃住了。）
+princess: （話音剛落，我能明顯感覺到賽拉斯整個人瞬間繃緊，彷彿被戳中了死穴。）
 
 [wait time="0.8"]
 
-princess: （父王先看他，再看我。）
+princess: （父王的笑容僵在臉上，眼神銳利地先掃過賽拉斯，再死死釘在我身上。）
 
 king: ……誰告訴你的？
 
@@ -110,7 +110,7 @@ princess (determined): 我知道邊境來的不是小股盜匪，是敵國大軍
 
 king: ……
 
-princess: （他沒立刻反駁。這比承認更可怕。）
+princess: （父王沉默了。他沒有立刻反駁我這個「荒唐」的猜測。這份沉默，比直接承認更讓我感到絕望和可怕。）
 
 princess (determined): 我也知道，為了備戰，您加了很重的稅。
 
@@ -134,13 +134,13 @@ king: 來人！把公主先請下去！
 
 [sound path="res://audio/sfx/armor_approach_heavy.ogg" bus="SFX"]
 
-princess: （有人扣住我的手臂，我怎麼掙都掙不開。）
+princess: （兩旁的近衛上前，像鐵鉗一樣死死扣住我的手臂，無論我怎麼掙扎都紋絲不動。我是公主，可現在卻像個囚犯。）
 
 princess (shocked): 是宰相！去查宰相就夠了！父王，你不要再讓他——
 
 [wait time="0.8"]
 
-princess: （門在我面前關上。）
+princess: （朝議廳沉重的大門在我面前無情地關上，將我徹底隔絕在權力的核心之外。）
 
 leave king
 leave princess
@@ -153,15 +153,15 @@ leave princess
 
 join king right
 
-princess: （後面發生了什麼，我沒看見。）
+princess: （被強行帶走後，裡面具體發生了什麼，我無法看見。）
 
-princess: （只聽見父王在裡頭發火。）
+princess: （我只隱約聽見父王雷霆般的震怒聲從門縫漏出。）
 
 king: 你怎麼辦事的！
 
 chancellor (concerned): 臣冤枉……臣真的不知——
 
-princess: （再後面，聲音就被門和牆吃掉了。）
+princess: （再後面，所有的爭吵和辯解，都被厚重的木門和冰冷的石牆徹底吞噬了。）
 
 leave king
 
@@ -174,44 +174,44 @@ leave king
 
 join princess left
 
-princess: （一張桌子，一把椅子，一扇打不開的窗。）
+princess: （只有一張空蕩蕩的桌子，一把硬木椅子，和一扇從外面被釘死的窗戶。這根本不是客房，是牢房。）
 
 [wait time="1.2"]
 
-princess (sad): （他聽見了，可還是把我關起來。）
+princess (sad): （父王他明明聽見了我的警告，也知道了宰相的嫌疑，可他還是選擇把我這個知情者關了起來。）
 
-princess: （像我說的那些話，全被當成危險。）
+princess: （我以為說出真相就能改變一切，結果我說的那些話，只讓我自己變成了一個必須被隔離的「危險」。）
 
 [wait time="1.5"]
 
-princess: （我等了一會兒。門外一直有人，可沒有人打算進來。）
+princess: （時間一點點流逝。門外的守衛腳步聲從未間斷，但沒有任何人打算進來給我一個解釋。）
 
-princess: （桌上放著一杯茶。）
+princess: （我的目光落在桌上。那裡不知何時，早已經放著一杯茶。）
 
 [wait time="1.0"]
 
 - 站起來走了好幾圈
-	princess (angry): （我明明已經說出口了。）
+	princess (angry): （我煩躁地在狹小的房間裡走了好幾圈。我明明已經把一切都說出口了！為什麼還是這種結果？）
 - 坐在椅子上，盯著牆
-	princess (sad): （說了那麼多，還是沒用。）
+	princess (sad): （我頹然地坐在椅子上，死死盯著冰冷的牆壁。說了那麼多真相，到頭來還是沒用嗎？）
 
 [wait time="1.2"]
 
-princess: （我伸手拿起茶杯，喝了一口。）
+princess: （我實在渴得厲害，也沒多想，便伸手端起那杯茶，喝了一口。）
 
 [wait time="1.5"]
 
-princess (shocked): （——！）
+princess (shocked): （——這股甜膩中夾雜著苦澀的味道……！）
 
-princess: （這個味道。）
+princess: （我的大腦瞬間炸開。這個味道……）
 
-princess (shocked): （我認得。）
+princess (shocked): （我死都不會認錯。這就是我第一次輪迴時，在宰相書房裡喝下的那杯毒茶！）
 
-princess: （第一次死前，那杯茶也是這個味道。）
+princess: （在父王的眼皮底下，在被嚴密看守的軟禁室裡，他居然還能把毒藥送到我面前。）
 
 [wait time="0.8"]
 
-princess (determined): （原來從頭到尾，都是同一個人。）
+princess (determined): （原來從頭到尾，策劃這一切、兩次殺死我的，根本就是同一個人。）
 
 [signal arg="cut_to_silence"]
 

@@ -5,7 +5,7 @@
 
 join princess left
 
-princess: （走廊安靜得過頭，連腳步聲都像做錯事。）
+princess: （通往宰相書房的走廊安靜得過頭，我連自己的心跳聲都聽得一清二楚，每走一步都彷彿如履薄冰。）
 
 [wait time="0.8"]
 
@@ -29,7 +29,7 @@ princess (shocked): 宰相大人，外面到底怎麼了？邊境、戰事……
 
 chancellor: ……
 
-princess: （他居然沒有立刻笑著帶過去。）
+princess: （他居然沒有立刻笑著帶過去。這份沉默，反而證實了我的不安。）
 
 chancellor (concerned): 殿下……怎麼突然問這些？
 
@@ -41,7 +41,7 @@ chancellor (concerned): ……
 
 chancellor (concerned): 殿下既然問到這一步，臣實在沒辦法再只說「一切安好」。
 
-princess: （他肯說了。可我反而更怕。）
+princess: （他肯說了。可看著他嚴肅的神情，我心底的恐懼反而被無限放大。真相到底有多不堪？）
 
 [wait time="0.7"]
 
@@ -57,11 +57,11 @@ chancellor (concerned): 那請您看看這本。這是近兩年的軍需帳簿�
 
 [wait time="0.5"]
 
-princess: （厚厚一本推到我面前，邊角都翻毛了。）
+princess: （厚厚一本帳簿推到我面前，邊角都翻毛了，上面記滿了密密麻麻的數字，透著一股陳舊的味道。）
 
 chancellor (concerned): 這裡，是以「戰備」名義徵收的稅。這裡，是實際撥去軍備的數字。殿下看得出差了多少嗎？
 
-princess: （我看不懂細節，可那些數字擺在一起，怎麼看都不對。）
+princess: （我從未接觸過政務，看不懂細節。可那些龐大得驚人的稅收數字，和少得可憐的軍費擺在一起，只要不傻，都能看出其中的巨大虧空。）
 
 princess (sad): 那其他的錢……去哪裡了？
 
@@ -85,7 +85,7 @@ chancellor (concerned): 進來吧。
 
 [wait time="0.8"]
 
-princess: （門開了，進來的人彎著背，像連站直都不敢。）
+princess: （門開了，進來的男人彎著背，眼神空洞，整個人像是被生活的重擔壓垮了，連站直都不敢。）
 
 chancellor (concerned): 不必緊張。殿下只是想聽您親口說。
 
@@ -99,7 +99,7 @@ npc (default): 她就這樣走了。我什麼都做不了。
 
 [wait time="1.5"]
 
-princess: （他說完就停了，像連怨都沒力氣怨。）
+princess: （他說完就停了。沒有聲嘶力竭的哭喊，也沒有激烈的指責。那種連怨恨都已經失去力氣的麻木，比任何悲鳴都更讓人絕望。）
 
 [wait time="0.5"]
 
@@ -109,7 +109,7 @@ chancellor: 好了，多謝你。下去吧。
 
 [wait time="0.8"]
 
-princess: （門一關，房裡又只剩我們兩個。）
+princess: （門一關，那種令人窒息的沉重感卻沒有跟著離開。房裡又只剩我們兩個，空氣冷得像結了冰。）
 
 princess (sad): 這些……都是真的嗎？
 
@@ -133,9 +133,9 @@ chancellor (concerned): 可若由臣出面，動靜太大。只有殿下，進�
 
 princess: ……
 
-princess: （要我去父王書房拿東西。）
+princess: （要我去父王的書房偷東西……這等於是背叛了父王。）
 
-princess: （可剛才那個人的聲音還卡在我耳邊。）
+princess: （可剛才那個男人的聲音還卡在我耳邊，還有那些染滿貪婪的帳目……我真的還能假裝什麼事都沒發生嗎？）
 
 princess (shocked): 父王今天什麼時候不在？
 
@@ -149,7 +149,7 @@ chancellor (concerned): 殿下放心，臣不會讓任何人因為這件事受�
 
 leave chancellor
 
-princess: （他說得那麼輕，像真的會護住所有人。）
+princess: （他的聲音說得那麼輕，那麼溫柔，像是一個真正憂國憂民的長者，發誓會護住所有人。我決定相信他。）
 
 leave princess
 
@@ -164,19 +164,19 @@ leave princess
 
 join princess left
 
-princess: （父王的書房沒上鎖。和以前一樣。）
+princess: （父王的書房沒上鎖。這是我從小最熟悉的地方，現在卻覺得無比陌生和危險。）
 
 [wait time="0.8"]
 
-princess: （摸到暗格的那一下，我手心全是汗。）
+princess: （憑著記憶摸到暗格的那一下，我心跳得快要衝出胸膛，手心全是冷汗。）
 
 [wait time="0.6"]
 
-princess (determined): （就這一次。）
+princess (determined): （就這一次。為了王國，為了弄清真相……父王，原諒我。）
 
 - （取出密令）
-	princess: （封蠟硬硬地抵在身上。我把它塞進外套裡，轉身就走。）
-	princess: （父王總說，這扇門永遠為我開著。）
-	princess: （……對不起。）
+	princess: （密令的封蠟硬硬地抵在胸口。我把它死死塞進外套裡，像是藏著一個會爆炸的秘密，轉身就走。）
+	princess: （父王總說，他的書房大門永遠為我開著，他對我從不設防。）
+	princess: （……對不起，父王。但我必須這麼做。）
 	leave princess
 jump 03_loop1_betrayal_reveal/

@@ -11,13 +11,13 @@ princess (shocked): ……又是這裡。
 
 [wait time="0.8"]
 
-princess: （我明明喝下了那杯茶。）
+princess: （我明明喝下了宰相給的那杯毒茶。）
 
-princess: （那句話、那個味道，還黏在身上。可房間又乾乾淨淨，像什麼都沒發生。）
+princess: （那句「不要怪我」、那個發苦的玫瑰味道，彷彿還黏在喉嚨裡。可房間又乾乾淨淨，像什麼都沒發生過。）
 
 [wait time="1.0"]
 
-princess (shocked): （這次不是夢了。）
+princess (shocked): （如果說一次是夢，那兩次呢？這絕對不是夢。我被困在時間裡了。）
 
 [wait time="0.8"]
 
@@ -27,9 +27,9 @@ maid (default): 殿下～早安呀！今天天氣超好的喔～對了對了，�
 
 [wait time="0.5"]
 
-princess: （……莉娜。）
+princess: （……莉娜。又是同一個時間點，同一段對話。）
 
-princess: （她眼睛還是紅的。）
+princess: （她的眼睛和上次一樣，還是紅的。）
 
 maid (default): 嗯？殿下怎麼啦？臉色好差喔……是不是又做惡夢啦？
 
@@ -37,7 +37,7 @@ princess (shocked): 莉娜，你眼睛怎麼紅紅的？
 
 maid (forced_smile): 欸？才沒有呢！就是昨晚小說太好看，看到很晚而已～殿下別擔心莉娜啦！
 
-princess: （又是這套說法。）
+princess: （又是這套說詞。我上次怎麼就信了她只是看小說看太晚？）
 
 princess (shocked): 莉娜，今天是幾月幾號？
 
@@ -45,9 +45,9 @@ maid (default): 三月十二日呀～殿下今天怎麼一直問這個？
 
 [wait time="1.2"]
 
-princess: （三月十二日。還是同一天。）
+princess: （三月十二日。果真如此，每次死亡都會回到這一天。）
 
-princess: （想到宰相，我胃裡就先縮了一下。）
+princess: （只要一想到宰相那張溫和的臉，我胃裡就一陣翻江倒海的噁心，恐懼和憤怒交織在一起。）
 
 maid (default): 殿下，宰相大人的項鍊要不要戴上呀？他特地交代，說今天一定要配那件藍色禮服——
 
@@ -59,7 +59,7 @@ princess (shocked): 簡單一點就好。
 
 [wait time="0.8"]
 
-princess: （鏡子裡那張臉，好像忽然不是我自己的。）
+princess: （鏡子裡那張養尊處優、天真無邪的臉，好像忽然變得十分陌生。我不能再像個傻瓜一樣任人擺佈了。）
 
 # ================================================================
 # 三個選項 — 玩家需全部探索後，「決定去找賽拉斯」才會出現
@@ -74,25 +74,25 @@ if {option_explored:a_v1_chancellor} and {option_explored:a_v1_king} and {option
 	jump final_decision
 
 if not {option_explored:a_v1_chancellor} and not {option_explored:a_v1_king} and not {option_explored:a_v1_cyras}:
-	princess: （帳本、人證，全是宰相安排好給我看的。我現在手上什麼都沒有。）
+	princess: （仔細一想，上一輪的帳本、那個悲慘的人證，全都是宰相刻意安排好給我看的。他算準了我的天真。而我現在，手上其實什麼底牌都沒有。）
 
 label choice_menu
 
 - 找宰相 | [if not {option_explored:a_v1_chancellor}]
 	[wait time="0.5"]
-	princess: （他說過「不要怪我」。那杯茶的味道我還記得。不管他的理由是什麼……不行。）
+	princess: （去找宰相？他親手毒殺了我，那杯茶的味道我死也不會忘。不管他背後有什麼理由，這條路絕對是死路一條……不行。）
 	[signal arg="option_explored:a_v1_chancellor"]
 	jump choice_loop
 
 - 問父王 | [if not {option_explored:a_v1_king}]
 	[wait time="0.5"]
-	princess: （宰相說的那些帳本、那個男人的證詞——就算是假的，我也沒辦法當場反駁。父王課了那麼多稅，宮裡沒人願意跟我說真話……我去了，他會聽我說嗎？）
+	princess: （去問父王？宰相說的那些帳本、那個男人的證詞，真假難辨。如果父王真的為了備戰課了重稅，甚至默許了那些事……他會聽我說嗎？沒有證據，我什麼都不是。）
 	[signal arg="option_explored:a_v1_king"]
 	jump choice_loop
 
 - 找賽拉斯 | [if not {option_explored:a_v1_cyras}]
 	[wait time="0.5"]
-	princess: （賽拉斯手上有密令。上一次我太害怕，但現在不一樣了。他就算真的拿著刀，我也需要問他。）
+	princess: （找賽拉斯？雖然第一次輪迴中是他殺了我，但他手上確實有那份針對我的密令。上一次我太害怕不敢面對他，但現在不一樣了。比起笑面虎的宰相，賽拉斯或許更容易暴露出破綻。我必須去試探他。）
 	[signal arg="option_explored:a_v1_cyras"]
 	jump choice_loop
 
@@ -100,7 +100,7 @@ label final_decision
 
 - 【決定去找賽拉斯】
 	[wait time="0.6"]
-	princess: （宰相不能碰，父王那裡說不清楚……那一夜是賽拉斯執行的，密令的源頭一定能從他身上找到。）
+	princess: （宰相是一條毒蛇，父王那裡也解釋不清……既然第一次是賽拉斯執行的暗殺，那份密令的源頭一定能從他身上找到線索。我只能從他那裡找突破口了。）
 	leave maid
 	leave princess
 	[signal arg="day_counter:180"]
