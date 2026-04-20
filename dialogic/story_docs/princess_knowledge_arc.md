@@ -1,3 +1,9 @@
+> 文件層級：實作層
+> 文件角色：寫作支援
+> 可否定義新設定：不可以
+> 上游來源：docs/zh/design/story/00_Characters.md / 00_Reversal_Framework.md / dialogic/story_docs/LOOP_OUTLINE.md
+> 下游同步對象：scenario_*_outline.md / characters/princess_elena.md
+> 最後一次已對齊的主檔：dialogic/story_docs/LOOP_OUTLINE.md
 # 公主艾蓮娜——知識積累與成長弧線
 
 > 本文件追蹤公主在每一輪迴中學到了什麼，包括客觀情報、認知轉變與習得的能力。

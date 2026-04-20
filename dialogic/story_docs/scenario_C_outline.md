@@ -1,3 +1,9 @@
+> 文件層級：實作層
+> 文件角色：場景落地
+> 可否定義新設定：不可以
+> 上游來源：dialogic/story_docs/LOOP_OUTLINE.md / docs/zh/design/story/00_Canon_Line.md / 00_Characters.md / 對應 loop_* 檔案
+> 下游同步對象：Dialogic timelines / 對白撰寫
+> 最後一次已對齊的主檔：dialogic/story_docs/LOOP_OUTLINE.md
 # 調查線 C 大綱：魔法陣與羅網（達爾線）
 
 > 本文件為調查線 C（`03_loop_3/`）的場景逐幕大綱，供對白撰寫參考。

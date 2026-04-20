@@ -1,3 +1,9 @@
+> 文件層級：實作層
+> 文件角色：寫作支援
+> 可否定義新設定：不可以
+> 上游來源：docs/zh/design/story/00_Characters.md / dialogic/story_docs/LOOP_OUTLINE.md / scenario_*_outline.md
+> 下游同步對象：角色立繪 / 場景資產協作
+> 最後一次已對齊的主檔：dialogic/story_docs/LOOP_OUTLINE.md
 # 美術資源驗證清單
 
 > 根據 `.dch` 角色定義與 `art/characters/` 資料夾比對產生。

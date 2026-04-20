@@ -1,3 +1,9 @@
+> 文件層級：設計層
+> 文件角色：真源（章節暗線）
+> 可否定義新設定：可以
+> 上游來源：00_Canon_Line.md / 00_Timeline.md / 對應 loop_*/design_notes.md
+> 下游同步對象：dialogic/story_docs/LOOP_OUTLINE.md / scenario_*_outline.md
+> 最後一次已對齊的主檔：00_Timeline.md / 對應 loop_*/design_notes.md
 # Loop 2 — 暗線設計
 
 > Loop 2 的暗線核心：**平民社會的真實生態**。

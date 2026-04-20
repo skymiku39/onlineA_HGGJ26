@@ -1,3 +1,9 @@
+> 文件層級：實作層
+> 文件角色：真源（實作層主檔）
+> 可否定義新設定：不可以（若需新 canon 先回寫設計層）
+> 上游來源：docs/zh/design/story/00_Canon_Line.md / 00_Characters.md / 00_Reversal_Framework.md / 00_Timeline.md
+> 下游同步對象：scenario_*_outline.md / STORY_OVERVIEW.md / Dialogic 落地
+> 最後一次已對齊的主檔：docs/zh/design/story/00_Reversal_Framework.md / 00_Timeline.md
 # Break the Loop — 全回圈故事大綱
 
 > 以公主經歷的順序，逐輪呈現劇情脈絡與情報積累。

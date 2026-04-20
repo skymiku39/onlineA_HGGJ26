@@ -1,3 +1,9 @@
+> 文件層級：設計層
+> 文件角色：真源
+> 可否定義新設定：可以
+> 上游來源：無（本檔即真相主檔）
+> 下游同步對象：00_Timeline.md / 00_Characters.md / dialogic/story_docs/LOOP_OUTLINE.md / scenario_* / characters/*.md
+> 最後一次已對齊的主檔：無（本檔即主檔）
 # Break the Loop — 真實線（Canon Line）
 
 > **本文件是故事的「絕對真相」。**

@@ -1,3 +1,9 @@
+> 文件層級：設計層
+> 文件角色：摘要
+> 可否定義新設定：不可以
+> 上游來源：對應 loop_*/design_notes.md / 00_Reversal_Framework.md / dialogic/story_docs/LOOP_OUTLINE.md
+> 下游同步對象：STORY_OVERVIEW.md / 協作者快速閱讀
+> 最後一次已對齊的主檔：dialogic/story_docs/LOOP_OUTLINE.md
 # 最終輪迴 — 破曉（明線）
 
 > **時間點：** Day 1 — Day 180

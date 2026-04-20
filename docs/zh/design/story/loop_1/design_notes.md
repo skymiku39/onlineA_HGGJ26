@@ -1,3 +1,9 @@
+> 文件層級：設計層
+> 文件角色：真源（章節意圖）
+> 可否定義新設定：可以
+> 上游來源：00_Reversal_Framework.md / 00_Canon_Line.md / 00_Characters.md
+> 下游同步對象：對應 loop_*/surface.md / loop_*/hidden.md / dialogic/story_docs/LOOP_OUTLINE.md / scenario_*_outline.md
+> 最後一次已對齊的主檔：00_Reversal_Framework.md
 # Loop 1 — 設計筆記（現行同步版）
 
 > 本文件已移除舊版「偷兵符／宰相開城門」設計。

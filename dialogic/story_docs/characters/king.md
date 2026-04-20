@@ -1,3 +1,9 @@
+> 文件層級：實作層
+> 文件角色：寫作支援
+> 可否定義新設定：不可以
+> 上游來源：docs/zh/design/story/00_Characters.md / 00_Canon_Line.md
+> 下游同步對象：scenario_*_outline.md / Dialogic 對白撰寫
+> 最後一次已對齊的主檔：docs/zh/design/story/00_Characters.md
 # 國王（King）
 
 | 項目 | 說明 |

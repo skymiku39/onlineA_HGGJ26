@@ -1,3 +1,9 @@
+> 文件層級：設計層
+> 文件角色：真源
+> 可否定義新設定：可以
+> 上游來源：00_Canon_Line.md / 00_Characters.md
+> 下游同步對象：loop_*/design_notes.md / loop_*/surface.md / dialogic/story_docs/LOOP_OUTLINE.md
+> 最後一次已對齊的主檔：00_Canon_Line.md / 00_Characters.md
 # Break the Loop — 現行反轉框架
 
 > 本文件只保留與現行章節總綱一致的反轉結構。
