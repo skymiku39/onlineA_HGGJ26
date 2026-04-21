@@ -18,7 +18,8 @@
 2. `dialogic/story_docs/canon/00_Canon_Line.md`
 3. `dialogic/story_docs/canon/00_Characters.md`
 4. `dialogic/story_docs/canon/00_Factions.md`
-5. `dialogic/story_docs/LOOP_OUTLINE.md`
+5. `dialogic/story_docs/canon/00_Loop_Response_Matrix.md`
+6. `dialogic/story_docs/LOOP_OUTLINE.md`
 
 ### 要寫某一章
 
@@ -56,6 +57,7 @@
 | 角色真實動機 | `canon/00_Characters.md` | `characters/*.md` |
 | 勢力與城外壓力 | `canon/00_Factions.md` | `LOOP_OUTLINE.md` |
 | 章節功能 | `canon/00_Reversal_Framework.md` | `loops/loop_x/design_notes.md` |
+| 公主改變後別人怎麼反應 | `canon/00_Loop_Response_Matrix.md` | `loops/loop_x/design_notes.md` / `scenarios/scenario_*_outline.md` |
 | 主流程與情報流 | `LOOP_OUTLINE.md` | `scenarios/scenario_*_outline.md` |
 | 寫某場戲 | `scenarios/scenario_*_outline.md` | `characters/*.md` |
 | 美術與資產 | `production/art_handoff.md` | `production/art_asset_checklist.md` |
@@ -80,4 +82,3 @@
 - 改場景節奏、選項、演出時，改 `scenarios/`，但不可新增未回寫 canon 的設定。
 - 舊 `docs/zh/design` 已遷移；不要再把它當成 active source。
 - `production/screenplay_legacy_source.md` 與 `production/asset_plan.md` 只保留歷史參考，不可引用為現行劇情依據。
-

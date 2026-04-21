@@ -43,6 +43,7 @@ dialogic/story_docs
 | `canon/00_Factions.md` | 勢力真源 | 宮內、下城區、城外壓力的勢力分工 | 單場演出細節 |
 | `canon/00_Timeline.md` | 時間線真源 | Day / Month 節點、可提前與不可提前事件 | 對白與演出節奏 |
 | `canon/00_Reversal_Framework.md` | 章節功能真源 | 公主認知演進、每章反轉與學習 | Dialogic 節點拆解 |
+| `canon/00_Loop_Response_Matrix.md` | 回圈因應真源 | 每輪公主變化、誰察覺、世界與勢力如何反應、哪些事項不變 | 場景逐幕對白 |
 | `canon/00_Role_Alignment_Index.md` | 角色對位索引 | 交接查找、策略對照 | 新增高於角色真源的設定 |
 | `loops/*` | 章節設計 | 作者意圖、表層摘要、暗線機制 | 與 `canon/` 衝突的新設定 |
 | `LOOP_OUTLINE.md` | 主流程與情報流主檔 | 輪次結構、情報流、條件、步驟順序 | 角色本質、世界真相的唯一來源 |
@@ -58,6 +59,7 @@ dialogic/story_docs
 - 角色本質與角色對位：先看 `canon/00_Characters.md`，再看 `characters/`。
 - 勢力分工與外部壓力：先看 `canon/00_Factions.md`。
 - 章節功能與公主學習：先看 `canon/00_Reversal_Framework.md`，再看 `loops/`。
+- 公主每輪改變後，角色與勢力如何因應：看 `canon/00_Loop_Response_Matrix.md`。
 - 主流程與情報變數：先看 `LOOP_OUTLINE.md`，再看 `scenarios/`。
 - 美術與資產交接：看 `production/`，但不得在 production 文件新增故事 canon。
 
@@ -73,6 +75,7 @@ dialogic/story_docs
 | `canon/00_Characters.md` | `characters/`、`canon/00_Role_Alignment_Index.md`、`LOOP_OUTLINE.md` |
 | `canon/00_Factions.md` | `canon/00_Canon_Line.md`、`canon/00_Timeline.md`、相關角色卡、`scenarios/scenario_D_outline.md` |
 | `canon/00_Reversal_Framework.md` | 對應 `loops/*/design_notes.md`、`loops/*/surface.md`、`LOOP_OUTLINE.md`、`STORY_OVERVIEW.md` |
+| `canon/00_Loop_Response_Matrix.md` | `LOOP_OUTLINE.md`、對應 `loops/*/design_notes.md`、受影響的 `scenarios/` |
 | `LOOP_OUTLINE.md` | `STORY_OVERVIEW.md`、受影響的 `scenarios/`、相關角色卡 |
 | `scenarios/*` | 若出現新 canon，先回寫 `canon/`，再保留場景落地 |
 | `production/*` | 若牽涉故事內容，只能引用現行 `canon/`，不可把舊稿混回主線 |
