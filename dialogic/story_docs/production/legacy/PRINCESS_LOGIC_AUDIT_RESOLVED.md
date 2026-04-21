@@ -1,9 +1,9 @@
-> 文件根目錄：dialogic/story_docs
-> 文件角色：審查報告（不定義 canon）
+> 文件根目錄：dialogic/story_docs/production/legacy
+> 文件角色：已處理審查報告（歷史參考，不定義 canon）
 > 可否定義新設定：不可以
 > 上游來源：00_DOCUMENT_SYSTEM.md / canon/*.md / LOOP_OUTLINE.md / loops/* / scenarios/* / characters/* / production/*
 > 下游同步對象：修稿排程 / 對白撰寫 / Dialogic timelines
-> 最後一次已對齊的主檔：本次審查依目前工作區內容
+> 最後一次已對齊的主檔：本次審查依 2026-04-21 修稿前工作區內容；主要問題已回寫 active docs
 
 # 公主事件／場景／決策邏輯審查報告
 

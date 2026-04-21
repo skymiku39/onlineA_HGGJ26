@@ -1,3 +1,5 @@
+> Legacy 說明：本檔為舊資產規劃來源說明，只供歷史追溯，不定義現行 canon。現行美術交接請看 `../art_handoff.md` 與 `../art_asset_checklist.md`。
+
 > 文件根目錄：dialogic/story_docs
 > 文件角色：製作參考（舊資產規劃來源說明）
 > 可否定義新設定：不可以（不得新增故事 canon）

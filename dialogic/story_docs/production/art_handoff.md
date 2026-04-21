@@ -67,7 +67,7 @@
 
 | 表情 key | 正式檔名 | 狀態 | 優先級 | 畫面重點 |
 |---|---|---|---|---|
-| `default` | `knight_portrait.png` | 已上線 | 高 | 冷靜、克制、壓住情緒的忠臣 |
+| `default` | `knight_portrait.png` | 已上線 | 高 | 冷靜、克制、壓住情緒的騎士長 |
 | `serious` | `retainer_serious.png` | 已上線 | 高 | 對局勢有重量感的嚴肅表情 |
 | `tearful` | `retainer_tearful.png` | 已上線 | 高 | 壓抑崩潰、帶淚但不失控 |
 | `exhausted` | `retainer_exhausted.png` | 佔位，現共用 `retainer_serious.png` | 中 | 長期熬夜備戰、身體先垮的疲憊感 |
@@ -119,7 +119,7 @@
 
 | 表情 key | 正式檔名 | 狀態 | 優先級 | 畫面重點 |
 |---|---|---|---|---|
-| `default` | `dal_default.png` | 佔位，現共用 `suspect_a_default.png` | 高 | 老工匠、盲眼、沉穩、像看得比別人更深 |
+| `default` | `dal_default.png` | 佔位，現共用 `suspect_a_default.png` | 高 | 宮廷陣防老工匠、沉穩、技術感強，像長期和圖稿與工具相處的人 |
 | `wary` | `dal_wary.png` | 佔位 | 高 | 不完全信任人時的保留 |
 | `quiet` | `dal_quiet.png` | 佔位 | 低 | 可與 `default` 共用，如果趕工可不拆 |
 | `sad_smile` | `dal_sad_smile.png` | 待補，timeline 有使用 | 中 | 最終輪迴 briefing 時那種看透痛苦的溫和 |
@@ -200,10 +200,10 @@
 | `cg_title.png` | 待補 | 高 | 主選單 | 主視覺，建議有迴圈、碎片、王城與公主意象 |
 | `cg_false_evidence.png` | 待補 | 中 | A-0 / A 線帳本段 | 宰相攤開帳簿、將假證據包裝成真相 |
 | `cg_lower_city_famine.png` | 待補 | 中 | B-0 首次看見下城區 | 讓玩家一眼知道苦難是真的 |
-| `cg_mob_trial.png` | 待補 | 高 | B 線最壞走向 | 布魯諾與暴民包圍公主，群眾壓迫感要強 |
+| `cg_lower_city_pressure.png` | 待補 | 高 | B 線下城區壓力 | 下城區真實苦難、被安排的展示路線與群體壓迫感；不要畫成群眾審判公主 |
 | `cg_dal_workshop_death.png` | 待補 | 高 | C-0 工作室死亡 | 達爾誤飲毒茶、助手動手前後的窒息瞬間 |
 | `cg_expose_chancellor.png` | 待補 | 中 | 終章王座廳揭露 | 公主、國王、賽拉斯、達爾同場對質，宰相末路 |
-| `cg_dawn_oath.png` | 待補 | 高 | 真結局破曉 | 賽拉斯宣誓效忠、公主站上新位置；這張取代舊版紙本密令儀式，更符合現行劇本 |
+| `cg_dawn_oath.png` | 待補 | 高 | 真結局破曉 | 賽拉斯公開宣誓、公主站上新位置；這張以口頭密令的宣誓收束為核心，更符合現行劇本 |
 
 ---
 
@@ -258,7 +258,7 @@
 ### 6.3 第三批，做能抬整體完成度的 CG
 
 1. `cg_title.png`
-2. `cg_mob_trial.png`
+2. `cg_lower_city_pressure.png`
 3. `cg_dal_workshop_death.png`
 4. `cg_dawn_oath.png`
 
@@ -286,5 +286,5 @@
 
 1. 先把 `hallway / hallway2 / restaurant / throne_room_gj / window` 這幾張 placeholder 替掉
 2. 再把 `maid`、`mob_leader`、`dal`、`king` 的正式立繪補齊
-3. 最後做 `cg_title`、`cg_mob_trial`、`cg_dal_workshop_death`、`cg_dawn_oath` 四張關鍵 CG
+3. 最後做 `cg_title`、`cg_lower_city_pressure`、`cg_dal_workshop_death`、`cg_dawn_oath` 四張關鍵 CG
 

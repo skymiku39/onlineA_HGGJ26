@@ -81,4 +81,4 @@
 - 改真相、角色本質、勢力分工、時間線時，先改 `canon/`。
 - 改場景節奏、選項、演出時，改 `scenarios/`，但不可新增未回寫 canon 的設定。
 - 舊 `docs/zh/design` 已遷移；不要再把它當成 active source。
-- `production/screenplay_legacy_source.md` 與 `production/asset_plan.md` 只保留歷史參考，不可引用為現行劇情依據。
+- `production/legacy/*` 只保留歷史參考，不可引用為現行劇情依據。

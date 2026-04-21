@@ -29,7 +29,7 @@ dialogic/story_docs
 ├─ loops/                       各輪迴章節設計、表層摘要、暗線
 ├─ scenarios/                   A/B/C/D 場景級落地大綱
 ├─ characters/                  對白與演出角色卡
-└─ production/                  美術、資產、框架、舊稿整理後的製作參考
+└─ production/                  美術、資產、框架與 legacy 歷史參考
 ```
 
 ---
@@ -94,7 +94,7 @@ dialogic/story_docs
 處理方式：
 
 - 還有現行價值：改寫成現行同步版。
-- 只剩歷史價值：移到 `production/` 並標明不得定義 canon。
+- 只剩歷史價值：移到 `production/legacy/` 並標明不得定義 canon。
 - 沒有交接價值：刪除，不保留混合稿。
 
 ---
