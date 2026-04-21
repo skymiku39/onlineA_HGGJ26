@@ -1,0 +1,428 @@
+# 第二章 2-1：洩密的善意（B-0）
+
+[background arg="res://art/backgrounds/princess_room.png" fade="1.0"]
+[music path="res://audio/bgm/music_box_uneasy.ogg" fade="2.0" volume="0.3"]
+
+[wait time="1.5"]
+
+join princess left
+
+princess (determined): 呼——
+
+[wait time="0.6"]
+
+princess: （這一次醒來，我連深呼吸都顯得多餘。）
+princess: （宰相是兇手。毒茶可以出現在書房，也可以出現在父王軟禁我的小房間。）
+princess: （父王不肯說，賽拉斯被密令綁住，王宮裡每一扇門背後都像藏著眼睛。）
+
+[wait time="0.8"]
+
+princess: （可是還有一件事，我沒有弄清楚。）
+princess: （A-0 輪迴裡，宰相給我看的那些下城區苦難，到底是不是他偽造的？）
+princess: （帳本是假的，那個失去妻子的男人呢？下城區的藥和糧食呢？）
+
+[wait time="0.8"]
+
+princess (determined): （光聽別人講，永遠不夠。）
+princess (determined): （我要自己去看。）
+
+[wait time="1.0"]
+
+join maid right
+
+maid (default): 殿下～早安呀！今天也是好天氣喔！
+maid (default): 宰相大人今天一早派人送來了這條項鍊——
+
+[wait time="0.4"]
+
+princess (determined): 不用了。
+
+[wait time="0.5"]
+
+maid (confused): 欸？可是宰相大人特別交代……
+
+[wait time="0.4"]
+
+princess (determined): 我說不用。
+
+[wait time="0.8"]
+
+maid (forced_smile): ……好、好的，殿下。
+
+[wait time="0.5"]
+
+princess: （她笑了一下，可笑意根本沒撐住。）
+princess: （我知道莉娜可能被牽連，也知道拒絕項鍊會讓宰相察覺異常。）
+princess: （但我現在必須去驗證下城區的真相。）
+
+[wait time="0.8"]
+
+princess: 莉娜，今天幾號？
+maid (default): 今天呀？六月十四日～殿下怎麼啦，臉色這麼差？
+
+[wait time="0.6"]
+
+princess: （又是這一天。）
+princess: （能把我帶出宮的人，只剩莉娜。）
+
+[wait time="1.0"]
+
+# === 行動抉擇（先三後一） ===
+label action_selection
+if {b0_silas_checked} == true and {b0_chancellor_checked} == true and {b0_king_checked} == true:
+    jump final_choice
+
+if {b0_silas_checked} == false and {b0_chancellor_checked} == false and {b0_king_checked} == false:
+    princess: （我要出城堡。可誰能帶我去，又不會立刻把我推回籠子裡？）
+
+- 找賽拉斯 [if {b0_silas_checked} == false]
+    [wait time="0.5"]
+    princess: （找賽拉斯帶我去下城區？不，他太正直了。）
+    princess: （如果我說那裡可能藏著宰相操縱民意的證據，他只會把我留在最安全的城堡裡。）
+    princess: （對他來說，保護我比相信我更重要。）
+    set {b0_silas_checked} = true
+    jump action_selection
+
+- 找宰相 [if {b0_chancellor_checked} == false]
+    [wait time="0.5"]
+    princess: （找宰相？）
+    princess: （他是兇手。我絕對不可能再去相信他安排給我看的東西。）
+    princess: （如果我要知道真相，就不能走他替我鋪好的路。）
+    set {b0_chancellor_checked} = true
+    jump action_selection
+
+- 問父王 [if {b0_king_checked} == false]
+    [wait time="0.5"]
+    princess: （父王比賽拉斯更不可能放我出去。）
+    princess: （上次我只是說出真相，就被他軟禁了。）
+    princess: （他會以保護之名關上所有門，而我已經沒有時間再被保護了。）
+    set {b0_king_checked} = true
+    jump action_selection
+
+label final_choice
+- 找女僕
+    [wait time="0.6"]
+    princess: （莉娜是平民出身，她一定知道怎麼去下城區。）
+    princess: （而且她的恐懼裡，也許藏著我需要的答案。）
+    jump maid_guidance
+
+# === 找女僕帶路 ===
+label maid_guidance
+
+[wait time="0.6"]
+
+princess (determined): 莉娜，我想去下城區看看。你帶我去好不好？
+
+[wait time="0.5"]
+
+maid (shocked): 咦？！下城區？
+maid (shocked): 殿下，那裡又髒又亂，而且最近很危險，絕對不行的！
+
+[wait time="0.5"]
+
+maid (forced_smile): 宰相大人也交代過，這幾天殿下最好先待在城堡裡……
+maid (forced_smile): 萬一出了事，莉娜真的擔不起呀……
+
+[wait time="0.8"]
+
+princess: （她不是單純不想去。她是怕。）
+princess: （怕下城區，怕宰相，還是怕我看見什麼不該看的東西？）
+
+[wait time="0.5"]
+
+princess (determined): 我只想親眼看看。
+princess (determined): 我換上普通的衣服，不會有人認出來。我們看一眼就回來。
+
+[wait time="0.8"]
+
+maid (sad): 殿下，真的不行……
+
+[wait time="0.5"]
+
+princess: （她嘴上拒絕，手卻下意識抓住了衣角。）
+princess: （那不是想把我留下的動作，反而像是已經知道自己最後會答應。）
+
+[wait time="0.5"]
+
+princess (sad): 拜託你了，莉娜。
+
+[wait time="1.0"]
+
+princess: （她僵住了。）
+princess: （那一瞬間，她的眼神空了一下，像是剛剛聽見的不是我的請求，而是某個無法違抗的命令。）
+
+[wait time="0.6"]
+
+maid (sad): ……我明白了。
+maid (sad): 殿下既然堅持，那……請跟我來吧。
+
+[wait time="0.8"]
+
+princess: （她答應得很勉強。）
+princess: （可她的腳步，卻比我想像中更熟悉這條逃出城堡的路。）
+
+# === 前往下城區 ===
+[background arg="res://art/backgrounds/lower_district.png" fade="1.0"]
+[music path="res://audio/bgm/lower_district.ogg" fade="2.0" volume="0.4"]
+
+[wait time="1.0"]
+
+princess: （莉娜帶著我換上粗布衣服，從僕人的通道溜出了城堡。）
+princess: （越往下走，空氣越沉。王宮裡的花香被甩在身後，取而代之的是炭灰、潮濕木頭和發霉糧食混在一起的味道。）
+
+[wait time="0.8"]
+
+maid (tearful): 殿下，我們真的只看一眼就回去，好不好？
+
+[wait time="0.5"]
+
+princess: （莉娜抓著我的袖子，手一直在抖。）
+princess: （她嘴上催我回去，可腳步卻把我往更深的地方帶。）
+princess: （她嘴裡說的，和她真正做的，不一樣。）
+
+[wait time="0.8"]
+
+# === 觀察下城區 ===
+- 先看清眼前這些人
+    princess: （先撞進眼裡的，是破布、瘦得見骨的孩子，還有牆角一堆分不清是垃圾還是家當的東西。）
+    princess: （一個抱著嬰兒的女人坐在石階上，連哭都沒聲音。）
+    jump city_after_people
+
+- 先想起那些帳本
+    princess: （我先想到宰相拿給我的那些紙上數字。）
+    princess: （加徵、徵收、軍需、邊防。字都寫得很整齊，可那些字根本寫不出這裡的味道。）
+    jump city_after_ledgers
+
+label city_after_people
+- 再回頭想那些帳本
+    princess: （眼前這些人一擺出來，那些紙上的數字就更像假的了。）
+    princess: （帳本可以偽造，飢餓的眼神卻偽造不了。）
+    jump lower_city_walk
+
+label city_after_ledgers
+- 再看清眼前這些人
+    princess: （先想到帳本，再看這些人，紙上的數字就顯得更薄了。）
+    princess: （苦難是真的。被篡改的，是「誰造成了這些苦難」這個答案。）
+    jump lower_city_walk
+
+label lower_city_walk
+
+[wait time="0.8"]
+
+princess (sad): 這些……都是真的。
+princess: （宰相的帳本是假的，但他帶來的那些苦難，卻真實存在。）
+princess: （甚至比他在書房裡描述的還要慘烈百倍。）
+
+[wait time="0.8"]
+
+maid (tearful): 殿下，我們已經看過了……我們回去好不好？
+maid (tearful): 求求您，我們快點回城堡吧……
+
+[wait time="0.7"]
+
+princess: （她越來越慌。）
+princess: （不是怕我受不了這裡，而是怕我們繼續走下去。）
+
+[wait time="0.8"]
+
+princess: （我們現在只走了一半。我要繼續往前，還是聽她的話回去？）
+
+- 回城
+    jump return_to_castle
+
+- 繼續前進
+    jump keep_going
+
+# ==========================================
+# 分歧：回城路線
+# ==========================================
+label return_to_castle
+
+princess (sad): ……好吧。我們回去。
+maid (relieved): 謝謝殿下！謝謝殿下！
+
+[wait time="0.8"]
+
+princess: （她鬆了一口氣，幾乎是拽著我往回走。）
+princess: （可我知道，回去不代表安全。）
+
+[background arg="res://art/backgrounds/darkness.png" fade="1.0"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.0" volume="0.3"]
+
+[wait time="1.0"]
+
+princess: （回到城堡後，我的行蹤立刻就被父王知道了。）
+princess: （盛怒的父王隔著門吼了一句「我是在保護你」，然後門鎖就落了下來。）
+
+[wait time="0.8"]
+
+princess: （世界一下子縮得很小。）
+princess: （窗、床、桌子、侍從送來又收走的餐盤。）
+
+[background arg="res://art/backgrounds/princess_room.png" fade="1.0"]
+
+[wait time="0.8"]
+
+princess: （到了晚上，桌上出現了一杯茶。）
+princess: （我湊近一聞。）
+
+[wait time="0.6"]
+
+princess (shocked): （蜂蜜、玫瑰、一點苦澀。）
+princess (determined): 我不會喝的。
+
+[wait time="0.5"]
+
+princess: （我把茶倒進了盆栽裡。）
+princess: （侍從來收杯子時不敢看我。）
+
+[wait time="1.0"]
+
+princess: （隔天，桌上又出現了同樣的茶。）
+princess: （我再次倒掉。）
+
+[wait time="0.8"]
+
+princess: （他們以為我只是沒有胃口喝茶。）
+princess: （直到第三天中午——）
+
+[wait time="0.8"]
+
+princess: （我端起侍從送來的午餐熱湯，喝了一口。）
+
+[wait time="0.8"]
+
+princess: （熟悉的苦澀感在喉嚨裡爆開。）
+
+[signal arg="camera_shake"]
+
+princess (shocked): 嗚……！
+princess: （我倒在地上，胃裡像被火燒一樣。）
+princess: （我太天真了。毒藥……根本不限於茶。）
+
+[background arg="res://art/backgrounds/darkness.png" fade="1.5"]
+
+[wait time="2.0"]
+
+# 結算（回城）
+[signal arg="intel:intel_chancellor_surveillance"]
+[signal arg="intel:intel_lower_city_suffering"]
+[signal arg="intel:intel_poison_not_just_tea"]
+[signal arg="death_context:{'death_message': '你驗證了下城區的苦難，卻因行蹤暴露遭軟禁。你避開了毒茶，卻死於有毒的熱湯。宰相的控制無孔不入。', 'intel_reward': ['intel_chancellor_surveillance', 'intel_lower_city_suffering', 'intel_poison_not_just_tea'], 'killer': 'chancellor_remote', 'advance_loop': true, 'next_timeline': '02_loop2_b1_puppet'}"]
+[signal arg="trigger_death"]
+
+# ==========================================
+# 分歧：繼續前進路線
+# ==========================================
+label keep_going
+
+princess (determined): 不，莉娜。
+princess (determined): 我要去你家看看。我想親眼看看你們平時是怎麼生活的。
+
+[wait time="0.5"]
+
+maid (tearful): 殿下……不……
+
+[wait time="0.6"]
+
+princess: （她幾乎要哭出來。）
+princess: （可我不能停。）
+princess: （如果她這麼害怕，那前面一定有東西。）
+
+[background arg="res://art/backgrounds/darkness.png" fade="1.0"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.0" volume="0.3"]
+
+[wait time="1.0"]
+
+princess: （我不顧她的哀求，堅持到了她位於下城區邊緣的家。）
+princess: （那是一間破舊的木屋，門縫漏風，桌腳墊著舊布，牆邊放著一小包像是珍寶般收好的乾糧。）
+
+[wait time="0.8"]
+
+maid (sad): 殿下先坐……莉娜去幫您泡茶。
+
+[wait time="0.8"]
+
+princess: （她說「泡茶」時，聲音抖了一下。）
+
+[wait time="1.0"]
+
+[sound path="res://audio/sfx/glass_break.ogg" bus="SFX"]
+
+princess: （廚房傳來茶杯摔碎的聲音。）
+
+maid: 對不起！殿下，我不小心打破了杯子，我重泡一杯！
+
+[wait time="1.0"]
+
+princess: （過了一會兒，她端著茶出來。）
+princess: （可在我伸手去接時，她又猛地縮回手。）
+
+maid (forced_smile): 不、不行……這茶太涼了，殿下喝了會生病的，我去換熱的……
+
+[wait time="1.2"]
+
+princess: （第三次，她終於端著一杯茶走到我面前。）
+princess: （她的手抖得連茶水都灑了出來。）
+
+[wait time="0.8"]
+
+maid (tearful): 殿下……
+maid (tearful): 這茶的味道感覺不太對……我們還是不要喝了，好不好？
+
+[wait time="0.8"]
+
+princess: （我低頭聞了聞。）
+princess: （蜂蜜、玫瑰、一點苦澀。）
+princess: （我全明白了。）
+
+[wait time="0.6"]
+
+princess (sad): 莉娜。是宰相嗎？
+
+[wait time="0.8"]
+
+maid (shocked): ……！
+maid (shocked): 殿、殿下……
+
+[wait time="0.6"]
+
+princess: （她驚恐地瞪大眼睛，眼淚不斷掉下來。）
+princess: （她的恐懼，不僅僅是因為要毒死我，更是因為那背後龐大的陰影。）
+
+[wait time="0.8"]
+
+princess (determined): （宰相的網，早就延伸到我身邊每一個人。）
+princess (determined): （她帶我出來，不是因為被我說動，而是因為宰相的命令。）
+princess (determined): （但她三次阻止這杯毒茶……她的良心還在。）
+
+[wait time="0.8"]
+
+princess (sad): 沒關係的。
+princess (sad): 希望他不會為難你。
+
+[wait time="0.8"]
+
+princess: （我端起茶杯，仰頭一飲而盡。）
+
+maid (tearful): 殿下——！！
+
+[signal arg="camera_shake"]
+
+[wait time="0.6"]
+
+princess: （莉娜撲上來想阻止，但為時已晚。）
+princess: （我倒在她的懷裡，意識開始消散。）
+princess: （她的哭聲是我聽到的最後一個聲音。）
+princess: （這一次，我會帶著這個教訓回去。）
+
+[background arg="res://art/backgrounds/darkness.png" fade="1.5"]
+
+[wait time="2.0"]
+
+# 結算（繼續前進）
+[signal arg="intel:intel_chancellor_surveillance"]
+[signal arg="intel:intel_lower_city_suffering"]
+[signal arg="intel:intel_maid_coerced"]
+[signal arg="death_context:{'death_message': '你驗證了下城區的苦難，也發現了女僕被脅迫的真相。你主動喝下毒茶，只為不牽連尚有良心的她。', 'intel_reward': ['intel_chancellor_surveillance', 'intel_lower_city_suffering', 'intel_maid_coerced'], 'killer': 'chancellor_remote', 'advance_loop': true, 'next_timeline': '02_loop2_b1_puppet'}"]
+[signal arg="trigger_death"]

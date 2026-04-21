@@ -1,0 +1,468 @@
+# 第二章 2-2：傀儡的巡禮（B-1）
+
+[background arg="res://art/backgrounds/princess_room.png" fade="1.0"]
+[music path="res://audio/bgm/music_box_uneasy.ogg" fade="2.0" volume="0.3"]
+
+[wait time="1.5"]
+
+join princess left
+
+princess (determined): 呼——
+
+[wait time="0.6"]
+
+princess: （我坐了起來。）
+princess: （上一輪，莉娜的眼淚還歷歷在目。）
+princess: （她不是單純被我說動，也不是單純背叛我。她被宰相握在手裡，像一根繩子一樣被拉扯。）
+
+[wait time="0.8"]
+
+princess: （我也明白了另一件事。）
+princess: （宰相的網捕捉的是「異常」。）
+princess: （拒絕項鍊、偷跑出宮、看見不該看的東西，只要我不順從，就會被盯上。）
+
+[wait time="0.8"]
+
+princess (determined): （硬撞只會更快被處理掉。）
+princess (determined): （那就先讓他放心。）
+princess (determined): （這一次，我要成為他期待的那個乖巧傀儡。）
+
+[wait time="1.0"]
+
+join maid right
+
+maid (default): 殿下～早安呀！今天也是好天氣喔！
+maid (default): 宰相大人今天一早派人送來了這條項鍊——
+
+[wait time="0.4"]
+
+princess (smiling): 幫我戴上吧。
+
+[wait time="0.5"]
+
+maid (default): 咦？好的，殿下今天心情真好呢！
+
+[wait time="0.6"]
+
+princess: （金屬碰到皮膚時冰得我想發抖。）
+princess: （可是我不能躲。）
+princess: （今天，我要讓所有人都看見我乖乖戴著它。）
+
+[wait time="0.6"]
+
+- 先對鏡笑了一下
+    princess: （先把這張臉練好。）
+    princess: （不能像知道自己在被監視，也不能像刻意討好。）
+    jump puppet_after_smile
+
+- 先整了整鍊子的位置
+    princess: （先讓它待在最顯眼的地方。）
+    princess: （如果這是宰相的眼睛，那我就主動把自己放在它看得見的位置。）
+    jump puppet_after_chain
+
+label puppet_after_smile
+- 再整了整鍊子的位置
+    princess: （笑還不夠。還得讓那條鍊子也待在最顯眼的地方。）
+    jump puppet_ready
+
+label puppet_after_chain
+- 再對鏡笑了一下
+    princess: （鍊子擺好了，我又對鏡子練了一個最乖的笑。）
+    jump puppet_ready
+
+label puppet_ready
+
+[wait time="0.6"]
+
+princess: （臉和鍊子都要對。）
+princess: （今天我得像一個什麼都沒發現的人。）
+princess (determined): （先去找宰相。像請教，不像興師問罪。）
+
+[wait time="0.8"]
+
+leave maid
+jump ask_chancellor
+
+# === 請求視察 ===
+label ask_chancellor
+
+[background arg="res://art/backgrounds/chancellor_study.png" fade="1.0"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.0" volume="0.3"]
+
+[wait time="0.8"]
+
+join chancellor right
+
+chancellor (smiling): 殿下，您今天真是光彩照人。這條項鍊非常適合您。
+
+[wait time="0.5"]
+
+princess: （他的視線在我的頸部滿意地停留了一瞬，才抬頭看我。）
+
+princess (smiling): 宰相大人，早安。
+princess (sad): 我昨晚做了一個夢。
+
+[wait time="0.5"]
+
+chancellor (serious): 夢？
+
+princess (sad): 夢到下城區的人過得很辛苦。
+princess (sad): 我知道父王和大人都很忙，可我一直被保護在城堡裡，什麼都看不見。
+
+[wait time="0.6"]
+
+princess (smiling): 您以前說過，治理國家不能只看紙上的數字。
+princess (smiling): 我想親眼去看看，也想帶點物資給他們。
+
+[wait time="0.8"]
+
+chancellor (serious): 殿下真是仁慈。
+chancellor (serious): 但下城區最近治安不太好，臣擔心您的安危。
+
+[wait time="0.5"]
+
+princess (determined): 我會帶上侍衛的。
+princess (determined): 而且如果有您安排，我一定不會遇到危險。
+
+[wait time="1.0"]
+
+princess: （他假裝思考了一下。）
+princess: （我知道，他正等著我這麼說。）
+
+[wait time="0.6"]
+
+chancellor (smiling): 既然殿下堅持，臣會為您安排最安全的路線。
+chancellor (smiling): 明日清晨，臣派人護送您。
+
+[wait time="0.8"]
+
+princess: （答得太快了。）
+princess: （但我不能露出懷疑，只能讓自己的笑容更柔順一點。）
+
+princess (smiling): 謝謝您，宰相大人。
+
+leave chancellor
+leave princess
+
+# === 虛假視察之旅 ===
+[background arg="res://art/backgrounds/lower_district.png" fade="1.0"]
+[music path="res://audio/bgm/lower_district.ogg" fade="2.0" volume="0.4"]
+
+[wait time="1.0"]
+
+join princess left
+
+princess: （隔天清晨，宰相安排了一隊精銳侍衛陪同。）
+princess: （街上的人都知道，今天有個公主來了。）
+princess: （每一條路都被清過，每一個靠近我的人都像事先被挑選過。）
+
+[wait time="0.8"]
+
+# === 兩個視察站（兩個都看完才能繼續） ===
+- 先去糧食分發點
+    princess: （我先被帶到糧食分發點。）
+    princess: （隊伍排得很長，發糧的人嗓門也特別大，像生怕別人聽不清。）
+    narrator: 這些都是宰相大人從自己的庫存撥出來的。王上不管我們死活，只有宰相大人還記得我們。
+    princess: （太順了。）
+    princess: （順得像先演過。）
+    jump tour_after_food
+
+- 先去傷兵收容所
+    princess: （我先被帶到傷兵收容所。）
+    princess: （潮濕的布簾後面擠滿傷患，有個老婦人握著年輕士兵的手，哭到聲音都啞了。）
+    old_woman: 都是王上要打仗，我兒子才會變成這樣……
+    princess: （她的痛是真的。）
+    princess: （可那句怪誰，也像有人早就塞給她了。）
+    jump tour_after_hospital
+
+label tour_after_food
+- 再去傷兵收容所
+    princess: （剛看完那邊整齊的口號，再看這裡啞掉的哭聲，像被人硬擺成一組對照。）
+    old_woman: 都是王上要打仗，我兒子才會變成這樣……
+    princess: （她的痛是真的。可那句怪誰，被塞進她嘴裡的痕跡也更明顯了。）
+    jump station_done
+
+label tour_after_hospital
+- 再去糧食分發點
+    princess: （剛聽完那個老婦人的哭聲，再看這條排得太整齊的隊，像有人把「感激」也排練好了。）
+    narrator: 這些都是宰相大人從自己的庫存撥出來的。王上不管我們死活，只有宰相大人還記得我們。
+    princess: （一邊是真痛，一邊是口號。擺得太剛好了。）
+    jump station_done
+
+label station_done
+
+[wait time="0.8"]
+
+princess: （糧與傷，被放成一前一後給我看。）
+princess: （越像照顧，越像挑給我看的。）
+princess: （苦難沒有被偽造，被篡改的，是「誰該為此負責」的敘事。）
+
+[wait time="0.8"]
+
+# === 鐵匠鋪的布魯諾 ===
+princess: （最後，隊伍停在鐵匠鋪。）
+princess: （爐火熱得嚇人，走出來的男人比火還硬。）
+
+join mob_leader right
+
+mob_leader (sad): 殿下……多謝您來看我們。
+mob_leader (sad): 也替我們謝過宰相大人。
+
+[wait time="0.5"]
+
+princess: （他低著頭說話，但我注意到，他的眼神總是不自覺地瞟向我身後的侍衛。）
+
+princess (sad): 你最近過得好嗎？
+
+[wait time="0.6"]
+
+mob_leader (sad): 我的妻子……病死了。
+mob_leader (sad): 本來只要一帖退燒藥……但徵糧隊把草藥都帶走了。
+
+[wait time="0.8"]
+
+princess: （他握緊了拳頭，聲音裡帶著強壓的火氣。）
+
+mob_leader (sad): 要不是——
+
+[wait time="0.5"]
+
+princess: （他突然看了一眼侍衛，把剩下的話吞了回去。）
+
+mob_leader (sad): ……算了。
+mob_leader (sad): 這裡風大，殿下還是早點回去吧。
+
+[wait time="0.8"]
+
+princess: （他把後半句吞回去了。）
+princess: （但我記住了。）
+
+leave mob_leader
+
+[wait time="1.0"]
+
+# === 回程的異常 ===
+[background arg="res://art/backgrounds/lower_district.png" fade="1.0"]
+
+princess: （回程的馬車上，我裝作疲倦地看著窗外。）
+princess: （這一次，我不再只看人。我開始看站位。）
+
+[wait time="0.8"]
+
+- 先注意人群裡格格不入的人
+    princess: （先撞進眼裡的，是幾個走得太整齊的人。）
+    princess: （不像平民，像把巡邏藏進了人群。）
+    jump anomaly_after_crowd
+
+- 先注意窄巷的流民
+    princess: （先不對勁的，是那條窄巷。）
+    princess: （流民走到巷口就自動繞開，像那裡劃著一條不能踩進去的線。）
+    jump anomaly_after_alley
+
+label anomaly_after_crowd
+- 再看窄巷的流民
+    princess: （人群裡有眼，窄巷口就像線。）
+    princess: （流民一走到那裡便自動繞開，像誰都知道不能踩進去。）
+    jump anomaly_both_done
+
+label anomaly_after_alley
+- 再看人群裡格格不入的人
+    princess: （巷口像有界線，我再回頭看人群，就更看得出那幾個人走得太整齊。）
+    princess: （像巡邏被塞進了平民裡。）
+    jump anomaly_both_done
+
+label anomaly_both_done
+
+[wait time="0.8"]
+
+princess (determined): （人是眼，巷是線。）
+princess (determined): （這一路根本不是護送，是看守。）
+
+[wait time="0.6"]
+
+narrator: 不要看那邊。除非你想死。
+
+[wait time="0.8"]
+
+princess: （有人和馬車擦肩而過，只丟下這一句。）
+princess: （城門明明在王國手裡，這裡卻像另一套規矩。）
+
+[wait time="0.8"]
+
+princess (determined): （先記下來。方向、站位、繞路的習慣。）
+
+leave princess
+
+# === 連日的偽裝與學藝 ===
+[background arg="res://art/backgrounds/princess_room.png" fade="1.0"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.0" volume="0.3"]
+
+[wait time="1.0"]
+
+join princess left
+
+princess: （回到城堡後，我先裝作什麼都沒發現。）
+princess: （腦子裡有圖，臉上就更不能露。）
+
+[wait time="0.8"]
+
+- 先製造偽裝
+    princess: （先把假動作鋪出去。）
+    princess: （我借卷宗、寫讀書心得、去問禮官那些無聊到不行的典制細節，看起來像突然對歷史著迷。）
+    princess: （能演得多自然，就多自然。）
+    jump disguise_after_cover
+
+- 先看自己真正在讀什麼
+    princess: （先把眼睛壓回真正要看的地方：牆怎麼做、門怎麼關、術式接在哪，還有那條巷子最後通到哪。）
+    jump disguise_after_truth
+
+label disguise_after_cover
+- 再看自己真正在讀什麼
+    princess: （戲先演夠了，回頭再看，我其實只盯著一件事。）
+    princess: （牆怎麼做、門怎麼關、術式接在哪，還有那條巷子最後通到哪。）
+    jump real_reading
+
+label disguise_after_truth
+- 再把偽裝做滿一點
+    princess: （真東西先記進腦子裡，表面上就更得像個突然對歷史著迷的公主。）
+    princess: （能演得多自然，就多自然。）
+    jump real_reading
+
+label real_reading
+
+[wait time="0.8"]
+
+princess: （假動作鋪在外面，真問題藏在頁裡。）
+princess: （我只能兩邊一起做。）
+
+[wait time="0.8"]
+
+# === 初見達爾 ===
+[background arg="res://art/backgrounds/hallway.png" fade="0.8"]
+
+[wait time="0.6"]
+
+join dal right
+
+princess: （我照規矩遞牌子去見達爾。）
+
+dal (default): 殿下對術式有興趣？
+
+princess (smiling): 我想多懂一些。
+princess (smiling): 至少別再只會站著聽別人講。
+
+[wait time="0.6"]
+
+dal (default): ……殿下若想多聽幾句，臣說也無妨。
+dal (default): 只是術式這東西，聽懂了和學會了，是兩口不同的井。
+
+[wait time="0.8"]
+
+princess: （他當我是心血來潮。）
+princess: （我沒有糾正。）
+
+dal (default): 魔法陣不是一個符號，而是一整套力的流向。
+dal (default): 陣點、線路、供能、回流，任何一處被切斷，都可能讓保護看起來還在，實際上卻已經漏風。
+
+[wait time="0.8"]
+
+princess: （這些知識現在看似沒用。）
+princess: （但總有一天，我會需要它們去碰觸真正的陣核。）
+
+leave dal
+
+[wait time="1.0"]
+
+# === 幾天過去 ===
+[background arg="res://art/backgrounds/princess_room.png" fade="1.0"]
+
+[wait time="0.8"]
+
+princess: （幾天過去了。）
+princess: （宰相還是照樣對我笑，也沒攔我借書，沒攔我見達爾。）
+
+[wait time="0.8"]
+
+princess (determined): （……放得太輕了。）
+princess: （他不是沒看見。）
+princess: （他只是在等我碰到真正不該碰的那一塊。）
+
+[wait time="0.8"]
+
+# === 城牆地圖 ===
+join maid right
+
+princess: 莉娜，我想看一下城牆沿革的地圖。
+princess: 我在研究賑災時物資怎麼走比較快。
+
+[wait time="0.5"]
+
+maid (smiling): 哎呀，殿下最近真的好用功喔！
+maid (smiling): 莉娜幫您找找看！
+
+[wait time="0.8"]
+
+leave maid
+
+princess: （地圖一攤開，我的眼睛就黏在那塊牆上。）
+princess: （內城牆和下城區交界的窄巷，和我在回程看到的位置完全對得上。）
+princess: （那裡厚得太奇怪了。）
+
+[wait time="1.0"]
+
+# === 慈愛的毒茶 ===
+join maid right
+
+maid (forced_smile): 殿下～宰相大人聽說您一回來就在看城牆地圖，可心疼了。
+maid (forced_smile): 大人特地準備了放鬆的茶，還交代莉娜先把地圖收走，讓您好好休息呢。
+
+[wait time="0.8"]
+
+princess: （莉娜把地圖捲起來。）
+princess: （茶送到我面前，笑得一點都挑不出毛病。）
+
+[wait time="0.6"]
+
+princess: （那個味道。）
+princess: （蜂蜜、玫瑰、苦澀。）
+
+[wait time="0.8"]
+
+princess (sad): （原來不是放任。）
+princess (sad): （他只是在等我碰到真正不該碰的那一塊。）
+
+[wait time="0.8"]
+
+princess: （我以為我騙過了他。）
+princess: （原來，他的監視從未放鬆過。）
+princess: （他放任我讀書，也是一種觀察。直到我把視線停在內城牆的地圖上。）
+
+[wait time="0.8"]
+
+princess: （那裡一定藏著他最大的秘密。）
+princess: （達爾教我的魔法知識，我還來不及用。）
+princess: （但我鎖定了城防的死穴。）
+
+[wait time="0.8"]
+
+princess: （我端起茶杯。）
+
+[sound path="res://audio/sfx/glass_break.ogg" bus="SFX"]
+[signal arg="camera_shake"]
+
+[wait time="0.6"]
+
+princess: （茶杯碎裂，毒藥在我體內發作。）
+princess: （我在莉娜不知情的笑容中閉上了眼睛。）
+
+[background arg="res://art/backgrounds/darkness.png" fade="1.5"]
+
+[wait time="2.0"]
+
+# 結算（B-1）
+[signal arg="intel:intel_mob_manipulation"]
+[signal arg="intel:intel_bruno_wife_death"]
+[signal arg="intel:intel_lower_city_route"]
+[signal arg="intel:intel_dal_magic_basics"]
+[signal arg="death_context:{'death_message': '你以順從換取情報，卻在凝視內城牆地圖時觸碰了逆鱗。你明白了宰相的監視是全天候的網，而你還不夠謹慎。', 'intel_reward': ['intel_mob_manipulation', 'intel_bruno_wife_death', 'intel_lower_city_route', 'intel_dal_magic_basics'], 'killer': 'chancellor_remote', 'advance_loop': true, 'next_timeline': '03_loop2_b2_abyss'}"]
+[signal arg="trigger_death"]

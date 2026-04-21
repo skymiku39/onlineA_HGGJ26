@@ -1,0 +1,398 @@
+# 第二章 2-3：深淵的窺探（B-2）
+
+[background arg="res://art/backgrounds/princess_room.png" fade="1.0"]
+[music path="res://audio/bgm/music_box_uneasy.ogg" fade="2.0" volume="0.3"]
+
+[wait time="1.5"]
+
+join princess left
+
+princess (determined): 呼——
+
+[wait time="0.6"]
+
+princess: （又一次。）
+princess: （但我沒有時間發呆了。）
+
+[wait time="0.8"]
+
+princess: （上次我才剛把地圖攤開，茶就送來了。）
+princess: （宰相不是沒有放鬆監視，他只是在等我碰到真正的秘密。）
+princess: （內城牆，窄巷交界處。那裡藏著宰相最大的秘密。）
+
+[wait time="0.8"]
+
+princess (determined): （這次不留任何東西在紙上。）
+princess (determined): （不看地圖，不借卷宗，不讓任何人知道我的眼睛停在哪裡。）
+
+[wait time="0.8"]
+
+princess: （今天是集市日。）
+princess: （在我不曾死過的「第一次」人生裡，我曾任性地要求過自己逛。）
+princess: （侍衛會識趣地改在街口外圍站崗，只留女僕跟著。）
+princess (determined): （缺口就在那裡。）
+
+[wait time="1.0"]
+
+join maid right
+
+maid (default): 殿下～早安呀！今天也是好天氣喔！
+maid (default): 宰相大人今天一早派人送來了這條項鍊——
+
+[wait time="0.4"]
+
+princess (determined): 幫我戴上吧。
+
+[wait time="0.5"]
+
+maid (default): 好～殿下今天真乖呢！來，莉娜幫您扣好。
+
+[wait time="0.6"]
+
+princess: （我不能拒絕，因為這條項鍊是我這次唯一的籌碼。）
+princess: （宰相把它當成項圈。）
+princess: （而今天，我要把項圈換成路標。）
+
+[wait time="0.6"]
+
+- 對鏡端詳鍊墜，然後別過臉
+    princess: （宰相的東西。讓他看見我乖乖戴上就好。）
+    princess: （盯太久，心裡反而有什麼東西在腐爛。）
+    princess (determined): （別想。今天有比這更重要的事。）
+    jump shopping_plan
+
+- 指尖掠過鍊扣，一言不發
+    princess (determined): （這條鍊子，上次換了一條情報。）
+    princess (determined): （今天，我要親自走那條路。）
+    jump shopping_plan
+
+# === 出門理由 ===
+label shopping_plan
+
+[wait time="0.8"]
+
+princess (smiling): 莉娜，今天集市日。我想去挑點布料。
+
+[wait time="0.5"]
+
+maid (default): 好呀～殿下好久沒出去逛了！那莉娜陪您去。
+
+[wait time="0.6"]
+
+princess: （她看起來鬆了一口氣。）
+princess: （逛市集、挑布料、試衣服，這些都像一個公主會做的任性小事。）
+
+[wait time="0.6"]
+
+princess (smiling): 不過我想自己試衣服，不用人在旁邊伺候。
+maid (default): 好、好的，那莉娜在外頭幫殿下挑就好！
+
+[wait time="0.8"]
+
+princess: （侍衛守在路口，不進店。）
+princess: （就這一點空隙。）
+
+leave maid
+jump go_shopping
+
+# === 集市日・成衣店 ===
+label go_shopping
+
+[background arg="res://art/backgrounds/city_streets.png" fade="1.0"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.0" volume="0.3"]
+
+[wait time="0.8"]
+
+princess: （街上的人聲像一張粗糙的布，蓋住了所有刻意壓低的腳步。）
+princess: （我讓自己走得不快不慢，像真的只是心血來潮。）
+
+[background arg="res://art/backgrounds/shop.png" fade="1.0"]
+
+[wait time="0.8"]
+
+princess: （我們進了一家成衣店。）
+princess: （我挑了幾件衣服，走進更衣間。）
+
+[wait time="0.5"]
+
+princess (determined): 莉娜，我想自己試。
+princess (determined): 妳在外面幫我挑幾條搭配的緞帶好嗎？
+
+[wait time="0.5"]
+
+maid (smiling): 好的殿下，我就在外面，有事叫我喔！
+
+[wait time="0.8"]
+
+princess: （布簾落下的瞬間，我立刻動了起來。）
+
+- 先快速換上粗布
+    princess: （先把自己藏起來。粗布夠寬，也夠不起眼。）
+    princess: （鏡子裡的公主被一層廉價布料蓋住，變成路上誰都不會多看一眼的影子。）
+    jump escape_after_cloth
+
+- 先堆好華服製造假象
+    princess: （先把假人在裡頭留下。）
+    princess: （把裙角掛在外頭，讓人以為我還在裡面慢慢挑。）
+    jump escape_after_decoy
+
+label escape_after_cloth
+- 再堆好華服製造假象
+    princess: （人先能走，還得把影子留下。）
+    princess: （把裙角掛在外頭，才像我還在裡面慢慢挑。）
+    jump escape_done
+
+label escape_after_decoy
+- 再快速換上粗布
+    princess: （假象先擺好，接著才輪到我自己消失。）
+    princess: （粗布一套上，就只剩個不起眼的影子。）
+    jump escape_done
+
+label escape_done
+
+[wait time="0.8"]
+
+princess: （現在才像真的同時留下了一個公主，又放走了一個路人。）
+princess: （我迅速摘下那條昂貴的寶石項鍊，收進口袋。）
+
+[wait time="0.6"]
+
+princess: （趁著莉娜背對門口在挑緞帶時，我壓低身子，從後門溜出了店外。）
+princess: （沒有驚動夥計，也沒有觸發街口侍衛的視線。）
+princess: （這一次，我徹底甩開了宰相的眼線。）
+
+[wait time="1.0"]
+
+# === 鐵匠鋪，布魯諾 ===
+[background arg="res://art/backgrounds/lower_district.png" fade="1.0"]
+[music path="res://audio/bgm/lower_district.ogg" fade="2.0" volume="0.4"]
+
+[wait time="0.8"]
+
+princess: （我一路直奔下城區的鐵匠鋪。）
+princess: （爐火還在燒，鐵錘落下的聲音一下一下砸在街巷裡。）
+
+join mob_leader right
+
+mob_leader (confused): 妳是誰？這裡不賣女人的小玩意。
+
+[wait time="0.5"]
+
+princess: （我拉下兜帽，看著他。）
+
+princess (determined): 布魯諾。
+
+[wait time="0.6"]
+
+mob_leader (shocked): ……！
+mob_leader (shocked): 殿下？！妳怎麼會穿成這樣……妳身邊的侍衛呢？
+
+[wait time="0.6"]
+
+princess: （我沒有廢話，直接把那條鑲著寶石的項鍊放在鐵砧上。）
+princess: （寶石在黯淡的爐光裡閃了一下。）
+princess: （那一下，讓他再也沒辦法假裝沒看見我。）
+
+[wait time="0.6"]
+
+princess (determined): 我不要你替我說話。
+princess (determined): 我只要你告訴我一件事。
+
+[wait time="0.5"]
+
+princess (determined): 內城牆的窄巷，到了晚上，是不是有穿黑甲的士兵在進出？
+princess (determined): 那裡的牆，是不是有問題？
+
+[wait time="1.0"]
+
+princess: （他盯著那條價值連城的項鍊，又看了看我孤身一人的打扮，眼神複雜。）
+
+mob_leader (serious): 殿下，知道太多會死的。
+mob_leader (serious): 尤其是那些在夜裡推車的人……他們連自己的聲音都沒有。
+
+[wait time="0.8"]
+
+princess (determined): 告訴我。
+princess (determined): 這條項鍊夠你買下整個藥房的草藥了。
+
+[wait time="1.0"]
+
+mob_leader (serious): ……妳用這東西換一句話，值不值，自己想。
+
+[wait time="0.6"]
+
+mob_leader (serious): 窄巷最深處，有一段比別處厚了三尺的牆。
+mob_leader (serious): 老流民都知道晚上要避開那裡，因為那裡會「吞人」。
+
+[wait time="0.6"]
+
+mob_leader (serious): 那些黑甲人，都是從那裡冒出來的。
+mob_leader (serious): 他們會裝成補給車進出，車輪聲很輕，腳步卻很齊。
+
+[wait time="0.8"]
+
+princess (determined): 謝謝。
+princess (determined): 這項鍊是你的了。
+
+[wait time="0.6"]
+
+mob_leader (serious): 我不保妳活著回來。
+mob_leader (serious): 我只保我現在說的都是真的。
+
+leave mob_leader
+
+[wait time="1.0"]
+
+# === 跟循路線 ===
+[background arg="res://art/backgrounds/darkness.png" fade="1.0"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.0" volume="0.3"]
+
+[wait time="0.8"]
+
+princess: （我順著人流先走一段，再拐進布魯諾說的巷子。）
+princess: （巷口又臭又窄，可牆角磨得發亮，像常有重東西來回擦過。）
+
+[wait time="0.8"]
+
+princess: （越往裡走，光越少。）
+princess: （周圍的老流民用無聲的恐懼眼神看著我，彷彿我是個死人。）
+
+[wait time="0.8"]
+
+narrator: 不要看他們。不要讓他們知道你在看。
+
+[wait time="0.6"]
+
+princess: （角落裡有人抬頭，嘴唇幾乎沒有動，只吐出這句話。）
+princess: （我整個人都僵了一下。）
+
+[wait time="0.8"]
+
+- 先順著老人的視線看過去
+    princess: （先看見的，是牆面乍看普通，可那一截厚得不自然。）
+    princess: （石縫太整齊，像被刻意磨平又重新拼上。）
+    jump wall_after_vision
+
+- 先蹲下來摸牆面
+    princess: （先用手去試。）
+    princess: （指尖一刮，石紋就和旁邊對不上。）
+    jump wall_after_touch
+
+label wall_after_vision
+- 再蹲下來摸牆面
+    princess: （看起來不對，手一摸就更確定了。）
+    princess: （指尖一刮，石紋跟旁邊果然對不上。）
+    jump wall_both_done
+
+label wall_after_touch
+- 再順著老人的視線看過去
+    princess: （手底下先摸出破綻，我再順著老人剛剛看的方向望去。）
+    princess: （那一截牆果然厚得不自然。）
+    jump wall_both_done
+
+label wall_both_done
+
+[wait time="1.0"]
+
+princess (determined): （眼睛和指尖都對上了。）
+princess (determined): （那不是老牆，是被做出來的門面。）
+
+[wait time="0.6"]
+
+princess (determined): （就是這裡。）
+
+[wait time="0.8"]
+
+# === 發現密道 ===
+princess: （我貼著牆摸過去，石頭粗得刮手。）
+
+[wait time="0.6"]
+
+princess: （……找到了。）
+princess: （邊緣磨得圓圓的，像被推開過很多次。）
+
+[wait time="0.6"]
+
+princess: （我用力一推。）
+
+[sound path="res://audio/sfx/gate_open_heavy.ogg" bus="SFX"]
+
+[wait time="0.8"]
+
+princess: （沉重的石門緩緩滑開。）
+princess: （裡面黑得像要把光整口吞掉。）
+princess: （風從裡面灌出來，又濕又冷，帶著鏽味。）
+
+[wait time="1.0"]
+
+princess (shocked): （密道……）
+princess (shocked): （足以讓軍隊無聲穿梭的密道！就在內外城牆的交界處！）
+
+[wait time="0.8"]
+
+princess (shocked): （這就是宰相的私兵一直以來進出城池的方式。）
+princess (shocked): （物理城防，早就被架空了！）
+
+[wait time="1.0"]
+
+# === 就地格殺 ===
+audio "res://audio/sfx/armor_approach_heavy.ogg" [bus="SFX"]
+
+[wait time="0.6"]
+
+princess: （突然，通道深處傳來整齊劃一的腳步聲。）
+princess: （他們聽到了開門的聲音。）
+
+[wait time="0.8"]
+
+princess: （三個全身罩在黑甲裡的士兵走了出來。）
+princess: （他們沒有任何徽記，眼神冰冷得像死人。）
+
+[wait time="0.6"]
+
+princess (shocked): 等——
+
+[wait time="0.3"]
+
+princess: （我連一句話都還沒說出口。）
+
+[signal arg="cut_to_silence"]
+
+[wait time="0.8"]
+
+[sound path="res://audio/sfx/sword_stab_short.ogg" bus="SFX"]
+[signal arg="camera_shake"]
+
+[wait time="0.5"]
+
+princess: （沒有審問，沒有廢話。）
+princess: （他們的任務只是維持保密。）
+princess: （劍刃穿透了我的胸口。我倒在冰冷的石板上，血流進了密道的縫隙。）
+
+[background arg="res://art/backgrounds/darkness.png" fade="1.5"]
+
+[wait time="1.2"]
+
+princess: （原來城牆……早就不是牆了。）
+
+[wait time="0.8"]
+
+princess: （一條項鍊，換來這條路。）
+
+[wait time="0.8"]
+
+princess: （但光堵住密道不夠。）
+princess: （物理防線和魔法防線同時崩潰，城才會破。）
+
+[wait time="0.8"]
+
+princess: （那道陣……還撐得住多久？）
+princess: （我還需要查出魔法陣是怎麼被破壞的。）
+
+[wait time="2.0"]
+
+# 結算（B-2）
+[signal arg="intel:intel_bruno_passage_tip"]
+[signal arg="intel:intel_secret_passage"]
+[signal arg="death_context:{'death_message': '你用籌碼換來了密道的位置，卻低估了死士的無情。物理城防的漏洞已確認，你將帶著鮮血染成的地圖進入下一次輪迴。', 'intel_reward': ['intel_bruno_passage_tip', 'intel_secret_passage'], 'killer': 'chancellor_soldiers', 'advance_loop': true, 'next_timeline': '01_loop3_dal_awakening'}"]
+[signal arg="trigger_death"]
