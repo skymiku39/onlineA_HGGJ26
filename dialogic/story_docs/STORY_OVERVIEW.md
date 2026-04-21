@@ -1,58 +1,50 @@
-> 文件層級：實作層
-> 文件角色：摘要
+> 文件根目錄：dialogic/story_docs
+> 文件角色：協作者快速入口
 > 可否定義新設定：不可以
-> 上游來源：docs/zh/design/story/00_Document_Governance.md / 00_Canon_Line.md / 00_Characters.md / 00_Reversal_Framework.md / LOOP_OUTLINE.md
-> 下游同步對象：協作者快速入口
+> 上游來源：00_DOCUMENT_SYSTEM.md / LOOP_OUTLINE.md / canon/*.md
+> 下游同步對象：協作者導覽
 > 最後一次已對齊的主檔：dialogic/story_docs/LOOP_OUTLINE.md
 # Break the Loop — 故事文件快速入口
 
-> 本文件是協作者的快速導覽頁。
-> 它只負責回答「去哪裡找什麼」，不新增 canon。
+> 本文件只回答「去哪裡找什麼」，不新增 canon。
 
 ---
 
 ## 先看哪裡
 
-### 如果你第一次接手這個專案
+### 第一次接手
 
-1. `docs/zh/design/story/00_Document_Governance.md`
-2. `docs/zh/design/story/00_Canon_Line.md`
-3. `docs/zh/design/story/00_Characters.md`
-4. `docs/zh/design/story/00_Reversal_Framework.md`
+1. `dialogic/story_docs/00_DOCUMENT_SYSTEM.md`
+2. `dialogic/story_docs/canon/00_Canon_Line.md`
+3. `dialogic/story_docs/canon/00_Characters.md`
+4. `dialogic/story_docs/canon/00_Factions.md`
 5. `dialogic/story_docs/LOOP_OUTLINE.md`
 
-### 如果你要寫某一章
+### 要寫某一章
 
-1. 該章 `docs/zh/design/story/loop_x/design_notes.md`
-2. 該章 `surface.md` / `hidden.md`
+1. `dialogic/story_docs/loops/loop_x/design_notes.md`
+2. 同章 `surface.md` / `hidden.md`
 3. `dialogic/story_docs/LOOP_OUTLINE.md`
-4. 對應 `scenario_*_outline.md`
+4. `dialogic/story_docs/scenarios/scenario_*_outline.md`
 
-### 如果你要寫某個角色
+### 要寫某個角色
 
-1. `docs/zh/design/story/00_Characters.md`
-2. `docs/zh/design/story/00_Canon_Line.md`
+1. `dialogic/story_docs/canon/00_Characters.md`
+2. `dialogic/story_docs/canon/00_Factions.md`
 3. `dialogic/story_docs/characters/*.md`
 
 ---
 
-## 文件分層
+## 文件區域
 
-### 設計層真源
-
-位於：`docs/zh/design/story`
-
-- 定義真相、角色、時間線、章節功能
-- 可以新增 canon
-- 是所有故事設定的上游
-
-### 實作層落地
-
-位於：`dialogic/story_docs`
-
-- 將設計層轉成主流程、場景大綱、角色對白支援
-- 不可以自行新增未回寫的 canon
-- 是協作者與 Dialogic 實作的下游
+| 位置 | 用途 |
+|---|---|
+| `canon/` | 真相、角色、勢力、時間線、章節功能。這裡是故事設定的上游真源。 |
+| `loops/` | 各輪迴的章節意圖、表層摘要與暗線機制。 |
+| `LOOP_OUTLINE.md` | 主流程、情報流、解鎖條件與製作順序。 |
+| `scenarios/` | A/B/C/D 場景級大綱、節點與演出依據。 |
+| `characters/` | 對白聲線、表演重點、角色演出卡。 |
+| `production/` | 美術、資產、框架與舊稿整理後的製作參考，不定義故事 canon。 |
 
 ---
 
@@ -60,12 +52,13 @@
 
 | 你要找的資訊 | 先看哪份 | 再看哪份 |
 |---|---|---|
-| 唯一真相 | `00_Canon_Line.md` | `00_Timeline.md` |
-| 角色真實動機 | `00_Characters.md` | `characters/*.md` |
-| 章節功能 | `00_Reversal_Framework.md` | `loop_x/design_notes.md` |
-| 絕對時間線 | `00_Timeline.md` | `LOOP_OUTLINE.md` |
-| 主流程與情報流 | `LOOP_OUTLINE.md` | `scenario_*_outline.md` |
-| 寫某場戲 | `scenario_*_outline.md` | `characters/*.md` |
+| 唯一真相 | `canon/00_Canon_Line.md` | `canon/00_Timeline.md` |
+| 角色真實動機 | `canon/00_Characters.md` | `characters/*.md` |
+| 勢力與城外壓力 | `canon/00_Factions.md` | `LOOP_OUTLINE.md` |
+| 章節功能 | `canon/00_Reversal_Framework.md` | `loops/loop_x/design_notes.md` |
+| 主流程與情報流 | `LOOP_OUTLINE.md` | `scenarios/scenario_*_outline.md` |
+| 寫某場戲 | `scenarios/scenario_*_outline.md` | `characters/*.md` |
+| 美術與資產 | `production/art_handoff.md` | `production/art_asset_checklist.md` |
 
 ---
 
@@ -77,21 +70,14 @@
 - 第三章：崩解的穹頂
 - 終章：最終輪迴
 
-權威主流程請看：`LOOP_OUTLINE.md`
+權威主流程請看 `LOOP_OUTLINE.md`。
 
 ---
 
 ## 重要規則
 
-- 如果你要改真相，先改設計層，不要先改場景大綱。
-- 如果你在實作層發現缺設定，先回寫到設計層真源。
-- 如果某份文件同時像舊稿、摘要、設計草稿三種東西，優先清稿，不要繼續往上疊。
+- 改真相、角色本質、勢力分工、時間線時，先改 `canon/`。
+- 改場景節奏、選項、演出時，改 `scenarios/`，但不可新增未回寫 canon 的設定。
+- 舊 `docs/zh/design` 已遷移；不要再把它當成 active source。
+- `production/screenplay_legacy_source.md` 與 `production/asset_plan.md` 只保留歷史參考，不可引用為現行劇情依據。
 
----
-
-## 相關索引
-
-- 角色對位索引：`docs/zh/design/story/00_Role_Alignment_Index.md`
-- 文件治理主檔：`docs/zh/design/story/00_Document_Governance.md`
-- 角色詳細設定：`docs/zh/design/story/00_Characters.md`
-- 實作層主檔：`LOOP_OUTLINE.md`
