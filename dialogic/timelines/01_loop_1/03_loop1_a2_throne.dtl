@@ -1,0 +1,389 @@
+# 第一章 1-3：傾頹的王座（A-2）
+
+[background arg="res://art/backgrounds/princess_room.png" fade="1.0"]
+[music path="res://audio/bgm/music_box_uneasy.ogg" fade="2.0" volume="0.3"]
+
+[wait time="1.2"]
+
+join princess left
+
+princess (determined): 呼——
+
+[wait time="0.6"]
+
+princess: （沒有驚訝，沒有尖叫。）
+princess: （我深吸了一口氣，平靜地坐了起來。）
+
+[wait time="0.8"]
+
+princess: （這是第三次。）
+princess: （我已經知道是誰殺了我，也知道帳本是假的。）
+princess: （現在，我只差最後一步——把這件事告訴唯一能解決它的人。）
+
+[wait time="1.0"]
+
+princess: （父王。）
+princess: （賽拉斯死前說過，只有父王知道更多。）
+princess: （只要能讓父王相信我，或許就能查到宰相到底在王宮裡布下了多少棋。）
+
+[wait time="0.8"]
+
+join maid right
+
+maid (default): 殿下～早安呀！今天也是好天氣喔！
+
+[wait time="0.4"]
+
+princess: （莉娜還是笑著，眼睛依然微紅。）
+
+maid (default): 宰相大人今天一早派人送來了這條項鍊，說這是今年最新的款式——
+
+[wait time="0.4"]
+
+princess (determined): 不用了。
+
+[wait time="0.5"]
+
+maid (confused): 咦？可是宰相大人說……
+
+[wait time="0.4"]
+
+princess: （我知道她可能被脅迫了，或者有什麼難言之隱。）
+princess: （可是現在，我不能心軟。）
+
+princess (determined): 莉娜，幫我換正式的禮服。
+
+[wait time="0.5"]
+
+maid (confused): 正式禮服？
+princess (determined): 我要去見父王。
+
+[wait time="0.8"]
+
+maid (default): 啊……好的，莉娜馬上幫殿下準備。
+
+[wait time="1.0"]
+
+princess: （鏡子裡的我被層層繁複的布料包裹起來。）
+princess: （珍珠、緞帶、沉重的裙擺，像是要把我重新塞回那個天真無知的「公主」模具裡。）
+princess: （但今天，我不是去撒嬌，也不是去請安。）
+princess: （我是去打破這座王宮裡所有人都在維持的沉默。）
+
+[wait time="0.8"]
+
+# === 行動抉擇（先三後一） ===
+label action_selection
+if {a2_chancellor_checked} == true and {a2_silas_checked} == true and {a2_king_checked} == true:
+    jump final_choice
+
+if {a2_chancellor_checked} == false and {a2_silas_checked} == false and {a2_king_checked} == false:
+    princess: （出門之前，我最後一次整理所有可能性。這一次，不能再走錯。）
+
+- 找宰相 [if {a2_chancellor_checked} == false]
+    [wait time="0.5"]
+    princess: （不。絕對不。）
+    princess: （第一次，他親手讓我喝下毒茶。第二次，他只因為我沒戴項鍊，就讓一切提前崩壞。）
+    princess: （我不能把自己送到他面前。至少不能在沒有父王保護的情況下。）
+    set {a2_chancellor_checked} = true
+    jump action_selection
+
+- 找賽拉斯 [if {a2_silas_checked} == false]
+    [wait time="0.5"]
+    princess: （賽拉斯是唯一對我說出真相的人。）
+    princess: （可是他身為騎士長，總是跟在父王身邊。要單獨見他並不容易。）
+    princess: （而且他知道的也有限。他自己說過，只有父王知道更多。）
+    set {a2_silas_checked} = true
+    jump action_selection
+
+- 問父王 [if {a2_king_checked} == false]
+    [wait time="0.5"]
+    princess: （父王會相信我嗎？）
+    princess: （他一直把我保護得太好，也許在他眼裡，我永遠只是那個不懂政務、不懂戰爭的小女兒。）
+    princess: （可是我已經死了兩次。這不是任性，也不是惡夢。）
+    princess (determined): （就算他不相信，我也必須讓他聽見。）
+    set {a2_king_checked} = true
+    jump action_selection
+
+label final_choice
+- 正式求見父王
+    [wait time="0.6"]
+    princess: （這是我唯一的機會。我要走明路，直接去朝堂見父王。）
+    leave maid
+    jump confront_king
+
+# === 出門，遇宰相 ===
+label confront_king
+
+[background arg="res://art/backgrounds/hallway.png" fade="1.0"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.0" volume="0.3"]
+
+[wait time="0.8"]
+
+princess: （走廊比平常更長。）
+princess: （每一步，沉重的裙擺都會擦過地面，發出細碎而急促的聲音。）
+princess: （像在替我即將打響的戰爭擂鼓。）
+
+[wait time="0.8"]
+
+join chancellor right
+
+chancellor (smiling): 殿下，早安。您今天打扮得如此莊重，是要去哪裡呢？
+
+[wait time="0.5"]
+
+princess: （他的視線在我的頸部停了一下。）
+princess: （他在確認我有沒有戴他的項鍊。）
+
+[wait time="0.5"]
+
+princess (determined): 我要去見父王。
+
+[wait time="0.6"]
+
+chancellor (smiling): 哦？真難得。殿下最近不是都不太愛出門嗎？
+
+[wait time="0.5"]
+
+princess: （他的笑容沒有變。）
+princess: （可是周圍的空氣像是忽然冷了一點。）
+
+chancellor (smiling): ……殿下今天沒有戴那條項鍊。
+
+[wait time="0.7"]
+
+princess (determined): 今天不需要。
+
+[wait time="0.8"]
+
+chancellor (serious): ……
+
+[wait time="0.8"]
+
+princess: （我們對視了一瞬。）
+princess: （那一瞬間，我幾乎以為他會伸手攔住我。）
+
+[wait time="0.6"]
+
+chancellor (smiling): 既然如此，臣祝殿下一切順利。
+
+[wait time="0.5"]
+
+princess: （他退開半步，給我讓路。）
+princess: （我沒有回頭，但他那停留在背後的視線，讓我的後頸一直發麻。）
+
+leave chancellor
+leave princess
+
+[wait time="1.0"]
+
+# === 朝堂攤牌 ===
+[background arg="res://art/backgrounds/throne_room.png" fade="1.0"]
+[music path="res://audio/bgm/prologue_epic.ogg" fade="2.0" volume="0.6"]
+
+[wait time="0.8"]
+
+princess: （朝堂上，大臣們正在議事。）
+princess: （我踏進去的瞬間，原本低聲交談的人群安靜下來。）
+princess: （他們的目光像細針一樣落在我身上。）
+
+[wait time="0.7"]
+
+join loyal_retainer left
+
+princess: （賽拉斯一身甲冑，就站在父王身旁。）
+princess: （看到我時，他的眉心微微一動。）
+
+join king right
+
+king: 哈哈哈，我親愛的女兒！今天怎麼有空來找父王？
+
+[wait time="0.6"]
+
+princess: （父王笑著張開雙臂，像往常那樣等我跑過去。）
+princess: （如果是以前，我大概會真的撲進他懷裡，抱怨今天的禮服太重。）
+princess: （但我在離他幾步遠的地方停了下來。）
+
+[wait time="0.8"]
+
+king: 怎麼啦？今天不抱抱父王了？
+
+[wait time="0.6"]
+
+princess (determined): 父王，我都知道了。
+
+[wait time="0.8"]
+
+king: 知道什麼？
+
+[wait time="0.5"]
+
+princess (determined): 您給了賽拉斯一道密令。
+princess (determined): 如果城破，就由他親手殺了我。
+
+[wait time="1.0"]
+
+[signal arg="camera_shake"]
+
+loyal_retainer: ……！
+
+[wait time="0.6"]
+
+princess: （賽拉斯猛然一僵，甲冑發出清脆的撞擊聲。）
+princess: （他震驚地看著我，又與父王交換了一個眼神，然後緩緩搖頭。）
+princess: （那是在告訴父王，不是他說的。）
+
+[wait time="0.8"]
+
+king: ……誰告訴你的？
+
+[wait time="0.6"]
+
+princess (determined): 沒有人。
+princess (determined): 我還知道，邊境那些所謂的「小毛賊」，其實是敵國的大軍。
+
+[wait time="0.8"]
+
+king: ……
+
+[wait time="0.6"]
+
+princess: （父王沉默了。）
+princess: （他沒有立刻反駁我這個「荒唐」的猜測。）
+princess: （這份沉默，比直接承認更讓我感到絕望。）
+
+[wait time="0.7"]
+
+princess (determined): 為了備戰，您加徵了很重的稅。
+princess (determined): 您徵走了下城區的草藥和糧食，讓很多人活不下去。
+
+[wait time="0.6"]
+
+king (angry): 夠了。
+
+[wait time="0.5"]
+
+princess (determined): 還有宰相。
+princess (determined): 他給我的帳本是假的，他才是真正的敵人！
+
+[wait time="0.8"]
+
+king (angry): 胡鬧！
+king (angry): 你在胡說八道什麼！
+
+[wait time="0.5"]
+
+princess (shocked): 父王，我沒有胡說！
+princess (shocked): 只要去調查宰相就知道了！那些帳本，還有被截留的物資——
+
+[wait time="0.5"]
+
+king (angry): 來人！
+king (angry): 公主最近精神不佳，把她帶下去休息！
+
+[wait time="0.5"]
+
+princess (shocked): 父王！
+
+[background arg="res://art/backgrounds/hallway.png" fade="1.0"]
+
+[wait time="0.6"]
+
+princess: （士兵架住我的手臂。）
+princess: （我掙扎著回頭，想再說一句話，卻只看見朝堂的大門在我面前緩緩關上。）
+
+[wait time="0.8"]
+
+princess: （我的聲音被長長的走廊吞沒。）
+
+# === 宰相被召見（背景音） ===
+[wait time="1.0"]
+
+king: （門內隱約傳來父王憤怒的聲音）你怎麼辦事的！
+chancellor: （微弱而平靜的聲音）臣冤枉……
+
+[wait time="1.0"]
+
+princess: （宰相的聲音太平靜了。）
+princess: （像是早就知道事情會變成這樣。）
+
+# === 小房間的毒茶 ===
+[background arg="res://art/backgrounds/darkness.png" fade="1.0"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.0" volume="0.3"]
+
+[wait time="1.5"]
+
+princess: （我被關進了一個小房間。）
+princess: （沒有人陪我，只有一張桌子，一把椅子。）
+
+[wait time="0.8"]
+
+princess: （桌上放著一杯茶。）
+
+[wait time="0.8"]
+
+princess (angry): 父王為什麼不肯聽我說完！
+princess (angry): 明明真相就在眼前……
+
+[wait time="0.8"]
+
+princess: （我在房間裡來回走動。）
+princess: （憤怒、委屈、恐懼，全都堵在胸口，讓我幾乎喘不過氣。）
+princess: （父王不是不愛我。可他的保護像一座厚重的牆，擋住了刀，也擋住了我的聲音。）
+
+[wait time="1.0"]
+
+princess: （過了好一會兒，我感到口乾舌燥。）
+princess: （桌上的茶已經不再冒熱氣。）
+princess: （我沒有多想，端起杯子喝了一口。）
+
+[wait time="1.2"]
+
+[signal arg="camera_shake"]
+
+princess (shocked): ……！
+
+[wait time="0.5"]
+
+princess: （蜂蜜。）
+princess: （玫瑰。）
+princess: （還有一點點苦澀。）
+
+[wait time="0.8"]
+
+princess (shocked): （這是……宰相書房裡的那杯茶？）
+
+[sound path="res://audio/sfx/glass_break.ogg" bus="SFX"]
+
+[wait time="0.5"]
+
+princess: （茶杯再次從我手中滑落。）
+princess: （碎裂聲在小房間裡炸開，和第一次死亡時一模一樣。）
+
+[wait time="0.8"]
+
+princess: （視線開始模糊，那種熟悉的冰冷感再次爬上心頭。）
+princess: （我明白了。）
+
+[wait time="0.8"]
+
+princess: （他根本不需要在場。）
+princess: （他只需要讓這杯茶，出現在正確的地方。）
+
+[wait time="1.0"]
+
+princess: （傾頹的王座……）
+princess: （父王的保護，在宰相的手段面前，竟然如此蒼白無力。）
+
+[wait time="0.8"]
+
+princess: （我確認了。）
+princess: （宰相就是敵人，而他殺人的手段，防不勝防。）
+
+[background arg="res://art/backgrounds/darkness.png" fade="1.5"]
+
+[wait time="2.0"]
+
+# === 死亡結算 ===
+[signal arg="intel:intel_chancellor_poison"]
+[signal arg="death_context:{'death_message': '你孤注一擲向父王攤牌，卻被當作胡鬧軟禁。那杯熟悉的毒茶告訴你：權力中心早已被滲透。', 'intel_reward': ['intel_chancellor_poison'], 'killer': 'chancellor_remote', 'advance_loop': true, 'next_timeline': '01_loop2_b0_maid'}"]
+[signal arg="trigger_death"]

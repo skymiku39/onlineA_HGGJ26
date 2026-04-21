@@ -1,0 +1,342 @@
+# 第一章 1-1：溫柔的鴆毒（A-0）
+
+[background arg="res://art/backgrounds/princess_room.png" fade="1.0"]
+[music path="res://audio/bgm/music_box_uneasy.ogg" fade="2.0" volume="0.3"]
+
+[wait time="1.8"]
+
+join princess left
+
+princess (shocked): 呼……！
+
+[wait time="0.8"]
+
+princess (shocked): （我猛地坐起身，大口喘著氣。胸口的劇痛彷彿還殘留著，冰冷的感覺爬滿全身。）
+
+[wait time="0.8"]
+
+princess: （城外的火光、倒塌的城門、尖叫聲，還有賽拉斯那把滴血的劍。）
+princess: （那些畫面像是被人用力按進我的腦子裡，一閉眼就會重新浮現。）
+
+[wait time="1.0"]
+
+princess (confused): 這裡……是我的房間？
+
+[wait time="0.5"]
+
+princess: （窗簾被清晨的光照得發白，桌上的花還沾著露水，床邊的小鐘也還好好地擺著。）
+princess: （沒有煙味，沒有血，也沒有任何人用劍指著我。）
+
+[wait time="0.8"]
+
+princess (confused): （不，那絕對不是夢。那種冷到骨子裡的感覺，絕對不是夢。）
+
+[wait time="1.0"]
+
+join maid right
+
+maid (default): 殿下～早安呀！今天也是好天氣喔！
+
+[wait time="0.4"]
+
+princess (shocked): 莉娜？！
+maid (confused): 殿下？您怎麼滿頭大汗的……做噩夢了嗎？
+
+[wait time="0.5"]
+
+princess (determined): 莉娜，今天是幾月幾號？
+maid (default): 咦？今天是六月十四日呀。
+
+[wait time="1.0"]
+
+princess (confused): （六月十四……那是三個月前。）
+princess: （城破發生在九月。父王死亡、城門淪陷、賽拉斯殺了我，都是三個月後的事。）
+princess (shocked): （我……回到了三個月前？）
+
+[wait time="1.0"]
+
+maid (default): 殿下今天怎麼一直發呆呀？夢都是反的，不怕不怕，莉娜在這裡喔。
+
+[wait time="0.5"]
+
+maid (default): 對了，殿下！宰相大人今天一早派人送來了這條項鍊，說這是今年最新的款式，請您務必配戴看看呢。
+
+[wait time="0.6"]
+
+princess: （莉娜笑著捧出那條鑲著寶石的項鍊。寶石在晨光裡閃著柔和的藍光，漂亮得像一滴凝固的湖水。）
+princess: （我看向莉娜的眼睛。她的眼眶好像有點紅紅的。）
+princess: （可是我的腦子裡太亂了。死亡的記憶、回到過去的荒謬、還有不知道該相信誰的恐慌，全部攪在一起。）
+
+[wait time="0.8"]
+
+princess: （宰相大人……是啊，他對我一直都很好。）
+princess: （在我還小的時候，他會替我挑選書本；父王忙於政務時，也是他耐心回答我那些幼稚的問題。）
+princess: （如果這個王宮裡有人能冷靜地告訴我到底發生了什麼，也許只有他。）
+
+[wait time="0.5"]
+
+princess (default): 幫我戴上吧。
+maid (default): 好耶～殿下戴起來一定很好看！
+
+[wait time="1.0"]
+
+princess: （冰涼的金屬扣上頸項時，我忍不住縮了一下。）
+princess: （鏡子裡的我臉色蒼白，卻還是那個什麼都不知道、被所有人保護著的公主。）
+princess: （如果我真的回到了過去，就不能再只是等著災難發生。）
+
+[wait time="0.8"]
+
+# === 行動抉擇（先三後一） ===
+label action_selection
+if {a0_silas_checked} == true and {a0_king_checked} == true and {a0_chancellor_checked} == true:
+    jump final_choice
+
+if {a0_silas_checked} == false and {a0_king_checked} == false and {a0_chancellor_checked} == false:
+    princess: （我必須想清楚。賽拉斯、父王、宰相大人……如果只能找一個人求助，我到底該找誰？）
+
+- 找賽拉斯 [if {a0_silas_checked} == false]
+    [wait time="0.5"]
+    princess: （找賽拉斯？他是王國最強的騎士，也是一直守在我身邊的人。）
+    princess: （可是最後走進房間的人就是他。那把劍刺進我胸口的觸感，直到現在都還像貼在皮膚底下。）
+    princess (shocked): （如果他真的是奉父王的命令殺我，那我現在去質問他，只會讓自己更早暴露。）
+    princess: （不行。我現在還沒有勇氣面對他。）
+    set {a0_silas_checked} = true
+    jump action_selection
+
+- 問父王 [if {a0_king_checked} == false]
+    [wait time="0.5"]
+    princess: （去找父王？告訴他城會在三個月後被攻破，還有他最信任的騎士長會殺了我？）
+    princess: （父王會保護我嗎？還是會覺得我被噩夢嚇壞了，只是胡言亂語？）
+    princess: （我沒有證據，甚至連自己為什麼能回到過去都說不清楚。）
+    princess (confused): （如果我貿然開口，可能只會被關起來休息。那樣就什麼都做不了了。）
+    set {a0_king_checked} = true
+    jump action_selection
+
+- 找宰相 [if {a0_chancellor_checked} == false]
+    [wait time="0.5"]
+    princess: （宰相大人……他總是很溫和，也願意聽我說話。）
+    princess: （如果我說自己做了預知夢，他也許不會立刻否定我。）
+    princess: （而且他掌管政務，知道父王和邊境的狀況。若城破是真的，他一定能看出徵兆。）
+    princess (default): （至少，他從來沒有傷害過我。）
+    set {a0_chancellor_checked} = true
+    jump action_selection
+
+label final_choice
+- 前往宰相書房
+    [wait time="0.6"]
+    princess: （我決定了。我要去找宰相大人。）
+    princess: （他一定會幫我的。）
+    leave maid
+    jump chancellor_study
+
+# === 宰相書房 ===
+label chancellor_study
+
+[background arg="res://art/backgrounds/chancellor_study.png" fade="1.0"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.0" volume="0.3"]
+
+[wait time="0.8"]
+
+join chancellor right
+
+chancellor (smiling): 哎呀，殿下。您今天氣色看起來不太好，是昨晚沒睡好嗎？
+
+[wait time="0.5"]
+
+princess: （他仍然用那種溫和的聲音叫我。光是聽見這個聲音，我緊繃的肩膀就稍微放鬆了一點。）
+princess (sad): 宰相大人……我做了一個很可怕的夢。
+
+chancellor (smiling): 夢？
+princess (sad): 我夢到城破了，父王死了，大家都不在了……我也死了。
+
+[wait time="1.0"]
+
+chancellor (serious): 殿下，夢有時候是神明的警示。
+
+[wait time="0.5"]
+
+princess: （他沒有笑我。）
+princess: （沒有說「公主只是累了」，也沒有像哄孩子一樣要我忘掉那個夢。）
+princess: （他只是皺起眉，像真的把我的恐懼當成一件重要的事。）
+
+[wait time="0.8"]
+
+chancellor (sad): 其實，臣最近也一直心神不寧。
+chancellor (sad): 殿下既然親自來了，或許這就是神明給我們的機會。
+
+[wait time="0.5"]
+
+princess (confused): 機會？
+chancellor (serious): 臣想讓您看些東西。
+
+[wait time="0.8"]
+
+princess: （他從抽屜裡拿出一本厚厚的帳冊。紙頁邊緣被翻得發軟，上面密密麻麻全是我看不太懂的數字與印章。）
+
+chancellor (serious): 這是國庫的帳本。
+chancellor (serious): 陛下最近以「準備邊防」為名，加徵了極重的稅，甚至強行徵用了下城區所有的草藥和糧食。
+
+[wait time="0.6"]
+
+chancellor (serious): 但這些資源，並沒有送到邊境。
+
+[wait time="0.8"]
+
+princess (shocked): 什麼？父王為什麼要這麼做？
+chancellor (sad): 這也是臣想知道的。
+chancellor (sad): 不僅如此，因為這些嚴苛的政策，平民正在受苦。
+
+[wait time="0.5"]
+
+princess: （父王很嚴厲，也很少向我解釋政務。可我從沒想過，他會讓自己的人民受苦。）
+
+chancellor (serious): 進來吧。
+
+[wait time="0.6"]
+
+join mob_leader left
+
+mob_leader (sad): 殿、殿下……
+
+[wait time="0.5"]
+
+princess: （一個穿著粗布衣服的男人走進來，低著頭，雙手不安地絞在一起。）
+princess: （他看起來不像能站在王宮裡的人，更不像會被允許靠近我的人。）
+
+mob_leader (sad): 我的妻子……昨天病死了。
+mob_leader (sad): 城裡所有的草藥都被軍隊徵走，我們連一帖退燒藥都買不到。
+
+[wait time="0.8"]
+
+mob_leader (sad): 大家都在說，國王瘋了，要為了自己的野心把我們都逼死……
+
+[wait time="0.8"]
+
+princess: （男人的聲音裡沒有憤怒，只有深深的絕望。）
+princess: （如果這是謊言，那未免太殘忍。可如果這是真的，我從前待在王宮裡看到的和平又算什麼？）
+
+princess (sad): 怎麼會這樣……父王不可能是這樣的人……
+
+[wait time="0.5"]
+
+leave mob_leader
+
+[wait time="0.8"]
+
+chancellor (sad): 臣也希望這一切都是誤會。
+chancellor (serious): 所以，臣需要殿下的幫忙。
+
+princess (confused): 我的幫忙？
+
+chancellor (serious): 陛下書房的暗格裡，有一份真正的密令。
+chancellor (serious): 只要能拿到那份密令，我們就能知道陛下到底在計畫什麼，或許還能阻止悲劇發生。
+
+[wait time="0.6"]
+
+chancellor (sad): 但那裡只有殿下能輕易進出而不被懷疑。
+chancellor (serious): 為了王國，您願意幫忙嗎？
+
+[wait time="1.0"]
+
+princess: （父王的書房。）
+princess: （我從小就被允許進去找他，因為我是他的女兒，不是大臣，也不是敵人。）
+princess: （如果只是一份文件，如果這能證明父王到底在做什麼，如果這能阻止城破……）
+
+[wait time="0.6"]
+
+princess (determined): 好，我去。
+
+# === 偷取密令 ===
+[background arg="res://art/backgrounds/darkness.png" fade="1.0"]
+[wait time="1.2"]
+
+princess: （我等到父王離開書房後，才假裝路過。）
+princess: （門外的侍衛向我行禮，沒有人懷疑我。）
+
+[wait time="0.8"]
+
+princess: （書房裡還殘留著父王常用的墨水味。桌上堆著未批完的公文，窗邊的戰略地圖被重物壓住一角。）
+princess: （我明明從小就在這裡玩，今天卻第一次覺得自己像個竊賊。）
+
+[wait time="0.8"]
+
+princess: （暗格的位置和宰相說的一樣。）
+princess: （我找到那份文件時，手指一直在發抖。）
+princess: （上面有很多我看不懂的軍事術語，但「緊急徵收」「邊境防線」「王都守備」幾個字刺得我眼睛發疼。）
+
+[wait time="0.8"]
+
+princess: （我把文件藏在披肩底下，像逃跑一樣離開父王的書房。）
+
+# === 歸還文件 ===
+[background arg="res://art/backgrounds/chancellor_study.png" fade="1.0"]
+[wait time="1.0"]
+
+chancellor (smiling): 殿下，您做得很好。
+
+[wait time="0.5"]
+
+princess: （宰相接過文件時，臉上露出了欣慰的笑容。）
+princess: （那笑容讓我緊繃了一整天的心終於鬆了一點。也許我真的做對了。）
+
+chancellor (smiling): 這對王國來說是極大的貢獻。
+chancellor (smiling): 您一定累壞了，喝杯茶壓壓驚吧。這是我特地為您準備的。
+
+[wait time="0.6"]
+
+princess (default): 謝謝宰相大人。
+
+[wait time="0.5"]
+
+princess: （我接過茶杯。杯壁微燙，茶面漂著幾片淡色花瓣。）
+princess: （蜂蜜的甜味先浮上來，接著是玫瑰的香氣。）
+
+[wait time="0.8"]
+
+princess: （我喝了一口。）
+princess: （咽下去的時候，舌根卻留下了一點說不清楚的苦澀。）
+
+[wait time="1.5"]
+
+[signal arg="camera_shake"]
+
+princess (shocked): 嗚……！
+
+[wait time="0.4"]
+
+princess: （突然間，我的視線開始模糊。手裡的茶杯滑落，摔在地上碎成了碎片。）
+
+[sound path="res://audio/sfx/glass_break.ogg" bus="SFX"]
+
+[wait time="0.6"]
+
+princess (shocked): 宰、宰相大人……茶……怎麼……
+princess: （我全身的力氣瞬間被抽空，整個人癱倒在椅子上。）
+princess: （胸口沒有被劍刺穿的痛，卻有一種窒息的冰冷正在蔓延。）
+
+[wait time="1.0"]
+
+chancellor (sad): 我也是身不由己。
+chancellor (sad): 你在我心裡一直是當女兒對待的孩子。
+
+[wait time="0.8"]
+
+chancellor (sad): 不要怪我。
+
+[background arg="res://art/backgrounds/darkness.png" fade="1.5"]
+
+[wait time="0.8"]
+
+princess: （他在說什麼……不要怪他？）
+princess: （蜂蜜、玫瑰、還有一點苦……那是毒藥的味道。）
+
+[wait time="0.8"]
+
+princess: （為什麼……又是我？）
+
+[wait time="2.0"]
+
+# === 死亡結算 ===
+[signal arg="intel:intel_chancellor_betrayal"]
+[signal arg="death_context:{'death_message': '你選擇信任宰相，卻喝下了他親手泡的毒茶。他那句「不要怪我」成為你臨死前最後的疑問。', 'intel_reward': ['intel_chancellor_betrayal'], 'killer': 'chancellor', 'advance_loop': true, 'next_timeline': '02_loop1_a1_fire'}"]
+[signal arg="trigger_death"]

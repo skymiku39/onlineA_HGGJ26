@@ -1,0 +1,417 @@
+# 第一章 1-2：提早的烽火（A-1）
+
+[background arg="res://art/backgrounds/princess_room.png" fade="1.0"]
+[music path="res://audio/bgm/music_box_uneasy.ogg" fade="2.0" volume="0.3"]
+
+[wait time="1.8"]
+
+join princess left
+
+princess (shocked): 咳咳……！
+
+[wait time="0.6"]
+
+princess (confused): （我捂著喉嚨坐了起來，嘴裡彷彿還有蜂蜜與玫瑰混雜著苦味的氣息。）
+princess: （茶杯碎裂的聲音還在耳邊。宰相那句「不要怪我」，像一根細針卡在喉嚨裡。）
+
+[wait time="1.0"]
+
+princess (confused): （我沒死？不，我又回到了三個月前。）
+
+[wait time="0.8"]
+
+princess: （如果第一次可以說是噩夢，那第二次呢？）
+princess: （賽拉斯殺了我。宰相也殺了我。）
+princess: （我被困在同一天，被迫一次又一次帶著死亡的記憶醒來。）
+
+[wait time="1.0"]
+
+join maid right
+
+maid (default): 殿下～早安呀！今天也是好天氣喔！
+
+[wait time="0.5"]
+
+princess: （莉娜笑著走進來。語氣、步伐、甚至推門時衣袖輕輕擦過門框的聲音，都和上次一樣。）
+princess: （但是這一次，我注意到了她微紅的眼眶。）
+
+[wait time="0.5"]
+
+princess (default): 莉娜，你眼睛怎麼紅紅的？
+maid (confused): 咦？沒、沒事，只是昨晚沒睡好……殿下不用擔心我。
+
+[wait time="0.5"]
+
+princess: （她回答得太快了。）
+princess: （我上次竟然完全沒有發現。）
+
+[wait time="0.5"]
+
+maid (default): 對了，殿下！宰相大人今天一早派人送來了這條項鍊，說這是今年最新的款式，請您務必配戴看看呢。
+
+[wait time="0.7"]
+
+princess: （那條項鍊又被捧到了我面前。藍色寶石在晨光下漂亮得刺眼。）
+princess: （我忽然想起茶杯裡浮動的花瓣，想起宰相平靜到近乎悲傷的眼睛。）
+
+[wait time="0.5"]
+
+princess (determined): 今天不想戴。
+
+[wait time="0.4"]
+
+maid (confused): 咦？可是宰相大人說……
+princess (determined): 放著吧。
+
+[wait time="0.8"]
+
+princess: （那個毒茶的味道我還記得很清楚。宰相……我現在無法再把他當成好人。）
+princess: （但我也不能立刻衝去父王面前大喊他想殺我。）
+princess: （我需要證據。至少，我需要知道賽拉斯到底知道什麼。）
+
+[wait time="1.0"]
+
+# === 行動抉擇（先三後一） ===
+label action_selection
+if {a1_chancellor_checked} == true and {a1_king_checked} == true and {a1_silas_checked} == true:
+    jump final_choice
+
+if {a1_chancellor_checked} == false and {a1_king_checked} == false and {a1_silas_checked} == false:
+    princess: （這一次，我不能再憑著天真去相信任何人。每一個選擇，都可能讓我更早被看見。）
+
+- 找宰相 [if {a1_chancellor_checked} == false]
+    [wait time="0.5"]
+    princess: （去找宰相？然後再喝一杯毒茶嗎？）
+    princess: （不。那種苦澀和被信任的人背叛的感覺，我不想再經歷一次。）
+    princess: （而且如果他知道我記得上一輪的事，我可能連活到今晚的機會都沒有。）
+    set {a1_chancellor_checked} = true
+    jump action_selection
+
+- 問父王 [if {a1_king_checked} == false]
+    [wait time="0.5"]
+    princess: （去找父王說宰相想毒死我？我拿什麼證明？）
+    princess: （宰相拿出來的國庫帳本、那個下城區男人的證詞，我根本說不清楚到底是真是假。）
+    princess: （如果父王不相信我，最好的結果是被當成受驚過度；最壞的結果，是把我的異常直接暴露給宰相。）
+    set {a1_king_checked} = true
+    jump action_selection
+
+- 找賽拉斯 [if {a1_silas_checked} == false]
+    [wait time="0.5"]
+    princess: （賽拉斯。那個手裡拿著父王殺我密令的騎士長。）
+    princess: （既然是他動的手，那他一定知道些什麼。）
+    princess: （他最後殺我時哭了。那不是單純的敵意。如果我能讓他露出破綻，也許就能知道密令是真的，還是被人設計的。）
+    set {a1_silas_checked} = true
+    jump action_selection
+
+label final_choice
+- 攔下賽拉斯
+    [wait time="0.6"]
+    princess: （既然他手上有密令，這次我必須親自問清楚。）
+    leave maid
+    jump confront_silas
+
+# === 質問賽拉斯 ===
+label confront_silas
+
+[background arg="res://art/backgrounds/hallway.png" fade="1.0"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.0" volume="0.3"]
+
+[wait time="0.8"]
+
+princess: （我在走廊等了很久。）
+princess: （每一次遠處傳來甲冑碰撞聲，我的心就會猛地縮緊。）
+princess: （直到快到中午，我才終於聽見那串熟悉的腳步。）
+
+[wait time="0.8"]
+
+join loyal_retainer right
+
+loyal_retainer: 殿下？請問有什麼事嗎？
+
+[wait time="0.5"]
+
+princess: （他的表情和往常一樣沉穩。）
+princess: （如果我沒有死過，如果我沒有看過那雙眼睛在火光裡變得痛苦，我大概仍會覺得他是全世界最值得信任的人。）
+
+[wait time="0.5"]
+
+princess (determined): 賽拉斯，父王是不是給過你一道口頭密令？
+princess (determined): 關於如果城破，你要對我做什麼的密令。
+
+[wait time="1.0"]
+
+loyal_retainer: ……！
+
+[wait time="0.4"]
+
+princess: （他的表情變了一瞬。極短，短到幾乎可以說是錯覺。）
+princess: （但我看到了。）
+
+loyal_retainer: 殿下在說什麼？臣聽不懂。
+
+[wait time="0.5"]
+
+princess (determined): 你真的聽不懂嗎？
+
+[wait time="0.5"]
+
+loyal_retainer: 臣怎麼可能有事瞞著殿下。
+loyal_retainer: 陛下只是吩咐臣加強城防，沒有別的命令。
+
+[wait time="0.8"]
+
+princess: （他的語速比平時快了一點。）
+princess: （他沒有看我的眼睛。）
+princess: （以前的賽拉斯從不這樣。）
+
+loyal_retainer: 若殿下沒有其他吩咐，臣還要去換防。
+
+[wait time="0.5"]
+
+princess: （他低頭行禮，然後急忙轉身離去。）
+princess: （那背影不像離開，更像逃避。）
+
+leave loyal_retainer
+
+[wait time="1.0"]
+
+# === 學習觀察 ===
+label maid_observation
+
+[background arg="res://art/backgrounds/princess_room.png" fade="1.0"]
+
+[wait time="0.8"]
+
+join maid right
+
+princess: （我回到房間時，莉娜還在整理床鋪。她聽見門聲，立刻轉過身對我笑。）
+
+princess (default): 莉娜，你覺得賽拉斯會撒謊嗎？
+
+[wait time="0.5"]
+
+maid (default): 殿下怎麼這麼問？賽拉斯大人是全城最正直的騎士了，他怎麼會撒謊騙您呢？
+
+[wait time="0.6"]
+
+princess: （她笑得很溫柔，卻沒有立刻看我。）
+princess: （如果是以前，我會順著她的話笑過去。可現在，我忽然明白一件事。）
+princess: （話語本身不重要。那些沒有說出來的東西，才是真相。）
+
+[wait time="0.5"]
+
+label maid_observe_loop
+if {a1_maid_mouth_checked} == true and {a1_maid_eyes_checked} == true:
+    jump maid_observe_done
+
+- 盯著她的嘴角 [if {a1_maid_mouth_checked} == false]
+    [wait time="0.4"]
+    princess: （她的笑容太整齊了。像是經過無數次練習，剛好彎到不會讓人起疑的弧度。）
+    princess: （可當我提到賽拉斯，她嘴角那點笑意就微微僵住了。）
+    set {a1_maid_mouth_checked} = true
+    jump maid_observe_loop
+
+- 看她的眼睛 [if {a1_maid_eyes_checked} == false]
+    [wait time="0.4"]
+    princess: （每當話題碰到賽拉斯、父王，或者王宮裡的事，她的目光就會往下飄。）
+    princess: （那不是單純的害怕說錯話。她像是在確認某句不能說出口的命令還在不在。）
+    set {a1_maid_eyes_checked} = true
+    jump maid_observe_loop
+
+label maid_observe_done
+
+[wait time="0.6"]
+
+maid (confused): 殿下……您怎麼一直看著我？
+
+[wait time="0.5"]
+
+princess: （原來他們每個人都在演戲。）
+princess: （我以前到底被保護得有多好，又漏掉了多少顯而易見的東西？）
+
+leave maid
+
+[wait time="1.0"]
+
+# === 庭院遇宰相 ===
+[background arg="res://art/backgrounds/garden.png" fade="1.0"]
+[music path="res://audio/bgm/garden_afternoon.ogg" fade="2.0" volume="0.35"]
+
+[wait time="0.8"]
+
+princess: （我需要呼吸一點房間外的空氣。）
+princess: （但王宮太安靜了。安靜得像每一面牆都在聽我說話。）
+princess: （經過庭院時，我正好遇到了宰相。）
+
+join chancellor right
+
+[wait time="0.5"]
+
+chancellor (smiling): 殿下，下午好。您今天的心情看起來不錯。
+
+[wait time="0.5"]
+
+princess: （他的目光迅速掃過我的頸部。）
+princess: （那裡空空如也，沒有戴他送的項鍊。）
+
+princess (sad): ……只是出來走走。
+
+[wait time="0.4"]
+
+chancellor (smiling): 那條項鍊不合您的心意嗎？
+
+[wait time="0.6"]
+
+princess: （我的喉嚨緊了一下。）
+princess: （他問得太自然，反而讓我覺得害怕。）
+
+princess (sad): 不太合適。
+
+[wait time="0.5"]
+
+chancellor (smiling): 原來如此，看來是老臣的眼光跟不上年輕人了。
+chancellor (smiling): 下次會為您挑選更合適的。
+
+[wait time="0.8"]
+
+princess: （他的笑容完美得無懈可擊。）
+princess: （可是他沒有像平常那樣多留我說話，只是匆匆行了個禮，就轉身離去了。）
+
+leave chancellor
+
+[wait time="1.0"]
+
+princess: （我站在原地，直到他的腳步聲徹底消失，手心才發現已經全是冷汗。）
+
+# === 軟禁與城破提前 ===
+[background arg="res://art/backgrounds/darkness.png" fade="1.0"]
+[music path="res://audio/bgm/tension_low_dark.ogg" fade="2.0" volume="0.4"]
+
+[wait time="1.2"]
+
+princess: （隔天，莉娜以家事為由辭職了。）
+princess: （她走得很急，甚至沒有像平常那樣抱怨我不會照顧自己。）
+
+[wait time="0.8"]
+
+princess: （賽拉斯也被突然調走，沒有人告訴我他去了哪裡。）
+princess: （新來的侍從不認識我，士兵也不跟我說話。）
+
+[wait time="0.8"]
+
+princess: （只要我走出房門沒有「充足的理由」，就會被擋回來。）
+princess: （我被軟禁了。）
+princess: （而這一切，只因為我沒戴那條項鍊，讓宰相起了疑心。）
+
+[wait time="1.0"]
+
+princess: （一開始，我還試著寫信給父王。）
+princess: （信被退了回來，封口完好，連拆都沒拆。）
+
+[wait time="0.8"]
+
+princess: （後來我試著詢問邊境的消息。）
+princess: （侍從低著頭說不知道，士兵說沒有命令不能回答。）
+
+[wait time="0.8"]
+
+princess: （時間變得漫長而煎熬。）
+princess: （直到某天夜晚——）
+
+[wait time="1.2"]
+
+[music path="res://audio/bgm/prologue_epic.ogg" fade="2.0" volume="0.6"]
+[sound path="res://audio/sfx/fire_burning.ogg" loop="true" volume="0.4"]
+[background arg="res://art/backgrounds/princess_room.png" fade="1.0"]
+
+[wait time="0.8"]
+
+audio "res://audio/sfx/running_screams_distant.ogg" [volume="0.8" bus="SFX"]
+
+princess (shocked): 外面好吵……還有火光？
+
+[wait time="0.6"]
+
+princess (shocked): （這才過了一個月……城就破了？）
+princess (shocked): （比上次早了整整兩個月！）
+
+[wait time="0.8"]
+
+audio "res://audio/sfx/armor_approach_heavy.ogg" [bus="SFX"]
+[signal arg="camera_shake"]
+
+[wait time="0.6"]
+
+join loyal_retainer right
+
+princess: （門被撞開。）
+princess: （賽拉斯被門口的士兵攙扶著走進來。他渾身是血，左肩到右腰有一道深可見骨的傷口。）
+
+[wait time="0.8"]
+
+loyal_retainer (exhausted): 快逃命吧。王不在了。
+
+[wait time="0.6"]
+
+princess: （他勸離了士兵，撐著牆走到我面前。）
+princess: （他的呼吸很重，每一下都像在忍痛。）
+
+loyal_retainer (tearful): 對不起。公主，我……我們失敗了。
+loyal_retainer (tearful): 我知道一直都很聰明的公主一定是察覺了什麼。
+
+[wait time="0.8"]
+
+loyal_retainer (tearful): 但——對不起，我欺騙了你。
+
+[wait time="0.5"]
+
+princess (sad): 賽拉斯，你的傷……到底發生了什麼事？
+
+[wait time="0.6"]
+
+loyal_retainer (tearful): 是宰相。
+loyal_retainer (tearful): 我們都被他騙了。
+
+[wait time="0.8"]
+
+princess: （他的聲音低得幾乎被外面的火聲吞沒。）
+
+loyal_retainer (exhausted): 更多的事情我就不知道了，只有王才知道更多。
+
+[wait time="0.8"]
+
+princess: （帳本是假的。）
+princess: （那些人證、那些數字、那些指向父王的證據，全都是宰相推到我面前的路。）
+princess: （他讓我以為自己在拯救王國，其實只是親手把刀遞給了他。）
+
+[wait time="0.8"]
+
+princess: （我走到他面前，把手放在他鮮血淋漓的肩膀上。）
+princess: （血是溫熱的。）
+
+princess (sad): 謝謝你，賽拉斯。
+princess (sad): 你是一位溫柔又勇敢的騎士。
+
+[wait time="1.0"]
+
+princess: （我轉過身，背對著他，閉上了眼睛。）
+
+[wait time="1.2"]
+
+loyal_retainer (tearful): ……對不起。
+
+[sound path="res://audio/sfx/sword_stab_short.ogg" bus="SFX"]
+
+[wait time="0.4"]
+
+[background arg="res://art/backgrounds/darkness.png" fade="1.5"]
+
+princess: （痛楚穿透胸口，但我這次沒有恐懼，只有理解。）
+princess: （下一次，我要去找父王。）
+
+[wait time="2.0"]
+
+# === 死亡結算 ===
+[signal arg="intel:intel_fake_ledgers"]
+[signal arg="death_context:{'death_message': '提早到來的戰火中，你從重傷的騎士長口中得知了真相。帳本是假的，宰相才是真正的敵人。', 'intel_reward': ['intel_fake_ledgers'], 'killer': 'retainer', 'advance_loop': true, 'next_timeline': '03_loop1_a2_throne'}"]
+[signal arg="trigger_death"]
