@@ -183,7 +183,7 @@
 |---|---|---|
 | `fire_room.png` | 存在但未被任何場景或 timeline 使用 | 可作序章火場參考，或另拆成新背景 |
 | `princess_room_gj.png` | 存在但未接線 | 若畫風較舊，可當參考不必直接使用 |
-| `art/backgrounds/ending_Images/*` | 有 7 張圖，但目前程式未接線 | 若要保留，建議另外整理成「舊版 ending 圖」資料夾，避免和正式交付混淆 |
+| `art/backgrounds/ending_Images/*` | 有 7 張圖，但目前程式未接線 | 若要保留，建議另外整理成「未接線 ending 圖」資料夾，避免和正式交付混淆 |
 
 ---
 
@@ -276,7 +276,7 @@
 | 女僕現有檔名不一致 | 現有是 `maid_confusion.png`、`maid_cry.png`、`maid_surprise.png` | 正式交付請改成 `maid_confused.png`、`maid_tearful.png`、`maid_shocked.png` |
 | 國王正式圖未接線 | `king_default.png` 已存在，但 `king.dch` 仍指向 `general_npc.png` | 圖確認後，把 `.dch` 改回 `king_default.png` |
 | 宰相額外表情未接線 | `chancellor_smile.png` 存在，但目前未引用 | 若畫風一致可納入 `default` / `concerned` 比較後再決定是否沿用 |
-| 舊版 ending 圖 | `art/backgrounds/ending_Images/` 有 7 張圖但未使用 | 不要和正式交付檔混在一起 |
+| 未接線 ending 圖 | `art/backgrounds/ending_Images/` 有 7 張圖但未使用 | 不要和正式交付檔混在一起 |
 
 ---
 

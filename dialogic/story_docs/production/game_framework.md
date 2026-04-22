@@ -6,15 +6,13 @@
 > 最後一次已對齊的主檔：LOOP_OUTLINE.md / scenarios/scenario_D_outline.md
 # Break the Loop — Godot / Dialogic 現行製作框架摘要
 
-> 舊版完整框架已移至 `production/legacy/game_framework_legacy.md`，只作歷史參考，不定義 canon。
-
 ---
 
 ## 1. 核心概念
 
 玩家扮演 17 歲公主艾蓮娜。她在亡國夜被賽拉斯依口頭密令殺死，帶著記憶回到城破前約 180 天。每一次死亡不是懲罰，而是讓她累積情報、修正誤判，最後學會同步調度兵、民、術、證，打破亡國迴圈。
 
-現行故事不是「找出單一犯人」的舊框架，而是 A/B/C/D 四條認知推進：
+現行故事以 A/B/C/D 四條認知推進組成：
 
 | 章節 | 功能 | 對應主檔 |
 |---|---|---|
@@ -47,7 +45,7 @@
 | C 線 | `03_loop3_*` | C-0 / C-1 / C-2 與高塔選擇 |
 | 終章 | `04_final_*` | 賽拉斯、布魯諾、達爾、朝堂、修復、破曉 |
 
-每個 timeline 應只落地現行 `scenarios/` 的固定場景。若舊檔名仍存在，請以現行內容重寫，不要引用 legacy 劇情。
+每個 timeline 應只落地現行 `scenarios/` 的固定場景；若檔名與現行章節功能不一致，請以現行場景大綱為準。
 
 ---
 
@@ -75,4 +73,4 @@
 - B 線不可寫成公主輕易逃宮；外出順利是宰相撤換保護與放行陷阱。
 - C 線不可讓公主突然全知；術式理解來自 B-1 入門、C-0 兩個月默背與達爾複驗。
 - 終章不可靠主角光環讓所有人相信；每個盟友都必須被本輪可核對資訊打開。
-- production 文件若提到劇情，必須引用 `canon/`、`LOOP_OUTLINE.md` 或 `scenarios/`，不可引用 legacy 當 active source。
+- production 文件若提到劇情，必須引用 `canon/`、`LOOP_OUTLINE.md` 或 `scenarios/`。

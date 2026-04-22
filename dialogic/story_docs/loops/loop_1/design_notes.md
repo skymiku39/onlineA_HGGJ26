@@ -6,7 +6,6 @@
 > 最後一次已對齊的主檔：canon/00_Reversal_Framework.md
 # Loop 1 — 設計筆記（現行同步版）
 
-> 本文件已移除舊版「偷兵符／宰相開城門」設計。
 > 現行版本以 `dialogic/story_docs/LOOP_OUTLINE.md` 的 A-0 / A-1 / A-2 為準。
 
 ---
@@ -99,4 +98,3 @@
 
 - 對齊 [00_Reversal_Framework.md](../00_Reversal_Framework.md)
 - 對齊 [LOOP_OUTLINE.md](../../../../dialogic/story_docs/LOOP_OUTLINE.md)
-- 舊版「兵符」「開城門」「親手毀國」不再作為第一章主軸

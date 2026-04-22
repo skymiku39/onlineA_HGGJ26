@@ -45,7 +45,7 @@
 | `LOOP_OUTLINE.md` | 主流程、情報流、解鎖條件與製作順序。 |
 | `scenarios/` | A/B/C/D 場景級大綱、節點與演出依據。 |
 | `characters/` | 對白聲線、表演重點、角色演出卡。 |
-| `production/` | 美術、資產、框架與舊稿整理後的製作參考，不定義故事 canon。 |
+| `production/` | 美術、資產與製作框架，不定義故事 canon。 |
 
 ---
 
@@ -80,5 +80,4 @@
 
 - 改真相、角色本質、勢力分工、時間線時，先改 `canon/`。
 - 改場景節奏、選項、演出時，改 `scenarios/`，但不可新增未回寫 canon 的設定。
-- 舊 `docs/zh/design` 已遷移；不要再把它當成 active source。
-- `production/legacy/*` 只保留歷史參考，不可引用為現行劇情依據。
+- 改美術、資產與製作框架時，改 `production/`，但不得反向定義故事 canon。

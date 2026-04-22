@@ -8,7 +8,7 @@
 
 ## 目的
 
-`dialogic/story_docs` 是本專案唯一有效的故事與製作文件入口。舊路徑 `docs/zh/design` 不再保存 active canon，也不再作為平行真源使用。
+`dialogic/story_docs` 是本專案唯一有效的故事與製作文件入口。
 
 本文件回答三件事：
 
@@ -29,7 +29,7 @@ dialogic/story_docs
 ├─ loops/                       各輪迴章節設計、表層摘要、暗線
 ├─ scenarios/                   A/B/C/D 場景級落地大綱
 ├─ characters/                  對白與演出角色卡
-└─ production/                  美術、資產、框架與 legacy 歷史參考
+└─ production/                  美術、資產與製作框架
 ```
 
 ---
@@ -49,7 +49,7 @@ dialogic/story_docs
 | `LOOP_OUTLINE.md` | 主流程與情報流主檔 | 輪次結構、情報流、條件、步驟順序 | 角色本質、世界真相的唯一來源 |
 | `scenarios/*` | 場景落地 | 節點、選項、場景節奏、演出依據 | 未回寫 canon 的新真相 |
 | `characters/*` | 寫作支援 | 聲線、表演重點、說話策略 | 未回寫 canon 的角色本質 |
-| `production/*` | 製作參考 | 美術、資產、系統框架、舊稿有效摘錄 | 故事 canon |
+| `production/*` | 製作參考 | 美術、資產、系統框架 | 故事 canon |
 
 ---
 
@@ -78,24 +78,18 @@ dialogic/story_docs
 | `canon/00_Loop_Response_Matrix.md` | `LOOP_OUTLINE.md`、對應 `loops/*/design_notes.md`、受影響的 `scenarios/` |
 | `LOOP_OUTLINE.md` | `STORY_OVERVIEW.md`、受影響的 `scenarios/`、相關角色卡 |
 | `scenarios/*` | 若出現新 canon，先回寫 `canon/`，再保留場景落地 |
-| `production/*` | 若牽涉故事內容，只能引用現行 `canon/`，不可把舊稿混回主線 |
+| `production/*` | 若牽涉故事內容，只能引用現行 `canon/`、`LOOP_OUTLINE.md` 或 `scenarios/` |
 
 ---
 
 ## 清稿規則
 
-舊版殘留包含：
+文件清稿時只保留現行設定與現行製作依據。
 
-- 同一事件在不同文件有不同版本。
-- 舊稿備忘、現行摘要、設計草稿混在同一份文件。
-- 已淘汰的 Loop 摘要仍作為現行主線。
-- 舊 `docs/zh/design` 路徑仍被當成 active source。
-
-處理方式：
-
-- 還有現行價值：改寫成現行同步版。
-- 只剩歷史價值：移到 `production/legacy/` 並標明不得定義 canon。
-- 沒有交接價值：刪除，不保留混合稿。
+- 同一事件只能有一個可執行版本。
+- 摘要文件只能引用真源，不重新發明設定。
+- 章節摘要只保留現行功能、節奏與情報流。
+- 沒有交接價值的過期內容直接刪除，不保留混合稿。
 
 ---
 
