@@ -20,8 +20,8 @@
 | [x] | 國王 | `king.dch` | `general_npc.png` | `king_default.png` |
 | [x] | 達爾 | `dal.dch` | `suspect_a_default.png` | `dal_default.png` |
 | [x] | 布魯諾 | `mob_leader.dch` | `suspect_b_default.png` | `mob_leader_default.png` |
-| [x] | 暴民乙 | `mob_npc_b.dch` | `suspect_c_default.png` | `mob_npc_default.png` |
-| [x] | 暴民丙 | `mob_npc_c.dch` | `suspect_c_default.png` | `mob_npc_default.png` |
+| [x] | 暴民乙 | 無獨立 `.dch`；被動員暴民群眾變體 | `suspect_c_default.png` | `mob_npc_default.png` |
+| [x] | 暴民丙 | 無獨立 `.dch`；被動員暴民群眾變體 | `suspect_c_default.png` | `mob_npc_default.png` |
 | [x] | 老婦人 | `old_woman.dch` | `minister_npc.png` | `old_woman_default.png` |
 
 ---

@@ -96,5 +96,5 @@
 
 ## 與現行框架的對齊
 
-- 對齊 [00_Reversal_Framework.md](../00_Reversal_Framework.md)
-- 對齊 [LOOP_OUTLINE.md](../../../../dialogic/story_docs/LOOP_OUTLINE.md)
+- 對齊 [00_Reversal_Framework.md](../../canon/00_Reversal_Framework.md)
+- 對齊 [LOOP_OUTLINE.md](../../LOOP_OUTLINE.md)
