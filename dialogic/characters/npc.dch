@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(0.65, 0.65, 0.65, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_mood_happy": "",
+"sound_mood_sad": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "default",
+&"description": "泛用無名 NPC。僅作 Dialogic speaker 占位，可依場景代表助手、守衛、傳話者或旁觀群眾；不是單一世界內角色。",
+&"display_name": "？？？",
+&"mirror": false,
+&"nicknames": ["無名者", "侍從", "守衛", "旁觀者"],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"default": {
+"export_overrides": {},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

@@ -61,6 +61,7 @@
 | 主流程與情報流 | `LOOP_OUTLINE.md` | `scenarios/scenario_*_outline.md` |
 | 寫某場戲 | `scenarios/scenario_*_outline.md` | `characters/*.md` |
 | 公主視角完整推演 | `scenarios/princess_pov_full_simulation.md` | `canon/princess_knowledge_arc.md` / `canon/00_Loop_Response_Matrix.md` |
+| 公主 POV 反推設定 | `canon/princess_pov_derived_settings.md` | `scenarios/princess_pov_full_simulation.md` |
 | 美術與資產 | `production/art_handoff.md` | `production/art_asset_checklist.md` |
 
 ---
