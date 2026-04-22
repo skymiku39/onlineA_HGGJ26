@@ -16,7 +16,7 @@ princess: （茶杯碎裂的聲音還在耳邊。宰相那句「不要怪我」�
 
 [wait time="1.0"]
 
-princess (confused): （我沒死？不，我又回到了三個月前。）
+princess (confused): （我沒死？不，我又回到了半年前。）
 
 [wait time="0.8"]
 
@@ -333,7 +333,7 @@ princess (shocked): 外面好吵……還有火光？
 [wait time="0.6"]
 
 princess (shocked): （這才過了一個月……城就破了？）
-princess (shocked): （比上次早了整整兩個月！）
+princess (shocked): （比原本早得太多了！）
 
 [wait time="0.8"]
 

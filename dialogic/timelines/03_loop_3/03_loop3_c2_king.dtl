@@ -1,0 +1,326 @@
+# 調查線 C-2：求見父王與交牌 — Day 1-2
+
+[background arg="res://art/backgrounds/window.png" fade="0.9"]
+[music path="res://audio/bgm/tension_low.ogg" fade="2.5" volume="0.35"]
+
+[wait time="1.0"]
+
+join princess left
+
+princess: （我照規矩遞牌子。要書房，要單獨，不要宰相。）
+
+[wait time="0.6"]
+
+princess: （等了一整天，回覆才來。）
+
+princess: （他肯見我。）
+
+leave princess
+
+# === 父王書房 ===
+
+[background arg="res://art/backgrounds/hallway.png" fade="0.8"]
+[music path="res://audio/bgm/tension_low.ogg" fade="1.5" volume="0.30"]
+
+[wait time="0.8"]
+
+join princess left
+join king center
+
+princess: （書房裡只有燈。沒有第三個人。）
+
+[wait time="0.6"]
+
+princess (cold): 父王，女兒有話要說。請您先聽完。
+
+king: ……說。
+
+# === 交牌 ===
+
+[wait time="0.5"]
+
+princess: （密道、私兵、簽署路線，還有達爾是怎麼被抹掉的。）
+
+princess: （不哭，也不求。）
+
+princess (cold): 這些都是我看見的事。父王若要查，比任何人都查得快。
+
+[wait time="2.0"]
+
+king: ……
+
+[wait time="1.0"]
+
+princess: （他很久都沒說話。）
+
+[wait time="0.8"]
+
+king: ……身為王，我不能只憑你現在說的這些，就在沒有證據、沒有程序、沒有朝臣在場的時候，把它當成真相。
+
+[wait time="0.8"]
+
+king: 但身為你的父親——
+
+[wait time="0.5"]
+
+king: 我信你。
+
+[wait time="1.2"]
+
+king: ……原諒我。我不能失去你。
+
+[wait time="1.0"]
+
+princess: （他一開口叫人，聲音就變回王的聲音了。）
+
+leave princess
+leave king
+
+jump c2_king_tower
+
+
+label c2_king_tower
+
+# 調查線 C-2：高塔與宰相潛逃 — 半年虛假和平
+
+[background arg="res://art/backgrounds/window.png" fade="1.2"]
+[music path="res://audio/bgm/music_box_uneasy.ogg" fade="3.0" volume="0.22"]
+
+[wait time="1.5"]
+
+join princess left
+
+princess: （馬車沒有回寢宮。它往高塔走。）
+
+[wait time="0.6"]
+
+princess: （窗很大，風很冷。這裡叫做保護。）
+
+[wait time="0.8"]
+
+princess: （父王信了我，卻還是把我放到最遠的地方。）
+
+[wait time="1.2"]
+
+# === 宰相潛逃 ===
+
+princess: （兩天後，消息傳上來了。）
+
+[wait time="0.6"]
+
+npc: 宰相大人東窗事發，已潛逃出城。
+
+[wait time="0.8"]
+
+princess: （人跑了。可洞還在，手也還在城裡。）
+
+[signal arg="intel:intel_chancellor_escape_plan"]
+
+[wait time="0.8"]
+
+princess: （城裡卻安靜得可怕。）
+
+# === 半年和平 ===
+
+[wait time="0.8"]
+
+princess: （日子一頁一頁翻過去。窗外的屋頂，看久了都像沒變過。）
+princess: （可只是「看起來」沒變。）
+
+[wait time="0.6"]
+
+- 先看下城區的燈
+	princess: （第一個月，我從窗邊看著下城區。夜裡的燈一盞一盞少下去。）
+	princess: （一開始我以為是宵禁，後來才懂，是糧、藥和人手都在變少。）
+	jump tower_phase_two
+
+- 先翻高塔裡的書
+	princess: （第一個月，我把塔裡能翻的書一本一本翻過去。）
+	princess: （書頁裡寫著治理、恩典和秩序，窗外的下城區卻一晚比一晚暗。）
+	jump tower_phase_two
+
+label tower_phase_two
+
+[wait time="0.6"]
+
+princess: （第二個月，軍隊調動的聲音越來越頻繁。）
+
+- 先聽清晨的鐵靴聲
+	princess: （鐵靴從清晨響到深夜，像王宮終於動了起來。）
+	princess: （可是沒有一次踏向我說過的那條密道。）
+	jump tower_phase_three
+
+- 先看城牆上的旗
+	princess: （城牆上的旗一天換過一天，傳令兵也比以前多。）
+	princess: （可那些命令繞過了下城區，也繞過了那條被挖空的牆。）
+	jump tower_phase_three
+
+label tower_phase_three
+
+[wait time="0.6"]
+
+princess: （再往後，達爾的名字開始變得模糊。）
+princess: （病倒、停職、另派人接手。每一個說法都很完整，完整到沒有人承認技術線已經斷了。）
+
+[wait time="0.8"]
+
+princess: （父王知道了。宰相跑了。可民心沒有被接住，術式沒有被修復，兵線也沒有切斷私軍。）
+princess: （原來抓出反派，不等於補上被他拆散的世界。）
+
+[wait time="0.8"]
+
+princess: （等我真正明白這件事時，半年已經過去了。）
+
+[wait time="0.8"]
+
+leave princess
+
+jump c2_final_choice
+
+
+label c2_final_choice
+
+# 調查線 C-2：破局的抉擇 — Bad End C-2
+
+[background arg="res://art/backgrounds/window.png" fade="0.8"]
+[music path="res://audio/bgm/tension_rising.ogg" fade="3.0" volume="0.28"]
+
+[wait time="1.2"]
+
+join princess left
+
+# === 茶水再現 ===
+
+princess: （又是那個味道。）
+
+princess: （這次我沒有碰。）
+
+[wait time="0.8"]
+
+princess: （我讓人去找父王，去找賽拉斯，找誰都行。）
+
+[wait time="0.6"]
+
+princess: （沒有人回來。）
+
+[wait time="1.2"]
+
+# === 城破之聲 ===
+
+[sound path="res://audio/sfx/gate_open_heavy.ogg" volume="0.4"]
+[signal arg="camera_shake" intensity="medium"]
+
+princess: （半夜裡，底下傳來很遠的吼聲，像整座城正在裂開。）
+
+[wait time="1.2"]
+
+princess: （高塔上看得見火。）
+
+[wait time="0.6"]
+
+princess: （城外是敵軍的旗，城牆邊是黑甲的影子，下城區的火則從另一個方向燒起來。）
+princess: （外患、私軍、被逼到絕路的人，不是同一股力量。）
+princess: （可它們終於被接成同一個破口。）
+
+[wait time="0.8"]
+
+princess: （以前總是別人替我動手。）
+
+princess: （這一次，輪到我自己。）
+
+[wait time="0.6"]
+
+# === 三個選項 ===
+
+- 餐刀
+	[music path="res://audio/bgm/tension_rising.ogg" fade="1.0" volume="0.12"]
+
+	princess (hollow): （桌角有把刀。冰得很。）
+
+	[wait time="0.8"]
+
+	princess (hollow): （我握住了。）
+
+	[wait time="1.5"]
+
+	set {c2_death_knife} = true
+	set {c2_death_tea} = false
+	set {c2_death_window} = false
+	[signal arg="final_choice:knife"]
+	[signal arg="cut_to_silence"]
+
+	leave princess
+
+	[background arg="res://art/backgrounds/darkness.png" fade="2.8"]
+	[wait time="3.0"]
+
+	narrator: 父王信了艾蓮娜公主，是以父親之身；可身為王，他還是沒辦法立刻兌現她要的答案。高塔是愛，也是囚。宰相跑了，城還是沒救回來。「知道了」和「做到了」之間，原來還隔著一道單憑一個人跨不過去的距離。
+
+	[wait time="3.0"]
+
+	[signal arg="intel:intel_chancellor_escape_plan"]
+	[signal arg="intel:intel_king_defense_line"]
+	[signal arg="death_context:{'death_message': '父王信了艾蓮娜公主、以高塔相囚；宰相潛逃；半年後城破，外力全斷，公主第一次主動選擇死亡（餐刀）。', 'intel_reward': ['intel_chancellor_escape_plan', 'intel_king_defense_line'], 'killer': 'self', 'advance_loop': true, 'next_timeline': '01_loop4_d0_final'}"]
+	[signal arg="trigger_death"]
+
+- 冷掉的茶
+	[music path="res://audio/bgm/tension_rising.ogg" fade="1.0" volume="0.12"]
+
+	princess (hollow): （茶已經涼了。底下還是甜，上面還是苦。）
+	princess (hollow): （這半年裡熄掉的燈、繞開密道的軍靴、沒有抵達朝堂的報告，都沉在這口苦味裡。）
+
+	princess (hollow): （我還是喝了。）
+
+	[wait time="1.5"]
+
+	set {c2_death_knife} = false
+	set {c2_death_tea} = true
+	set {c2_death_window} = false
+	[signal arg="final_choice:cold_tea"]
+	[signal arg="cut_to_silence"]
+
+	leave princess
+
+	[background arg="res://art/backgrounds/darkness.png" fade="2.8"]
+	[wait time="3.0"]
+
+	narrator: 父王信了艾蓮娜公主，是以父親之身；可身為王，他還是沒辦法立刻兌現她要的答案。高塔是愛，也是囚。宰相跑了，城還是沒救回來。「知道了」和「做到了」之間，原來還隔著一道單憑一個人跨不過去的距離。
+
+	[wait time="3.0"]
+
+	[signal arg="intel:intel_chancellor_escape_plan"]
+	[signal arg="intel:intel_king_defense_line"]
+	[signal arg="death_context:{'death_message': '父王信了艾蓮娜公主、以高塔相囚；宰相潛逃；半年後城破，外力全斷，公主第一次主動選擇死亡（冷茶）。', 'intel_reward': ['intel_chancellor_escape_plan', 'intel_king_defense_line'], 'killer': 'self', 'advance_loop': true, 'next_timeline': '01_loop4_d0_final'}"]
+	[signal arg="trigger_death"]
+
+- 窗戶
+	[music path="res://audio/bgm/tension_rising.ogg" fade="1.0" volume="0.12"]
+
+	princess (hollow): （窗推得開。風裡都是煙。）
+
+	[wait time="0.8"]
+
+	princess (hollow): （我探了出去。）
+
+	[wait time="1.5"]
+
+	set {c2_death_knife} = false
+	set {c2_death_tea} = false
+	set {c2_death_window} = true
+	[signal arg="final_choice:window"]
+	[signal arg="cut_to_silence"]
+
+	leave princess
+
+	[background arg="res://art/backgrounds/darkness.png" fade="2.8"]
+	[wait time="3.0"]
+
+	narrator: 父王信了艾蓮娜公主，是以父親之身；可身為王，他還是沒辦法立刻兌現她要的答案。高塔是愛，也是囚。宰相跑了，城還是沒救回來。「知道了」和「做到了」之間，原來還隔著一道單憑一個人跨不過去的距離。
+
+	[wait time="3.0"]
+
+	[signal arg="intel:intel_chancellor_escape_plan"]
+	[signal arg="intel:intel_king_defense_line"]
+	[signal arg="death_context:{'death_message': '父王信了艾蓮娜公主、以高塔相囚；宰相潛逃；半年後城破，外力全斷，公主第一次主動選擇死亡（窗戶）。', 'intel_reward': ['intel_chancellor_escape_plan', 'intel_king_defense_line'], 'killer': 'self', 'advance_loop': true, 'next_timeline': '01_loop4_d0_final'}"]
+	[signal arg="trigger_death"]
+

@@ -159,7 +159,8 @@ princess: （我迅速摘下那條昂貴的寶石項鍊，收進口袋。）
 
 princess: （趁著莉娜背對門口在挑緞帶時，我壓低身子，從後門溜出了店外。）
 princess: （沒有驚動夥計，也沒有觸發街口侍衛的視線。）
-princess: （這一次，我徹底甩開了宰相的眼線。）
+princess: （這一次，我只是讓最近的幾道視線慢了半拍。）
+princess: （網還在，只是暫時沒能立刻收緊。）
 
 [wait time="1.0"]
 
@@ -394,5 +395,5 @@ princess: （我還需要查出魔法陣是怎麼被破壞的。）
 # 結算（B-2）
 [signal arg="intel:intel_bruno_passage_tip"]
 [signal arg="intel:intel_secret_passage"]
-[signal arg="death_context:{'death_message': '你用籌碼換來了密道的位置，卻低估了死士的無情。物理城防的漏洞已確認，你將帶著鮮血染成的地圖進入下一次輪迴。', 'intel_reward': ['intel_bruno_passage_tip', 'intel_secret_passage'], 'killer': 'chancellor_soldiers', 'advance_loop': true, 'next_timeline': '01_loop3_dal_awakening'}"]
+[signal arg="death_context:{'death_message': '你用籌碼換來了密道的位置，卻低估了死士的無情。物理城防的漏洞已確認，你將帶著鮮血染成的地圖進入下一次輪迴。', 'intel_reward': ['intel_bruno_passage_tip', 'intel_secret_passage'], 'killer': 'chancellor_soldiers', 'advance_loop': true, 'next_timeline': '01_loop3_c0_dal'}"]
 [signal arg="trigger_death"]

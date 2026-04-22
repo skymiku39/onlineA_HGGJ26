@@ -1,3 +1,130 @@
+# 調查線 C：醒來 — 公主寢房
+
+[background arg="res://art/backgrounds/window.png" fade="1.3"]
+[music path="res://audio/bgm/music_box_uneasy.ogg" fade="3.5" volume="0.31"]
+
+[wait time="2.0"]
+
+join princess left
+
+princess: ……密道那條線，走完了。
+
+[wait time="1.2"]
+
+princess: （密道是真的。可光有密道還不夠。）
+
+princess: （賽拉斯說過，魔法陣是從裡面壞掉的。）
+
+[wait time="0.8"]
+
+princess: （達爾課上講過的東西，我現在總算能接上幾個詞。）
+
+[wait time="1.0"]
+
+join maid right
+
+maid (default): 殿下～早安呀！今天也是好天氣喔～宰相大人送來了——
+
+princess: 退回去。
+
+maid (default): 欸？可是殿下都還沒看——
+
+princess: 莉娜。今天不戴那條鍊子。幫我挑一套去書庫穿的衣服，乾淨一點，不要顯眼。
+
+maid (confused): ……去書庫？是，殿下。
+
+[wait time="0.5"]
+
+maid (forced_smile): 好了，殿下！……路上小心喔。
+
+[signal arg="day_counter:180"]
+
+leave maid
+leave princess
+
+jump c0_dal_approach
+
+
+label c0_dal_approach
+
+# 調查線 C-0：再次接近達爾 — 書庫走廊（Day 1）
+
+[background arg="res://art/backgrounds/hallway.png" fade="0.9"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.5" volume="0.45"]
+
+[wait time="1.0"]
+
+join princess left
+
+princess: （下課後這一小段走廊，通常只剩他的腳步聲。）
+
+[wait time="0.6"]
+
+join dal right
+
+dal (default): 殿下？
+
+princess: （他停下來了。）
+
+princess: （這次不能再像個來問功課的小孩。）
+
+princess: 達爾先生，我看過陣法沿革卷宗。防護接縫那一段，和您課上說的術式層級對不上。我想知道為什麼。
+
+[wait time="1.0"]
+
+dal (wary): ……殿下連這個都翻了？
+
+dal (wary): 上回那幾句話，公主是真的記下來，回去查了？
+
+princess: 我對照了三版卷宗。第二版之後，接縫的描述變少了。您說的是舊做法，現在存檔用的卻是第三版規格。這裡面一定有原因。
+
+[wait time="0.8"]
+
+dal (default): ……
+
+dal (default): 跟我來。
+
+princess: （他終於把我當成來查事的人。）
+
+leave princess
+leave dal
+
+# === 巡視路線 ===
+
+[background arg="res://art/backgrounds/hallway2.png" fade="0.8"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="1.5" volume="0.38"]
+
+join princess left
+join dal right
+
+princess: （牆角、轉彎、他停下來的地方……這不是課堂，是巡視。）
+
+princess: （我不能寫，只能硬背。）
+
+[wait time="0.6"]
+
+dal (default): 這段接縫，瞧見了嗎？第三版把緩衝層做薄了。當初說是省維護成本，可容許範圍跟著窄了——就像把一扇窗框換成薄紙，說這樣採光好。
+
+princess: 所以現在的「正常波動」，和以前根本不是同一套標準。
+
+dal (default): 正是。
+
+[wait time="0.8"]
+
+dal (default): ……老眼昏花，卻聽得出來，有人是真的在聽。
+
+princess: （他願意往下講了。）
+
+[wait time="0.6"]
+
+leave princess
+leave dal
+
+jump c0_dal_two_months
+
+
+label c0_dal_two_months
+
 # 調查線 C-0：兩個月的默背 — 蒙太奇
 
 [background arg="res://art/backgrounds/hallway2.png" fade="0.8"]
@@ -177,4 +304,92 @@ princess (cold): （這不是老化。是有人故意在磨這座陣。）
 
 leave princess
 
-jump 04_loop3_dal_workshop/
+jump c0_dal_workshop
+
+
+label c0_dal_workshop
+
+# 調查線 C-0：工作室 — Bad End C-0
+
+[background arg="res://art/backgrounds/hallway.png" fade="0.8"]
+[music path="res://audio/bgm/tension_low.ogg" fade="2.0" volume="0.38"]
+
+[wait time="0.6"]
+
+join princess left
+
+princess: （那天，達爾把我帶進了工作室。）
+
+[wait time="0.5"]
+
+join dal right
+
+dal (default): 我想再核對一件事。殿下既然看得懂，就幫我看一眼。
+
+[wait time="0.8"]
+
+princess: （他把我背過的幾個點逐一對起來，臉色越來越沉。）
+
+[wait time="0.6"]
+
+dal (wary): 自然老化的東西，是慢慢散的——像舊布磨薄，每處都一點。這裡不是。
+
+[wait time="0.8"]
+
+dal (wary): ……這像是有人拿著鑿子，知道往哪裡鑿。
+
+princess: 日誌上的外聘維護、夜間清場，全走財政署的核銷。表面看只是檢修，可實際上——
+
+[wait time="0.4"]
+
+# === 門開了 ===
+
+[sound path="res://audio/sfx/door_open_soft.ogg" bus="SFX"]
+
+[wait time="0.5"]
+
+npc: 達爾先生，公主殿下，喝點茶吧。
+
+princess: （門開了。助手端著盤子進來，兩杯。）
+
+[wait time="0.8"]
+
+dal (default): 今天居然是花茶？
+
+princess: （蜂蜜、玫瑰，還有那點淡淡的苦。是他。）
+
+- 開口阻止
+	princess: 達爾——
+	princess: （還是晚了一步。）
+- 伸手去攔
+	princess: （我手才抬起來，他就已經喝下去了。）
+
+[wait time="1.0"]
+
+princess: （助手還在笑，手卻往袖子裡滑。）
+
+princess (shocked): （金屬光。）
+
+[wait time="0.5"]
+
+[signal arg="cut_to_silence"]
+
+leave dal
+leave princess
+
+# === Bad End C-0 ===
+
+[background arg="res://art/backgrounds/darkness.png" fade="2.8"]
+[wait time="3.0"]
+
+narrator: 他不是不小心。他只是從頭到尾都不知道，那杯茶代表什麼。
+
+[wait time="3.0"]
+
+[signal arg="intel:intel_magic_array_mnemonic"]
+[signal arg="intel:intel_array_handed_clerk"]
+[signal arg="intel:intel_array_structural_passage"]
+[signal arg="intel:intel_chancellor_treason"]
+[signal arg="death_context:{'death_message': '達爾誤飲毒茶，助手持鍊金手槍就地槍殺公主。現場布置為達爾持槍行兇後中毒身亡——滅口與嫁禍同步完成。', 'intel_reward': ['intel_magic_array_mnemonic', 'intel_array_handed_clerk', 'intel_array_structural_passage', 'intel_chancellor_treason'], 'killer': 'clerk', 'advance_loop': true, 'next_timeline': '02_loop3_c1_warning'}"]
+[signal arg="trigger_death"]
+

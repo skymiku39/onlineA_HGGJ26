@@ -1,0 +1,784 @@
+# 最終輪迴：最後一次醒來 — 公主寢房（Day 1 早晨）
+
+[background arg="res://art/backgrounds/window.png" fade="1.3"]
+[music path="res://audio/bgm/music_box_uneasy.ogg" fade="3.5" volume="0.28"]
+
+[wait time="2.0"]
+
+join princess center
+
+[wait time="1.2"]
+
+# === 首段獨白（依 C-2 死法切換，需 c2_death_knife / c2_death_tea / c2_death_window 變數）===
+
+if {c2_death_knife}:
+	princess: （手腕還記得那一下。今天這雙手有別的事要做。）
+
+if {c2_death_tea}:
+	princess: （那口苦喝過一次就夠了。今天不會再碰。）
+
+if {c2_death_window}:
+	princess: （風刮過耳邊的聲音還在。今天我要站在地上。）
+
+[wait time="0.8"]
+
+# === 女僕儀式重複段 ===
+
+join maid right
+
+princess: （莉娜的眼睛還是腫的。）
+
+maid (default): 殿下～早安呀！今天也是好天氣喔～宰相大人送來——
+
+princess (determined): 一切都會好起來的。
+
+[wait time="0.6"]
+
+maid: ……！
+
+princess: （她手裡的梳子停了一下。）
+
+maid (default): 殿下怎麼突然……
+
+[wait time="0.5"]
+
+princess: （我沒解釋，只輕輕摸了摸她的頭。）
+
+[wait time="1.0"]
+
+maid (confused): ……今天的殿下，好奇怪。
+
+princess: （她沒掉眼淚，只是動作放輕了很多。）
+
+[wait time="0.8"]
+
+# === 項鍊 ===
+
+maid (default): 宰相大人昨天特別交代，說請公主今天務必配戴。
+
+princess (determined): 幫我戴上吧。
+
+princess: （今天不能先露出破綻。）
+
+[wait time="0.6"]
+
+# === 詢問日期 ===
+
+princess (determined): 今天是幾月幾號？
+
+maid (default): 六月十四日。殿下忘了嗎——
+
+princess: （還有一百八十天。夠了。）
+
+[wait time="0.8"]
+
+princess (determined): 對了，莉娜。去西側庫房幫我找那件舊披肩，再挑兩卷不顯眼的緞帶。
+
+maid (confused): 現在嗎？
+
+princess (determined): 現在。慢慢找，不急著回來。
+
+princess: （衣帽間、茶盤、廚房、門口交接，今天都不能讓她待在裡面。）
+
+# === 共用獨白（所有死法之後均接入）===
+
+leave maid
+
+[wait time="0.4"]
+
+princess: （這是我最後一次從這個早晨醒來。）
+
+princess: （先找賽拉斯。）
+
+[wait time="0.8"]
+
+princess (determined): （去他會經過的那條路。）
+
+leave princess
+
+[signal arg="day_counter:180"]
+
+jump d0_recruit_silas
+
+
+label d0_recruit_silas
+
+# 最終輪迴：收服騎士長 — Day 1（廊柱角落）
+
+[background arg="res://art/backgrounds/hallway.png" fade="0.9"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="3.0" volume="0.35"]
+
+join princess left
+
+princess: （我在轉角等他。甲冑聲越來越近。）
+
+[wait time="0.8"]
+
+join loyal_retainer right
+
+princess: （他看見我，先要行禮。我搖頭，指了指廊柱後面。）
+
+princess: （莉娜這時候應該還在西側庫房找披肩。很好。）
+princess: （今天不能把她放在門口，也不能讓她替我擋任何人的視線。）
+
+[wait time="0.6"]
+
+loyal_retainer: 殿下，這不合禮——
+
+princess (determined): 先聽我說完。不要中途走。
+
+[wait time="0.8"]
+
+loyal_retainer: ……
+
+# === 第一階段：可核對的軍務碎片 ===
+
+princess (determined): 北牆第三隊上月被臨時召回，文書卻還停在東門。
+
+[wait time="0.4"]
+
+loyal_retainer: 殿下，若無實據，這種話不能——
+
+princess (determined): 你左肩甲上那道凹痕，不是演習留下的。那天回防時，運糧車的側板撞過你。
+princess (determined): 調防前的信號位不該出現在下城區南路。可那裡有車轍，也有一條通向內城牆邊界的私軍密道。
+princess (determined): 財政署往地下倉儲的批核數量，和實際庫存也差了一截。
+
+[wait time="1.2"]
+
+# === 第二階段：苗頭與現狀吻合，開始認真 ===
+
+loyal_retainer: ……殿下，這些消息是從哪裡來的？
+
+princess (determined): 你先回答我。你心裡是不是早就覺得不對，只是還沒有證據？
+
+[wait time="1.5"]
+
+loyal_retainer: （他沉默很久，最後只輕輕點了一下頭。）
+
+[wait time="0.6"]
+
+# === 第三階段：口頭密令——只在他已認真之後 ===
+
+princess (determined): 父王給過你一道口頭密令。萬一守不住，就由你殺了我。
+
+[wait time="0.8"]
+
+loyal_retainer: ……
+
+princess: （他連呼吸都停了一瞬。）
+
+princess (determined): 你執行過一次。我知道。
+
+loyal_retainer (exhausted): ……殿下怎麼會知道？
+
+princess (determined): 因為這世上只有你，會為了殺我而哭。
+
+[wait time="1.5"]
+
+princess: （這次，他終於不再把我當成孩子。）
+
+princess (determined): 我不是來問你那道命令該怎麼辦的。我是來請你，先替我守住幾件事。
+
+[wait time="0.8"]
+
+# === 第四階段：願意幫助——具體任務 ===
+
+loyal_retainer: ……殿下請說。臣聽著。
+
+princess (determined): 三件事。第一，下城區的糧食和藥材，只能由你親自送，或交給你最信得過的人親手送。不經第二手，不讓別人代勞。
+
+princess (determined): 第二，密道先不要封，免得他們提前收尾滅證。但巡邏要加密，讓那條路不再像現在這麼順。
+
+princess (determined): 第三，下一次朝堂上，盯死宰相。盯他的人，盯他可能跑的路，盯他藏在城裡的接應。但在那之前，什麼都別演出來。
+
+[wait time="0.6"]
+
+princess (determined): 先做到這兩件。剩下的，我來補。
+
+[wait time="0.8"]
+
+loyal_retainer (relieved): ……好。臣明白了。
+
+loyal_retainer (relieved): 公主……請保重。
+
+princess (determined): 你也是。
+
+[wait time="1.0"]
+
+leave princess
+leave loyal_retainer
+
+princess: （西側庫房離這裡很遠。這一次，她沒有被我拖進交接的縫裡。）
+
+[wait time="0.6"]
+
+jump d0_calm_mob
+
+
+label d0_calm_mob
+
+# 最終輪迴：初見布魯諾 — Day 2（下城區鐵匠鋪）
+
+[background arg="res://art/backgrounds/darkness.png" fade="0.6"]
+[wait time="1.0"]
+princess: （隔天。馬車停在街口，賽拉斯的人留在看得見、又不會壓進店裡的位置。）
+princess: （我自己走去鐵匠鋪。不是逞強，是不能讓他覺得我帶著王宮來壓他。）
+- ——翌日——
+	[wait time="0.3"]
+
+# === 下城區鐵匠鋪 ===
+
+[background arg="res://art/backgrounds/restaurant.png" fade="0.9"]
+[music path="res://audio/bgm/lower_district.ogg" fade="2.0"]
+
+join princess left
+
+princess: （空氣裡都是炭灰味，牆上的字一筆一畫都帶火氣。）
+
+[wait time="0.6"]
+
+join mob_leader right
+
+princess: （他從鐵砧後抬眼，先把我當成來做戲的人。）
+
+mob_leader: 殿下。
+
+princess: （聲音不大，也不客氣。）
+
+[wait time="0.6"]
+
+# === 歸還，不是施捨 ===
+
+princess (determined): 今天早上，第一批糧和藥已經到南路倉口。押送的人是賽拉斯，不經第二手，也不掛宰相府的名。
+
+mob_leader (hesitant): ……殿下跟我說這些，想幹什麼？
+
+princess (determined): 我看過下城區的賑濟卷宗，也查過徵糧和草藥的批核。財政署怎麼走帳、東西怎麼被截住，我心裡大概有數。
+
+princess (determined): 我想請你，這幾天自己去核。帳目、署名、糧倉的實際庫存，凡是你覺得不對的，全都去看。
+
+[wait time="0.8"]
+
+mob_leader: 殿下怎麼會知道這些？
+
+princess (determined): 我看過紙，也看過人。你老婆的事，我知道不只是一句「時局如此」就能帶過去。
+
+[wait time="0.6"]
+
+mob_leader (angry): 知道又怎樣？我老婆也不會回來。
+
+princess: （他話裡全是火，可眼睛底下更像累。）
+
+[wait time="0.5"]
+
+princess (determined): 我不是來叫你原諒誰，也不是來施捨你什麼。
+
+princess (determined): 你的怒氣是真的。你失去的東西也是真的。這些沒有人有資格幫你抹平。
+
+[wait time="0.6"]
+
+princess (determined): 但再過不久，朝堂上會有人被攤開來問。從帳到人，從糧到私兵，都會被攤在光底下。
+
+princess (determined): 到那時候，下城區需要一個能站出來說「我自己查過，這是真的」的人。
+
+princess (determined): 如果你願意，那個人可以是你。
+
+[wait time="1.0"]
+
+mob_leader (hesitant): 妳這話的意思，是叫我替王室說話？
+
+princess (determined): 不是。是要你替你自己開口。
+
+[wait time="1.2"]
+
+mob_leader: （他盯著我看了好一會兒，最後轉身繼續打鐵。）
+
+[wait time="0.8"]
+
+princess: （我沒逼他，只站了一會兒就轉身離開。）
+
+leave princess
+leave mob_leader
+
+[wait time="0.5"]
+
+princess: （他沒有答應。也沒有拒絕。）
+
+[wait time="0.6"]
+
+jump d0_dal_briefing
+
+
+label d0_dal_briefing
+
+# 最終輪迴：達爾與魔法陣 — Day 3（內廷偏廳）
+
+[background arg="res://art/backgrounds/darkness.png" fade="0.6"]
+[wait time="1.0"]
+
+- ——第三天——
+	princess: （賽拉斯把人約到了後庫，不是工作室。）
+	[wait time="0.3"]
+
+# === 內廷偏廳 ===
+
+[background arg="res://art/backgrounds/hallway2.png" fade="0.9"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.5" volume="0.40"]
+
+join princess left
+join loyal_retainer right
+
+[wait time="0.5"]
+
+join dal right
+
+princess: （達爾進門看見我，腳步明顯慢了一下。）
+
+dal (wary): ……殿下。
+
+princess (determined): 陣核東南象限，第三維護週期。那段亮度下降，不是老化，是有人在每次清場後往能源管線裡動手。
+
+[wait time="0.8"]
+
+dal (wary): ……殿下怎麼會——
+
+princess (determined): 我對過維護日誌，也對過清場時程。哪些被寫成「例行維護」的東西，其實是腐蝕，你自己也看出來了，只是還沒說出口。
+
+[wait time="1.0"]
+
+princess: （他臉色變了。）
+
+dal (wary): ……若真是這樣，那些縫隙就不是自己長出來的。
+
+princess (determined): 我知道。所以你現在最重要的不是衝出去揭發誰。
+
+[wait time="0.6"]
+
+princess (determined): 是活著。
+
+[wait time="0.5"]
+
+dal (wary): ……那我該怎麼做？
+
+princess (determined): 先把能逆著查的地方查乾淨。把技術紀錄留好，把能留下的物證留下。不要私下往上報，不要單獨闖陣，也不要在工作室跟任何人翻臉。
+princess (determined): 尤其是你的助手、夜間清場令，還有任何端進工作室的茶水，都先當成證據，不要當成日常。
+
+princess (determined): 等正式上朝，再一次把東西攤開。到時候，有人護得住你。
+
+[wait time="0.6"]
+
+dal (sad_smile): （他沉默了很久，最後點了頭。）
+
+dal (sad_smile): ……好。
+
+[wait time="0.8"]
+
+leave dal
+
+princess: （達爾走後，賽拉斯才開口。）
+
+loyal_retainer: ……人都到位了。
+
+princess (determined): 還差父王。得讓他在眾人面前聽見，才堵得住退路。
+
+[wait time="0.8"]
+
+leave princess
+leave loyal_retainer
+
+# === 最後決策 ===
+
+label final_choice_menu
+
+if {option_explored:final_rush_arrest}:
+	princess (determined): （上次衝得太快，只看見空掉的房間和開著的門。這次不能再送他先走。）
+
+- 正式請求覲見，在朝堂上揭露宰相
+	princess (determined): （上朝。一次把門關死。）
+	jump d0_expose_chancellor
+
+- 趁宰相還不知道，現在直接去拿他 | [if {option_explored:final_rush_arrest} == false]
+	princess (determined): （賭一把。）
+	[signal arg="option_explored:final_rush_arrest"]
+	jump rush_arrest_bad_explanation
+
+label rush_arrest_bad_explanation
+
+[background arg="res://art/backgrounds/darkness.png" fade="0.6"]
+[wait time="1.0"]
+princess: （如果我現在就帶人去抓——）
+- ——即刻——
+	[wait time="0.3"]
+
+[background arg="res://art/backgrounds/hallway.png" fade="0.8"]
+[music path="res://audio/bgm/tension_rising.ogg" fade="2.0"]
+
+join princess left
+join loyal_retainer right
+
+princess: 賽拉斯，帶人去宰相書房。現在。
+
+loyal_retainer (default): 殿下，不經陛下命令直接拿人——
+
+princess: 來不及了。再慢一步，他今晚就會跑。
+
+loyal_retainer (serious): ……遵命。
+
+[wait time="0.8"]
+
+princess: （門一推就開。桌子是空的，抽屜也是，連墨都乾了。）
+
+princess (shocked): ……他不在。
+
+loyal_retainer: 他早一步走了。現在再追，只會撞上已經被打開的口子。
+
+[wait time="0.8"]
+
+princess: （箭雨壓下來的時候，賽拉斯一把把我壓到牆後。他背上中了箭，還是沒有倒。）
+
+[wait time="0.8"]
+
+leave princess
+leave loyal_retainer
+
+[background arg="res://art/backgrounds/darkness.png" fade="2.5"]
+[wait time="2.5"]
+
+[signal arg="intel:intel_chancellor_escape_plan"]
+
+princess: （不能私下抓。得在所有人面前，把他能走的門一起關上。）
+
+[wait time="1.2"]
+
+jump final_choice_menu
+
+
+label d0_expose_chancellor
+
+# 最終輪迴：揭露宰相 — Day 7（王座廳）
+
+[background arg="res://art/backgrounds/darkness.png" fade="0.6"]
+[wait time="1.0"]
+
+- ——四天後——
+	princess: （該對的，都對過了。）
+	princess: （這次，我要所有人都在場。）
+	[wait time="0.3"]
+
+# === 前往王座廳 ===
+
+[background arg="res://art/backgrounds/window.png" fade="0.8"]
+
+join princess left
+
+princess: （上次我是一個人喊。這次不是。）
+
+leave princess
+
+[wait time="0.6"]
+
+# === 王座廳 ===
+
+[background arg="res://art/backgrounds/throne_room_gj.png" fade="1.0"]
+[music path="res://audio/bgm/final_truth.ogg" fade="2.5" volume="0.56"]
+
+join princess left
+join chancellor right
+join king center
+
+princess (determined): 父王。女兒有四件事要說。每一件，都能由在場的人立刻去核。
+
+chancellor (default): 陛下，公主最近——
+
+princess (determined): 宰相大人，請等我說完。
+
+[wait time="0.6"]
+
+# === 第一件：城牆密道 ===
+
+princess (determined): 第一件。城南城牆有一條密道，出口在下城區靠河的倉儲群後方。賽拉斯已確認位置，今天就能派人去看。
+
+loyal_retainer: （他上前一步，點頭。）
+
+[wait time="0.8"]
+
+# === 第二件：糧藥路徑與在地證詞 ===
+
+princess (determined): 第二件。下城區帳上寫過的糧和藥，很多沒有到過下城。今天早上的第一批物資，則由賽拉斯親押，不經第二手。
+
+mob_leader (serious): 我查過。帳目、署名、倉口庫存，對不上。
+mob_leader (serious): 但今天到的糧藥是真的。不是宰相府的恩典，是被截走的東西回到該去的地方。
+
+[wait time="0.8"]
+
+# === 第三件：維護鏈 ===
+
+princess (determined): 第三件。財政署的清場令、批核署名，和魔法陣管線異常的時間點完全對得上。這些全有紀錄，也全能複驗。
+
+join dal left
+
+dal (default): （他上前一步，把查核記錄放了下來。）
+
+dal (default): 東南象限第三節點，連續六個週期在清場後出現異常衰退。若是自然老化，不會是這種曲線。這些批核，全部走同一條財政署路徑。
+
+[wait time="0.8"]
+
+# === 第四件：術式腐蝕節點 ===
+
+princess (determined): 第四件。這不是失誤，也不是巧合。有人假借維護之名，一次一次磨掉王城的防護。
+
+[wait time="1.0"]
+
+chancellor (cold): 這些……不過是被硬湊在一起的巧合。
+
+[wait time="0.5"]
+
+princess: （話一出口，賽拉斯沒有退，達爾也沒有收紙。）
+
+[wait time="1.2"]
+
+king: ……
+
+[wait time="2.0"]
+
+princess: （父王先看我，再看賽拉斯。）
+
+loyal_retainer: （賽拉斯朝他點了頭。）
+
+[wait time="0.8"]
+
+king: 查。
+
+[wait time="1.5"]
+
+princess: （夠了。）
+
+[wait time="0.8"]
+
+leave dal
+
+# === 宰相末路 ===
+
+[music path="res://audio/bgm/tension_rising.ogg" fade="2.0" volume="0.35"]
+
+princess: （命令一下，門就一扇一扇關上。）
+
+[wait time="1.0"]
+
+chancellor (cold): ……
+
+chancellor (cold): 臣一直以為，殿下是最好看的那枚棋子。
+
+[wait time="0.8"]
+
+chancellor (cold): 密道、帳目、術式、下城區……殿下把這些全都接成了一條線，也知道該在什麼時候說出口。
+
+[wait time="0.6"]
+
+chancellor (cold): 看來臣從一開始，就把殿下看得太淺了。
+
+[wait time="1.2"]
+
+[sound path="res://audio/sfx/vial_break.ogg" bus="SFX"]
+
+[wait time="0.8"]
+
+princess: （他倒下去了。毒。）
+
+[wait time="1.5"]
+
+leave chancellor
+
+king: ……
+
+[wait time="1.0"]
+
+leave king
+leave princess
+leave loyal_retainer
+
+jump d0_goodend_dawn
+
+
+label d0_goodend_dawn
+
+# 最終輪迴：真結局 — 破曉
+
+# === 蒙太奇：接下來的日子 ===
+
+[background arg="res://art/backgrounds/throne_room_gj.png" fade="1.0"]
+
+join princess left
+
+princess: （定性以後，事情才真正開始。）
+
+[wait time="0.6"]
+
+# --- 第一個月 ---
+
+- 先翻到第一個月
+	princess: （先翻回第一個月。賽拉斯守著陣區，達爾終於能把數字寫在紙上，也有人守著他。那道光一點一點穩回來。）
+	jump month_after_first
+
+- 先看最先穩下來的是什麼
+	princess: （先看的不是朝堂，是人心。至少有人開始相信，明天真的會來。）
+	jump month_after_spirit
+
+label month_after_first
+- 再看最先穩下來的是什麼
+	princess: （陣光穩住只是第一層。再往下看，最先真正穩下來的，其實是人心。）
+	jump month_one_cont
+
+label month_after_spirit
+- 再翻回第一個月
+	princess: （人心先穩住之後，我回頭再看第一個月，才看清那道光也是怎麼一點一點穩回來的。）
+	jump month_one_cont
+
+label month_one_cont
+
+[wait time="0.6"]
+
+princess: （人心和陣光，原來是一起慢慢穩回來的。）
+
+[wait time="0.4"]
+
+princess: （糧車一趟一趟往下城走，全都不經第二手。布魯諾站在路邊看了很久，最後只說：「我查過，是真的。」）
+
+[wait time="0.8"]
+
+# --- 第二階段 ---
+
+princess: （再往後兩個月，工地日夜都在敲。達爾坐在旁邊，指哪裡、工匠就補哪裡。）
+
+[wait time="0.6"]
+
+princess: （前線也慢慢撤人回來。莉娜的哥哥回來了，少了一條手臂，至少還活著。她撲上去的時候，我只能轉開臉。）
+
+[wait time="0.8"]
+
+# --- 第五個月 ---
+
+princess: （第五個月，密道那頭果然有人來。我們守在出口，把人一網打盡。）
+princess: （外頭的敵軍仍然來了，但他們等不到內應，也等不到城裡自己裂開。）
+
+princess: （第六個月——）
+
+leave princess
+
+# === Day 180 清晨・城牆上 ===
+
+[background arg="res://art/backgrounds/window.png" fade="1.8"]
+[music path="res://audio/bgm/final_truth.ogg" fade="4.0" volume="0.45"]
+
+join princess left
+join loyal_retainer right
+
+loyal_retainer (relieved): 殿下。敵軍主力已經開始撤退，城門守住了。
+
+princess: ……
+
+princess (sad): 父王呢？
+
+loyal_retainer (relieved): 陛下在南門指揮。他讓臣轉告——
+
+loyal_retainer (relieved): 「朕欠你一個道歉。但朕不後悔保護你。只後悔……低估了你。」
+
+[wait time="2.0"]
+
+princess: （城下有人在笑，小孩手裡抓著白麵包。莉娜抱著哥哥在哭，遠處還有修房子的敲打聲。）
+
+[wait time="1.0"]
+
+# === 口頭密令——以宣誓效忠作收束 ===
+
+princess (sad): 賽拉斯。那道密令……
+
+[wait time="0.8"]
+
+princess (determined): 以後，換我來護著你。
+
+[wait time="1.2"]
+
+loyal_retainer: （他沒有立刻回答，只是轉身，鄭重地單膝跪下。）
+
+[wait time="1.0"]
+
+loyal_retainer (tearful): 那道命令……從今天開始，在臣這裡不再作數。
+
+[wait time="0.8"]
+
+loyal_retainer (tearful): 這不是逼您今天坐上王座。這是臣向未來會承擔王國的人，先把劍交出去。
+
+[wait time="0.8"]
+
+loyal_retainer (tearful): 臣賽拉斯，願終生效忠女王陛下。
+
+[wait time="1.5"]
+
+princess: （這一次，不需要誰逼他。）
+
+[wait time="0.4"]
+
+princess (determined): 我收下了。
+
+[wait time="0.6"]
+
+loyal_retainer (relieved): 臣守了您十七年。這是第一次……臣不用再拿劍來守您。
+
+[wait time="1.5"]
+
+princess (default): 太陽出來了。
+
+[wait time="2.5"]
+
+princess: （風裡終於沒有焦味了。）
+
+[wait time="0.6"]
+
+princess (determined): 你們都安全了。
+
+leave princess
+leave loyal_retainer
+
+jump d0_goodend_epilogue
+
+
+label d0_goodend_epilogue
+
+# 最終輪迴：尾聲
+
+[background arg="res://art/backgrounds/darkness.png" fade="2.5"]
+
+[wait time="2.0"]
+
+join princess center
+
+princess: 「一開始，我連粗布衣擦過皮膚都覺得難受。」
+
+[wait time="1.2"]
+
+princess: 「後來，我學會低著頭走進下城。」
+
+[wait time="1.2"]
+
+princess: 「再後來，地道裡那麼黑，我還是得自己把燭火點起來。」
+
+[wait time="1.2"]
+
+princess: 「到最後，我終於學會開口說：我需要你。」
+
+[wait time="2.5"]
+
+princess (determined): 「迴圈困住的從來不只是時間，還有我以為自己只能怎麼活。」
+
+[wait time="2.5"]
+
+princess (default): 「謝謝你陪我走到這裡。」
+
+leave princess
+
+[wait time="3.0"]
+
+[signal arg="true_ending_reached"]
+[signal arg="show_credits"]
+

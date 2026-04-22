@@ -49,9 +49,9 @@ maid (default): 咦？今天是六月十四日呀。
 
 [wait time="1.0"]
 
-princess (confused): （六月十四……那是三個月前。）
-princess: （城破發生在九月。父王死亡、城門淪陷、賽拉斯殺了我，都是三個月後的事。）
-princess (shocked): （我……回到了三個月前？）
+princess (confused): （六月十四……那是城破前約一百八十天。）
+princess: （父王死亡、城門淪陷、賽拉斯殺了我，都是半年後的事。）
+princess (shocked): （我……回到了半年前？）
 
 [wait time="1.0"]
 
@@ -105,7 +105,7 @@ if {a0_silas_checked} == false and {a0_king_checked} == false and {a0_chancellor
 
 - 問父王 [if {a0_king_checked} == false]
     [wait time="0.5"]
-    princess: （去找父王？告訴他城會在三個月後被攻破，還有他最信任的騎士長會殺了我？）
+    princess: （去找父王？告訴他城會在半年後被攻破，還有他最信任的騎士長會殺了我？）
     princess: （父王會保護我嗎？還是會覺得我被噩夢嚇壞了，只是胡言亂語？）
     princess: （我沒有證據，甚至連自己為什麼能回到過去都說不清楚。）
     princess (confused): （如果我貿然開口，可能只會被關起來休息。那樣就什麼都做不了了。）

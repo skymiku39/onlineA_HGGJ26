@@ -1,0 +1,193 @@
+# 調查線 C-1：私下告知達爾 — Day 1
+
+[background arg="res://art/backgrounds/hallway.png" fade="0.9"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.5" volume="0.40"]
+
+[wait time="0.8"]
+
+join princess left
+
+princess: （助手不在。就這幾分鐘。）
+
+[wait time="0.5"]
+
+join dal right
+
+princess: 達爾先生，我有話要說，很短。
+
+dal (wary): ……殿下？
+
+princess: 你的助手，每次你要說到某些節點之前，都會先插話。你注意過嗎？
+
+dal (wary): ……
+
+princess: 每次夜間清場之後，那幾個節點就會再差一點。我對過維護日誌，週期完全對得上。表面上只是外聘維護、例行檢修、追查陣光黯淡，可如果你親自把帳跟技術紀錄對起來，一定看得出不對。
+
+[wait time="1.2"]
+
+dal (wary): ……公主，這些……是從哪裡來的？
+
+princess: 從卷宗、從路線、從你自己帶我看過的現場。不是我在猜，是紀錄和現況對不上。你才是負責人，該由你去核。
+
+[wait time="1.0"]
+
+princess: 不要提我的名字。也不要急著往上報。
+
+[wait time="0.8"]
+
+dal (wary): ……既然看見了，為何不直接往上說？老朽去開這個口，對殿下有什麼不同嗎？
+
+princess: 因為你一開口，他們就知道有人看懂了。
+
+[wait time="1.0"]
+
+dal (default): （他看了我很久。）
+
+dal (default): ……好。
+
+princess: （他會查。可我心裡一點都沒鬆。）
+
+leave princess
+leave dal
+
+# === 隔天 ===
+
+[background arg="res://art/backgrounds/window.png" fade="0.8"]
+[music path="res://audio/bgm/music_box_uneasy.ogg" fade="2.5" volume="0.28"]
+
+[wait time="1.0"]
+
+join princess left
+
+princess: （隔天，達爾沒來。）
+
+princess: （我忍到中午，才讓人隨口去問。）
+
+[wait time="0.6"]
+
+join maid right
+
+maid (default): 達爾先生昨晚好像身體不適，今天沒到崗喔……
+
+leave maid
+
+[wait time="1.0"]
+
+princess: （我什麼都沒說。）
+
+[wait time="0.6"]
+
+- 之後過了好幾天……
+	princess: （達爾和那個助手，像一起從宮裡被抹掉了。）
+	[wait time="0.5"]
+
+princess: （我叫他去查。然後人就沒了。）
+
+[wait time="0.8"]
+
+leave princess
+
+jump c1_gate_framed
+
+
+label c1_gate_framed
+
+# 調查線 C-1：陣區門口止步與軟禁 — Bad End C-1
+
+[background arg="res://art/backgrounds/hallway2.png" fade="0.8"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="2.0" volume="0.35"]
+
+[wait time="0.8"]
+
+join princess left
+
+princess: （達爾不見了。陣還在壞。）
+
+[wait time="0.6"]
+
+princess: （我至少要走到門口。）
+
+[wait time="0.5"]
+
+npc: 公主殿下，陣區暫停對外開放，請您——
+
+princess: 我只是進去看一眼。
+
+npc: 請殿下配合。
+
+[wait time="0.8"]
+
+princess: （衛兵站在那裡很正常。可「暫停進入」這句話，像是專門等我來聽的。）
+
+[wait time="0.6"]
+
+leave princess
+
+# === 敘事翻轉 ===
+
+[background arg="res://art/backgrounds/hallway.png" fade="0.8"]
+[music path="res://audio/bgm/tension_low.ogg" fade="2.0" volume="0.40"]
+
+[wait time="1.0"]
+
+join princess left
+
+princess: （沒多久，宮裡就開始傳新的說法。）
+
+npc: 公主殿下違反陣區管制，意圖干預國防術式，目前正在調查。
+
+[wait time="0.6"]
+
+princess: （我連門都還沒進。）
+
+- 試著解釋
+	princess: 是有人在故意腐蝕魔法陣——
+	princess: （沒人接。）
+- 閉上嘴
+	princess: （說了也沒人會信。）
+
+[wait time="0.8"]
+
+# === 父王的「保護」 ===
+
+[background arg="res://art/backgrounds/window.png" fade="0.8"]
+
+join king center
+
+king: ……你在高塔裡，是朕能護住你的最後辦法。
+
+[wait time="0.5"]
+
+princess: （他不是在演。）
+
+leave king
+
+[wait time="0.8"]
+
+princess: （可被關起來，從來不叫得救。）
+
+[wait time="0.6"]
+
+princess: （茶又送來了。還是那個味道。）
+
+[wait time="1.0"]
+
+[signal arg="cut_to_silence"]
+
+leave princess
+
+# === Bad End C-1 ===
+
+[background arg="res://art/backgrounds/darkness.png" fade="2.8"]
+[wait time="3.0"]
+
+narrator: 提早知道不夠。真正致命的不是名字被揭開，而是對方發現「有人已經知道了」。
+
+[wait time="3.0"]
+
+[signal arg="intel:intel_chancellor_treason"]
+[signal arg="intel:intel_narrative_flip"]
+[signal arg="intel:intel_king_defense_line"]
+[signal arg="death_context:{'death_message': '達爾匿名匯報後隔天身亡。宰相以「意圖干預國防」羅織罪狀，父王軟禁艾蓮娜公主加以「保護」——軟禁後毒茶再現，清除完成。', 'intel_reward': ['intel_chancellor_treason', 'intel_narrative_flip', 'intel_king_defense_line'], 'killer': 'chancellor', 'advance_loop': true, 'next_timeline': '03_loop3_c2_king'}"]
+[signal arg="trigger_death"]
+
