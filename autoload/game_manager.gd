@@ -119,13 +119,13 @@ func get_default_story_timeline_id() -> String:
 
 	match LoopManager.current_phase:
 		LoopManager.LoopPhase.EARLY:
-			return "01_loop1_betrayal_awakening"
+			return "01_loop1_a0_poison"
 		LoopManager.LoopPhase.MID:
-			return "01_loop3_dal_awakening"
+			return "01_loop3_c0_dal"
 		LoopManager.LoopPhase.FINAL:
-			return "01_final_main_awakening"
+			return "01_loop4_d0_final"
 		_:
-			return "01_loop1_betrayal_awakening"
+			return "01_loop1_a0_poison"
 
 
 func _on_timeline_started() -> void:

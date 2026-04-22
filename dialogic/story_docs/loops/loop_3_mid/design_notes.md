@@ -32,15 +32,9 @@
 
 | 檔案 | 內容 | 預估字數 |
 |---|---|---|
-| `01_loop3_dal_awakening.dtl` | 技術線醒來與決定 | 250 字 |
-| `02_loop3_dal_approach.dtl` | 以學生身分接近達爾 | 500 字 |
-| `03_loop3_dal_two_months.dtl` | 兩個月默背與副手觀察 | 600 字 |
-| `04_loop3_dal_workshop.dtl` | 工作室清場 | 500 字 |
-| `05_loop3_warning_warn_dal.dtl` | 提前警告達爾 | 400 字 |
-| `06_loop3_warning_gate_framed.dtl` | 陣區門口被剪成干預 | 400 字 |
-| `07_loop3_king_meet_king.dtl` | C-2 求見父王 | 400 字 |
-| `08_loop3_king_tower.dtl` | 高塔隔離 | 400 字 |
-| `09_loop3_king_final_choice.dtl` | 主動選擇死亡 | 300 字 |
+| `01_loop3_c0_dal.dtl` | C-0：醒來、接近達爾、兩個月默背、工作室清場 | 分支級檔案 |
+| `02_loop3_c1_warning.dtl` | C-1：提前警告達爾、陣區門口被剪成干預 | 分支級檔案 |
+| `03_loop3_c2_king.dtl` | C-2：求見父王、高塔隔離、主動選擇死亡 | 分支級檔案 |
 
 ## 失敗觸發邏輯
 

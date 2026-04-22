@@ -96,7 +96,7 @@
 | `grateful` | `maid_grateful.png` | 佔位，現共用 `maid_portrait.png` | 中 | 被理解、被幫助後的鬆動 |
 | `confused` | `maid_confused.png` | 佔位，現共用 `maid_portrait.png` | 中 | 公主突然變得很不一樣時的疑惑 |
 | `shocked` | `maid_shocked.png` | 佔位，現共用 `maid_portrait.png` | 中 | 被公主點破、局勢失控時 |
-| `sad` | `maid_sad.png` | 待補，timeline 有使用 | 中 | 目前 `06_loop1_ledgers_chancellor_visit.dtl` 有用到 `sad` key，建議補一張或後續統一改為 `tearful` |
+| `sad` | `maid_sad.png` | 待補，timeline 有使用 | 中 | 目前 `01_loop2_b0_maid.dtl` 有用到 `sad` key，建議補一張或後續統一改為 `tearful` |
 
 > 檔名對照提醒：
 > 目前資料夾內已有 `maid_confusion.png`、`maid_cry.png`、`maid_surprise.png`，但這三張名字和程式使用的 key 對不上。正式交圖請優先以 `maid_confused.png`、`maid_tearful.png`、`maid_shocked.png` 為準。
@@ -271,7 +271,7 @@
 | 問題 | 現況 | 建議 |
 |---|---|---|
 | 公主 `confused` | timeline 有用，但 `princess.dch` 沒定義 | 補 `princess_confused.png`，並同步補進 `.dch` |
-| 女僕 `sad` | `01_loop_1/06_loop1_ledgers_chancellor_visit.dtl` 有用，但 `maid.dch` 沒定義 | 補 `maid_sad.png` 或把劇本 key 統一改成 `tearful` |
+| 女僕 `sad` | `02_loop_2/01_loop2_b0_maid.dtl` 有用，但 `maid.dch` 沒定義 | 補 `maid_sad.png` 或把劇本 key 統一改成 `tearful` |
 | 達爾 `sad_smile` | 終章有用，但 `dal.dch` 沒定義 | 補 `dal_sad_smile.png`，並同步補進 `.dch` |
 | 女僕現有檔名不一致 | 現有是 `maid_confusion.png`、`maid_cry.png`、`maid_surprise.png` | 正式交付請改成 `maid_confused.png`、`maid_tearful.png`、`maid_shocked.png` |
 | 國王正式圖未接線 | `king_default.png` 已存在，但 `king.dch` 仍指向 `general_npc.png` | 圖確認後，把 `.dch` 改回 `king_default.png` |

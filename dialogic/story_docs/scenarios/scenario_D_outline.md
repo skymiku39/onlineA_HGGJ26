@@ -14,7 +14,7 @@
 >
 > 核心句：**「換我來保護你了。」**
 
-**實作註記**：終章固定依 `01_final_main_awakening -> 02_final_main_recruit_silas -> 03_final_main_calm_mob -> 04_final_main_dal_briefing -> 05_final_main_expose_chancellor -> 06_final_goodend_dawn -> 07_final_goodend_epilogue` 推進；`04_final_main_dal_briefing.dtl` 內部保留「直接抓宰相」的錯誤選項說明，但不再跳出獨立 bad end timeline。
+**實作註記**：終章固定收束在 `01_loop4_d0_final.dtl`；檔案內部以 label 串起完整主線，並保留「直接抓宰相」的錯誤選項說明，但不再跳出獨立 bad end timeline。
 
 > **角色演出總則（對齊角色卡）**：
 > - **公主**：終章的她不是冷酷版公主，而是說話極其精準、幾乎每句都帶任務的人。她已不再用「求你相信我」的方式說話，而是直接分配時機、風險與責任。
