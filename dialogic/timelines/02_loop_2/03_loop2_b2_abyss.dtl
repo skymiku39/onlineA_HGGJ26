@@ -383,6 +383,8 @@ label passage_death_end
 princess: （他們沒有審問，也沒有廢話。）
 princess: （他們的任務只是維持保密。）
 princess: （劍刃穿透了我的胸口。我倒在冰冷的石板上，血流進了密道的縫隙。）
+princess: （鏽味、濕氣、還有消失在通道裡的腳步聲——這裡所有的聲音，最後聽起來都一樣遠。）
+princess: （可我找到了。）
 
 [background arg="res://art/backgrounds/darkness.png" fade="1.5"]
 

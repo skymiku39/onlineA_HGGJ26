@@ -242,6 +242,7 @@ mob_leader (grieving): 這裡風大，殿下還是早點回去吧。
 [wait time="0.8"]
 
 princess: （他把後半句吞回去了。）
+princess: （那個侍衛站的位置，讓他不能往下說。）
 princess: （但我記住了。）
 
 leave mob_leader

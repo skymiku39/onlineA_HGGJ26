@@ -735,6 +735,197 @@ loyal_retainer (relieved): 臣守了您十七年。這是第一次……臣不�
 
 [wait time="1.5"]
 
+[wait time="1.0"]
+
+princess: （今天還有一個地方要去。）
+
+leave princess
+leave loyal_retainer
+
+[wait time="0.6"]
+
+jump d0_king_meeting
+
+
+label d0_king_meeting
+
+# 最終輪迴：南門・父王 — Day 180 午後
+
+[background arg="res://art/backgrounds/prologue_knight_arrives.png" fade="1.2"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="3.0" volume="0.30"]
+
+[wait time="1.0"]
+
+join princess left
+
+princess: （城門守住了的消息，已經傳遍了整條城牆。）
+princess: （但我沒有直接回寢宮。）
+
+[wait time="0.6"]
+
+princess: （往南門走，不是因為有人叫我去——是因為我知道他在那裡。）
+
+[wait time="0.8"]
+
+[background arg="res://art/backgrounds/prologue_knight_draws_weapon.png" fade="1.0"]
+
+join king right
+
+princess: （他的盔甲還在身上，血跡已經幹了，顏色像鏽。）
+princess: （他聽見腳步聲轉過身，看見是我，沉默了一下，才點了頭。）
+
+[wait time="0.8"]
+
+king: 你來了。
+
+princess: （他沒有叫我「女兒」，也沒有先說謝謝。）
+princess: （只說「你來了」，好像他在這裡等了很久。）
+
+[wait time="0.8"]
+
+king: 賽拉斯轉告了朕說的話。
+
+princess: 我聽到了。
+
+king: 那不夠。
+
+[wait time="0.8"]
+
+princess: （他轉向我。不是朝著城外——是朝著我這一邊。）
+
+[wait time="0.6"]
+
+king: 你在朝堂說的每一件事，都是對的。
+
+[wait time="0.6"]
+
+king: 但朕當時沒有護住你。
+
+[wait time="0.6"]
+
+king: 那個下令把你帶走的人，是朕。
+
+[wait time="1.0"]
+
+princess: 我知道。
+
+[wait time="0.8"]
+
+king: ……還有那道密令。
+
+[wait time="0.6"]
+
+princess: 那個我也知道。
+
+[wait time="0.8"]
+
+king: 朕下那道命令的時候，以為是在保護你。
+
+[wait time="0.6"]
+
+princess (sad): 我知道父王為什麼下那道令。
+
+[wait time="0.5"]
+
+princess (sad): 只是花了很長的時間，才把「知道為什麼」和「原諒」分開。
+
+[wait time="1.8"]
+
+king: ……你現在原諒了嗎？
+
+[wait time="1.0"]
+
+princess: （我沉默了一會兒。）
+
+princess (determined): 先說父王要說的事。
+
+[wait time="1.2"]
+
+king: ……
+
+[wait time="0.8"]
+
+king: 這次守住城的，不是朕。
+
+[wait time="0.6"]
+
+king: 朕守了你十七年，最後——是你守了這裡所有的人。
+
+[wait time="1.2"]
+
+princess: （他沒有試圖拿「父女合力」來美化它。）
+princess: （他只是說，就是你。）
+
+[wait time="0.8"]
+
+king: 你願意繼承這個位置嗎？
+
+[wait time="1.0"]
+
+princess: （他沒有說「等局勢穩了再談」，也沒有說「以後的事以後再說」。）
+princess: （他直接問了。）
+
+[wait time="0.8"]
+
+princess (determined): 願意。
+
+[wait time="1.0"]
+
+king: （他把腰帶上的玉璽取下來，放到我手中。）
+
+[wait time="0.8"]
+
+king: 正式詔書，等城修好之後再宣。
+king: 但從今天起，王女之位，朕屬你。
+
+[wait time="1.5"]
+
+princess: （那枚玉璽，比想像中重。）
+princess: （重的不是玉，是十七年，是那道密令，是朝堂上那個沒說完的句子。）
+
+[wait time="1.0"]
+
+princess (determined): 謝謝父王。
+
+[wait time="1.0"]
+
+king: 朕不是個好父親。
+
+[wait time="0.8"]
+
+princess (sad): 不是。是個太害怕的父親。
+
+[wait time="1.5"]
+
+king: （他沒有否認。只是點了一下頭。）
+
+[wait time="0.8"]
+
+king: ……是。
+
+[wait time="2.0"]
+
+leave king
+
+[wait time="0.6"]
+
+princess: （我沒有多說，轉身往城牆上走。）
+princess: （背後，父王還站在南門垛口，面朝外。）
+princess: （他守了這座城，守了我很久。也許，這就是他所知道的守護。）
+
+[wait time="1.0"]
+
+leave princess
+
+[wait time="0.8"]
+
+[background arg="res://art/backgrounds/window.png" fade="1.5"]
+[music path="res://audio/bgm/final_truth.ogg" fade="4.0" volume="0.45"]
+
+join princess left
+
+[wait time="1.5"]
+
 princess (default): 太陽出來了。
 
 [wait time="2.5"]
@@ -746,7 +937,8 @@ princess: （風裡終於沒有焦味了。）
 princess (determined): 你們都安全了。
 
 leave princess
-leave loyal_retainer
+
+[wait time="3.0"]
 
 jump d0_goodend_epilogue
 
