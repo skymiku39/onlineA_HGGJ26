@@ -198,7 +198,8 @@ princess: （她嘴裡說的，和她真正做的，不一樣。）
 label city_after_people
 - 再回頭想那些帳本
     princess: （眼前這些人一擺出來，那些紙上的數字就更像假的了。）
-    princess: （帳本可以偽造，飢餓的眼神卻偽造不了。）
+    princess: （這些苦難……都是真的。）
+princess: （宰相沒有捏造貧窮，但他改掉了答案。）
     jump lower_city_walk
 
 label city_after_ledgers
@@ -402,12 +403,14 @@ princess (determined): （但她三次阻止這杯毒茶……她的良心還在
 
 [wait time="0.8"]
 
-princess (sad): 沒關係的。
-princess (sad): 希望他不會為難你。
+princess (sad): 沒事的。
+
+princess: （我低頭看著那杯茶。）
+princess: （……再多說什麼也沒用了。）
 
 [wait time="0.8"]
 
-princess: （我端起茶杯，仰頭一飲而盡。）
+princess: （我端起茶杯，一口喝下去。）
 
 maid (crying): 殿下——！！
 
