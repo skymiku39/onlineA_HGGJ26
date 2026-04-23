@@ -21,7 +21,16 @@
 &"portraits": {
 "angry": {
 "export_overrides": {
-"image": "res://art/characters/princess_angry.png"
+"image": "res://art/characters/princess_mad.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"avoid": {
+"export_overrides": {
+"image": "res://art/characters/princess_avoid.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -46,9 +55,18 @@
 "scale": 1.0,
 "scene": ""
 },
+"cry": {
+"export_overrides": {
+"image": "res://art/characters/princess_cry.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
 "default": {
 "export_overrides": {
-"image": "res://art/characters/princess_portrait.png"
+"image": "res://art/characters/princess_default_01.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -57,7 +75,16 @@
 },
 "determined": {
 "export_overrides": {
-"image": "res://art/characters/princess_determined.png"
+"image": "res://art/characters/princess_cold_02.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"disguised": {
+"export_overrides": {
+"image": "res://art/characters/princess_disguised.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -66,7 +93,7 @@
 },
 "hollow": {
 "export_overrides": {
-"image": "res://art/characters/princess_sad.png"
+"image": "res://art/characters/princess_hollow.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -98,7 +125,7 @@
 },
 "shocked": {
 "export_overrides": {
-"image": "res://art/characters/princess_shocked.png"
+"image": "res://art/characters/princess_confused.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),

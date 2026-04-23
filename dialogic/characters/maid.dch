@@ -21,7 +21,7 @@
 &"portraits": {
 "confused": {
 "export_overrides": {
-"image": "res://art/characters/maid_portrait.png"
+"image": "res://art/characters/maid_confused.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -30,7 +30,7 @@
 },
 "crying": {
 "export_overrides": {
-"image": "res://art/characters/maid_portrait.png"
+"image": "res://art/characters/maid_tearful.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -39,7 +39,7 @@
 },
 "default": {
 "export_overrides": {
-"image": "res://art/characters/maid_portrait.png"
+"image": "res://art/characters/maid_default.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -48,7 +48,7 @@
 },
 "forced_smile": {
 "export_overrides": {
-"image": "res://art/characters/maid_portrait.png"
+"image": "res://art/characters/maid_forced_smile.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -57,7 +57,25 @@
 },
 "grateful": {
 "export_overrides": {
-"image": "res://art/characters/maid_portrait.png"
+"image": "res://art/characters/maid_grateful.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"mop": {
+"export_overrides": {
+"image": "res://art/characters/maid_mop.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"shocked": {
+"export_overrides": {
+"image": "res://art/characters/maid_shocked.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),

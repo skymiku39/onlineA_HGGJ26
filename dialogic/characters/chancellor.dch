@@ -21,7 +21,7 @@
 &"portraits": {
 "cold": {
 "export_overrides": {
-"image": "res://art/characters/chancellor_cold.png"
+"image": "res://art/characters/chancellor_determined_01.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -30,7 +30,7 @@
 },
 "concerned": {
 "export_overrides": {
-"image": "res://art/characters/chancellor_default.png"
+"image": "res://art/characters/chancellor_concerned.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -46,9 +46,45 @@
 "scale": 1.0,
 "scene": ""
 },
+"determined": {
+"export_overrides": {
+"image": "res://art/characters/chancellor_determined_02.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"relieved": {
+"export_overrides": {
+"image": "res://art/characters/chancellor_relieved_02.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"sad": {
+"export_overrides": {
+"image": "res://art/characters/chancellor_sad.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"serious": {
+"export_overrides": {
+"image": "res://art/characters/chancellor_serious.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
 "smile": {
 "export_overrides": {
-"image": "res://art/characters/chancellor_default.png"
+"image": "res://art/characters/chancellor_relieved.png"
 },
 "mirror": false,
 "offset": Vector2(0, 0),
