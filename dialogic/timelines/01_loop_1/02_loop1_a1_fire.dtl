@@ -315,8 +315,27 @@ princess: （侍從低著頭說不知道，士兵說沒有命令不能回答。�
 
 [wait time="0.8"]
 
-princess: （時間變得漫長而煎熬。）
-princess: （直到某天夜晚——）
+- 試著硬闖出去找父王
+    princess: （我不能這樣等下去。）
+    princess: （我強行走出門口，侍衛伸手攔住了我。）
+    [wait time="0.5"]
+    princess: 我要見父王。
+    princess: （他們沒有回答，只是把我重新推進了房間。）
+    [wait time="0.8"]
+    princess: （第二天，我房間裡多了一杯茶。）
+    princess: （蜂蜜、玫瑰、苦澀。）
+    princess (shocked): （他知道我動了。）
+    [wait time="0.8"]
+    princess (shocked): （我只是動了一下……他怎麼這麼快就知道了？）
+    [background arg="res://art/backgrounds/darkness.png" fade="1.5"]
+    [wait time="1.5"]
+    [signal arg="intel:intel_chancellor_surveillance"]
+    [signal arg="death_context:{'death_message': '你試著強行衝出軟禁，換來了提前送達的毒茶。你不知道他是怎麼知道的，只知道他知道了。', 'intel_reward': ['intel_chancellor_surveillance'], 'killer': 'chancellor_remote', 'advance_loop': true, 'next_timeline': '03_loop1_a2_throne'}"]
+    [signal arg="trigger_death"]
+
+- 繼續忍耐，等待時機
+    princess: （時間變得漫長而煎熬。）
+    princess: （直到某天夜晚——）
 
 [wait time="1.2"]
 

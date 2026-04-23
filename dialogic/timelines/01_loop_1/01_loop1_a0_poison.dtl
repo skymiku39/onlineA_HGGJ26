@@ -128,6 +128,35 @@ label final_choice
     leave maid
     jump chancellor_study
 
+- 先去找父王
+    [wait time="0.6"]
+    princess: （可是……如果我告訴父王，他一定會相信我的。一定的。）
+    leave maid
+    jump king_early_a0
+
+# === 找父王：被轉回宰相 ===
+label king_early_a0
+
+[background arg="res://art/backgrounds/hallway.png" fade="1.0"]
+[wait time="0.8"]
+
+princess: （我在走廊等到父王從書房出來。）
+
+join king right
+
+princess (sad): 父王……我昨晚做了一個很可怕的夢。城破了，大家都不在了……
+king: 艾蓮娜，只是噩夢，不必放在心上。
+princess (sad): 可是感覺太真實了……我很害怕……
+king: 去找宰相大人說說話吧，他有耐心。父王現在沒空。
+
+[wait time="0.8"]
+
+princess: （就這樣。）
+princess: （他連我真正在害怕什麼都不知道，就把我轉去了宰相那裡。）
+
+leave king
+jump chancellor_study
+
 # === 宰相書房 ===
 label chancellor_study
 

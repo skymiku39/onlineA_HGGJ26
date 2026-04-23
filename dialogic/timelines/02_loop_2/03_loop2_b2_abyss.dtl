@@ -351,18 +351,32 @@ princess: （他們沒有任何徽記，眼神冰冷得像死人。）
 
 [wait time="0.6"]
 
-princess (shocked): 等——
+- 開口喊「我是公主——」
+    princess (shocked): 我是公主——
+    [wait time="0.4"]
+    princess: （話還沒說完。）
+    [signal arg="cut_to_silence"]
+    [wait time="0.5"]
+    [sound path="res://audio/sfx/sword_stab_short.ogg" bus="SFX"]
+    [signal arg="camera_shake"]
+    [wait time="0.5"]
+    princess: （他們聽見了。知道了。）
+    princess: （正因為知道，才更不能讓我活著走出去。）
+    jump passage_death_end
 
-[wait time="0.3"]
+- 轉身往出口跑
+    princess: （我把腳步聲留在密道裡，轉身往原路跑。）
+    [wait time="0.6"]
+    [sound path="res://audio/sfx/armor_approach_heavy.ogg" bus="SFX"]
+    princess: （追上來的速度，比我快得多。）
+    [signal arg="cut_to_silence"]
+    [sound path="res://audio/sfx/sword_stab_short.ogg" bus="SFX"]
+    [signal arg="camera_shake"]
+    [wait time="0.5"]
+    princess: （被拖回去的時候，我只想到：密道的出口，我沒有記住。）
+    jump passage_death_end
 
-princess: （我連一句話都還沒說出口。）
-
-[signal arg="cut_to_silence"]
-
-[wait time="0.8"]
-
-[sound path="res://audio/sfx/sword_stab_short.ogg" bus="SFX"]
-[signal arg="camera_shake"]
+label passage_death_end
 
 [wait time="0.5"]
 

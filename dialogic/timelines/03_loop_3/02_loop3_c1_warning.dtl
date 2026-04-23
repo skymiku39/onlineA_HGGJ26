@@ -172,9 +172,34 @@ princess: （茶又送來了。還是那個味道。）
 
 [wait time="1.0"]
 
-[signal arg="cut_to_silence"]
+- 試著奪門衝出去
+    princess: （達爾死了。敘事被翻轉了。父王把我關在這裡「保護」我。）
+    princess: （等著被處理，還是先動？）
+    princess: （我把茶推開，衝向門口——）
+    [wait time="0.5"]
+    [signal arg="camera_shake"]
+    princess: （門外有兩個衛兵。）
+    princess: （我連第一步都還沒踏出去。）
+    [wait time="0.8"]
+    princess: （他們把我押回椅子上。過了一會兒，侍從送來了新的一杯茶。）
+    princess (shocked): （還是那個味道。）
+    [wait time="0.8"]
+    princess: （這次，我沒有辦法拒絕了。）
+    [signal arg="cut_to_silence"]
+    leave princess
+    [background arg="res://art/backgrounds/darkness.png" fade="2.8"]
+    [wait time="3.0"]
+    narrator: 父王相信她。可相信只讓她進了塔。塔外的門，在她奔向門口的那一刻就已經是對方的手了。
+    [wait time="3.0"]
+    [signal arg="intel:intel_chancellor_treason"]
+    [signal arg="intel:intel_narrative_flip"]
+    [signal arg="intel:intel_king_defense_line"]
+    [signal arg="death_context:{'death_message': '你試著衝出高塔，卻被衛兵壓回。父王的「保護」連逃跑的路也一起封死了。', 'intel_reward': ['intel_chancellor_treason', 'intel_narrative_flip', 'intel_king_defense_line'], 'killer': 'chancellor', 'advance_loop': true, 'next_timeline': '03_loop3_c2_king'}"]
+    [signal arg="trigger_death"]
 
-leave princess
+- 沉默坐著等
+    [signal arg="cut_to_silence"]
+    leave princess
 
 # === Bad End C-1 ===
 

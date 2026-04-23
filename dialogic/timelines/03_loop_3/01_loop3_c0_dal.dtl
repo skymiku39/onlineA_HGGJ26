@@ -363,6 +363,28 @@ princess: （蜂蜜、玫瑰，還有那點淡淡的苦澀——是那個熟悉�
 	princess: （但我還是晚了一步。）
 - 伸手去攔
 	princess: （我手才抬起來，他就已經喝下去了。）
+- 搶先把那杯茶拿來喝下
+	princess: （毒先在我身上——達爾還有幾秒鐘。）
+	princess: （我把那杯茶搶到手，仰頭喝了。）
+	[wait time="0.6"]
+	dal (wary): ……殿下——
+	[wait time="0.8"]
+	princess: （達爾站了起來。助手的表情僵了一下，然後迅速調整。）
+	princess: （他伸手進袖子。視線已經開始模糊了。）
+	princess (shocked): （達爾，快——跑……）
+	[signal arg="camera_shake"]
+	[sound path="res://audio/sfx/sword_stab_short.ogg" bus="SFX"]
+	[wait time="0.5"]
+	princess: （達爾的聲音被什麼截斷了。）
+	princess: （我拼命把視線固定在他身上，卻已經站不住了。）
+	[background arg="res://art/backgrounds/darkness.png" fade="1.5"]
+	[wait time="2.0"]
+	[signal arg="intel:intel_magic_array_mnemonic"]
+	[signal arg="intel:intel_array_handed_clerk"]
+	[signal arg="intel:intel_array_structural_passage"]
+	[signal arg="intel:intel_chancellor_treason"]
+	[signal arg="death_context:{'death_message': '你搶先喝下那杯茶，試圖爭取幾秒鐘。達爾看見了。助手仍然動了手。最後你們兩個人都沒能出去。', 'intel_reward': ['intel_magic_array_mnemonic', 'intel_array_handed_clerk', 'intel_array_structural_passage', 'intel_chancellor_treason'], 'killer': 'clerk', 'advance_loop': true, 'next_timeline': '02_loop3_c1_warning'}"]
+	[signal arg="trigger_death"]
 
 [wait time="1.0"]
 

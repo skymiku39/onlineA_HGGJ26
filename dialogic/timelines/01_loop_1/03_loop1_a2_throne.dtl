@@ -334,56 +334,54 @@ princess: （父王不是不愛我。可他的保護像一座厚重的牆，擋�
 
 princess: （過了好一會兒，我感到口乾舌燥。）
 princess: （桌上的茶已經不再冒熱氣。）
-princess: （我沒有多想，端起杯子喝了一口。）
 
-[wait time="1.2"]
+[wait time="0.6"]
 
-[signal arg="camera_shake"]
+- 把茶倒掉，繼續等
+    princess: （我盯著那杯茶。）
+    princess: （那個氣味……我記得。宰相說過「不要怪臣」。）
+    princess: （可如果不是茶呢？）
+    princess: （我把茶倒進了牆角的花盆裡，然後在椅子上坐了下來。）
+    [wait time="1.2"]
+    princess: （到了傍晚，侍從送來了晚餐。）
+    princess: （我端起碗喝了一口湯——）
+    [wait time="0.8"]
+    [signal arg="camera_shake"]
+    princess (shocked): ……！
+    princess: （蜂蜜的甜、玫瑰的香、說不清楚的苦澀。）
+    princess (shocked): （不只是茶……對吧。）
+    [background arg="res://art/backgrounds/darkness.png" fade="1.5"]
+    [wait time="0.8"]
+    princess: （我避開了茶。他只是換了容器。）
+    [wait time="2.0"]
+    [signal arg="intel:intel_chancellor_poison"]
+    [signal arg="intel:intel_poison_not_just_tea"]
+    [signal arg="death_context:{'death_message': '你識破了那杯茶，卻沒有逃過晚餐的湯。宰相的毒不限於茶，也不限於他在場。', 'intel_reward': ['intel_chancellor_poison', 'intel_poison_not_just_tea'], 'killer': 'chancellor_remote', 'advance_loop': true, 'next_timeline': '01_loop2_b0_maid'}"]
+    [signal arg="trigger_death"]
 
-princess (shocked): ……！
-
-[wait time="0.5"]
-
-princess: （先是蜂蜜的甜味。）
-princess: （接著是玫瑰的香氣。）
-princess: （最後是那一點點說不清楚的苦澀。）
-
-[wait time="0.8"]
-
-princess (shocked): （這是……宰相書房裡的那杯茶？）
-
-[sound path="res://audio/sfx/glass_break.ogg" bus="SFX"]
-
-[wait time="0.5"]
-
-princess: （茶杯再次從我手中滑落。）
-princess: （碎裂聲在小房間裡炸開，和第一次死亡時一模一樣。）
-
-[wait time="0.8"]
-
-princess: （視線開始模糊，那種熟悉的冰冷感再次爬上心頭。）
-princess: （我明白了。）
-
-[wait time="0.8"]
-
-princess: （他根本不需要在場。）
-princess: （他只需要讓這杯茶，出現在正確的地方。）
-
-[wait time="1.0"]
-
-princess: （傾頹的王座……）
-princess: （父王的保護，在宰相的手段面前，竟然如此蒼白無力。）
-
-[wait time="0.8"]
-
-princess: （我確認了。）
-princess: （宰相就是敵人，而他殺人的手段，防不勝防。）
-
-[background arg="res://art/backgrounds/darkness.png" fade="1.5"]
-
-[wait time="2.0"]
-
-# === 死亡結算 ===
-[signal arg="intel:intel_chancellor_poison"]
-[signal arg="death_context:{'death_message': '你孤注一擲向父王攤牌，卻被當作胡鬧軟禁。那杯熟悉的毒茶告訴你：權力中心早已被滲透。', 'intel_reward': ['intel_chancellor_poison'], 'killer': 'chancellor_remote', 'advance_loop': true, 'next_timeline': '01_loop2_b0_maid'}"]
-[signal arg="trigger_death"]
+- 沒有多想，端起來喝了一口
+    princess: （我沒有多想，端起杯子喝了一口。）
+    [wait time="1.2"]
+    [signal arg="camera_shake"]
+    princess (shocked): ……！
+    [wait time="0.5"]
+    princess: （先是蜂蜜的甜味。）
+    princess: （接著是玫瑰的香氣。）
+    princess: （最後是那一點點說不清楚的苦澀。）
+    [wait time="0.8"]
+    princess (shocked): （這是……宰相書房裡的那杯茶？）
+    [sound path="res://audio/sfx/glass_break.ogg" bus="SFX"]
+    [wait time="0.5"]
+    princess: （茶杯再次從我手中滑落。）
+    princess: （碎裂聲在小房間裡炸開，和第一次死亡時一模一樣。）
+    [wait time="0.8"]
+    princess: （他根本不需要在場。）
+    princess: （他只需要讓這杯茶，出現在正確的地方。）
+    [wait time="1.0"]
+    princess: （傾頹的王座……）
+    princess: （父王的保護，在宰相的手段面前，竟然如此蒼白無力。）
+    [background arg="res://art/backgrounds/darkness.png" fade="1.5"]
+    [wait time="2.0"]
+    [signal arg="intel:intel_chancellor_poison"]
+    [signal arg="death_context:{'death_message': '你孤注一擲向父王攤牌，卻被當作胡鬧軟禁。那杯熟悉的毒茶告訴你：權力中心早已被滲透。', 'intel_reward': ['intel_chancellor_poison'], 'killer': 'chancellor_remote', 'advance_loop': true, 'next_timeline': '01_loop2_b0_maid'}"]
+    [signal arg="trigger_death"]

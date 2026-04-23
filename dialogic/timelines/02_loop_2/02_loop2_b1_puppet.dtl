@@ -452,15 +452,39 @@ princess: （但我鎖定了城防的死穴。）
 
 [wait time="0.8"]
 
-princess: （我端起茶杯。）
+- 把茶推到一旁，假裝不渴
+    princess (default): 謝謝莉娜，先放著，等一下再喝。
+    [wait time="0.5"]
+    maid (forced_smile): 殿下……真的不渴嗎？這茶涼掉就不好喝了……
+    [wait time="0.5"]
+    princess (default): 不急。
+    [wait time="0.8"]
+    princess: （她沒再說話，可手還扶著托盤，像不知道要不要把茶拿走。）
+    princess: （她把地圖捲走之後，沒有馬上離開。）
+    [wait time="0.8"]
+    princess: （一個時辰後，侍從送來了晚餐。）
+    princess: （我看著碗，看著湯裡浮著的幾片葉子，沒有動。）
+    [wait time="0.6"]
+    princess: （第二天早上，莉娜換了個說辭，端著點心進來。）
+    princess: （那個味道，我閉著眼睛都認得出來。）
+    princess (sad): （他的網不只是茶。他的網，是我這一天裡所有能入口的東西。）
+    [background arg="res://art/backgrounds/darkness.png" fade="1.5"]
+    [wait time="1.5"]
+    [signal arg="intel:intel_mob_manipulation"]
+    [signal arg="intel:intel_bruno_wife_death"]
+    [signal arg="intel:intel_lower_city_route"]
+    [signal arg="intel:intel_dal_magic_basics"]
+    [signal arg="intel:intel_poison_not_just_tea"]
+    [signal arg="death_context:{'death_message': '你識破了那杯茶，卻沒能識破第二天早上的點心。宰相的毒從不只走一條路。', 'intel_reward': ['intel_mob_manipulation', 'intel_bruno_wife_death', 'intel_lower_city_route', 'intel_dal_magic_basics', 'intel_poison_not_just_tea'], 'killer': 'chancellor_remote', 'advance_loop': true, 'next_timeline': '03_loop2_b2_abyss'}"]
+    [signal arg="trigger_death"]
 
-[sound path="res://audio/sfx/glass_break.ogg" bus="SFX"]
-[signal arg="camera_shake"]
-
-[wait time="0.6"]
-
-princess: （茶杯碎裂，毒藥在我體內發作。）
-princess: （我在莉娜不知情的笑容中閉上了眼睛。）
+- 端起茶杯
+    princess: （我端起茶杯。）
+    [sound path="res://audio/sfx/glass_break.ogg" bus="SFX"]
+    [signal arg="camera_shake"]
+    [wait time="0.6"]
+    princess: （茶杯碎裂，毒藥在我體內發作。）
+    princess: （我在莉娜不知情的笑容中閉上了眼睛。）
 
 [background arg="res://art/backgrounds/darkness.png" fade="1.5"]
 
