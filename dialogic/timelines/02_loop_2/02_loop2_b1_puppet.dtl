@@ -36,7 +36,7 @@ maid (default): 宰相大人今天一早派人送來了這條項鍊——
 
 [wait time="0.4"]
 
-princess (smiling): 幫我戴上吧。
+princess (default): 幫我戴上吧。
 
 [wait time="0.5"]
 
@@ -93,31 +93,31 @@ label ask_chancellor
 
 join chancellor right
 
-chancellor (smiling): 殿下，您今天真是光彩照人。這條項鍊非常適合您。
+chancellor (default): 殿下，您今天真是光彩照人。這條項鍊非常適合您。
 
 [wait time="0.5"]
 
 princess: （他的視線在我的頸部滿意地停留了一瞬，才抬頭看我。）
 
-princess (smiling): 宰相大人，早安。
+princess (default): 宰相大人，早安。
 princess (sad): 我昨晚做了一個夢。
 
 [wait time="0.5"]
 
-chancellor (serious): 夢？
+chancellor (concerned): 夢？
 
 princess (sad): 夢到下城區的人過得很辛苦。
 princess (sad): 我知道父王和大人都很忙，可我一直被保護在城堡裡，什麼都看不見。
 
 [wait time="0.6"]
 
-princess (smiling): 您以前說過，治理國家不能只看紙上的數字。
-princess (smiling): 我想親眼去看看，也想帶點物資給他們。
+princess (default): 您以前說過，治理國家不能只看紙上的數字。
+princess (default): 我想親眼去看看，也想帶點物資給他們。
 
 [wait time="0.8"]
 
-chancellor (serious): 殿下真是仁慈。
-chancellor (serious): 但下城區最近治安不太好，臣擔心您的安危。
+chancellor (concerned): 殿下真是仁慈。
+chancellor (concerned): 但下城區最近治安不太好，臣擔心您的安危。
 
 [wait time="0.5"]
 
@@ -131,15 +131,15 @@ princess: （我知道，他正等著我這麼說。）
 
 [wait time="0.6"]
 
-chancellor (smiling): 既然殿下堅持，臣會為您安排最安全的路線。
-chancellor (smiling): 明日清晨，臣派人護送您。
+chancellor (default): 既然殿下堅持，臣會為您安排最安全的路線。
+chancellor (default): 明日清晨，臣派人護送您。
 
 [wait time="0.8"]
 
 princess: （答得太快了。）
 princess: （但我不能露出懷疑，只能讓自己的笑容更柔順一點。）
 
-princess (smiling): 謝謝您，宰相大人。
+princess (default): 謝謝您，宰相大人。
 
 leave chancellor
 leave princess
@@ -206,8 +206,8 @@ princess: （爐火熱得嚇人，走出來的男人比火還硬。）
 
 join mob_leader right
 
-mob_leader (sad): 殿下……多謝您來看我們。
-mob_leader (sad): 也替我們謝過宰相大人。
+mob_leader (grieving): 殿下……多謝您來看我們。
+mob_leader (grieving): 也替我們謝過宰相大人。
 
 [wait time="0.5"]
 
@@ -217,21 +217,21 @@ princess (sad): 你最近過得好嗎？
 
 [wait time="0.6"]
 
-mob_leader (sad): 我的妻子……病死了。
-mob_leader (sad): 本來只要一帖退燒藥……但徵糧隊把草藥都帶走了。
+mob_leader (grieving): 我的妻子……病死了。
+mob_leader (grieving): 本來只要一帖退燒藥……但徵糧隊把草藥都帶走了。
 
 [wait time="0.8"]
 
 princess: （他握緊了拳頭，聲音裡帶著強壓的火氣。）
 
-mob_leader (sad): 要不是——
+mob_leader (grieving): 要不是——
 
 [wait time="0.5"]
 
 princess: （他突然看了一眼侍衛，把剩下的話吞了回去。）
 
-mob_leader (sad): ……算了。
-mob_leader (sad): 這裡風大，殿下還是早點回去吧。
+mob_leader (grieving): ……算了。
+mob_leader (grieving): 這裡風大，殿下還是早點回去吧。
 
 [wait time="0.8"]
 
@@ -349,8 +349,8 @@ princess: （我照規矩遞牌子去見達爾。）
 
 dal (default): 殿下對術式有興趣？
 
-princess (smiling): 我想多懂一些。
-princess (smiling): 至少別再只會站著聽別人講。
+princess (default): 我想多懂一些。
+princess (default): 至少別再只會站著聽別人講。
 
 [wait time="0.6"]
 
@@ -398,8 +398,8 @@ princess: 我在研究賑災時物資怎麼走比較快。
 
 [wait time="0.5"]
 
-maid (smiling): 哎呀，殿下最近真的好用功喔！
-maid (smiling): 莉娜幫您找找看！
+maid (default): 哎呀，殿下最近真的好用功喔！
+maid (default): 莉娜幫您找找看！
 
 [wait time="0.8"]
 

@@ -247,7 +247,7 @@ join chancellor right
 
 [wait time="0.5"]
 
-chancellor (smiling): 殿下，下午好。您今天的心情看起來不錯。
+chancellor (default): 殿下，下午好。您今天的心情看起來不錯。
 
 [wait time="0.5"]
 
@@ -258,7 +258,7 @@ princess (sad): ……只是出來走走。
 
 [wait time="0.4"]
 
-chancellor (smiling): 那條項鍊不合您的心意嗎？
+chancellor (default): 那條項鍊不合您的心意嗎？
 
 [wait time="0.6"]
 
@@ -269,8 +269,8 @@ princess (sad): 不太合適。
 
 [wait time="0.5"]
 
-chancellor (smiling): 原來如此，看來是老臣的眼光跟不上年輕人了。
-chancellor (smiling): 下次會為您挑選更合適的。
+chancellor (default): 原來如此，看來是老臣的眼光跟不上年輕人了。
+chancellor (default): 下次會為您挑選更合適的。
 
 [wait time="0.8"]
 

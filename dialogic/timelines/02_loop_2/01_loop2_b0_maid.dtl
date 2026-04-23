@@ -115,8 +115,8 @@ princess (determined): 莉娜，我想去下城區看看。你帶我去好不好
 
 [wait time="0.5"]
 
-maid (shocked): 咦？！下城區？
-maid (shocked): 殿下，那裡又髒又亂，而且最近很危險，絕對不行的！
+maid (confused): 咦？！下城區？
+maid (confused): 殿下，那裡又髒又亂，而且最近很危險，絕對不行的！
 
 [wait time="0.5"]
 
@@ -135,7 +135,7 @@ princess (determined): 我換上普通的衣服，不會有人認出來。我們
 
 [wait time="0.8"]
 
-maid (sad): 殿下，真的不行……
+maid (crying): 殿下，真的不行……
 
 [wait time="0.5"]
 
@@ -153,8 +153,8 @@ princess: （那一瞬間，她的眼神空了一下，像是剛剛聽見的不�
 
 [wait time="0.6"]
 
-maid (sad): ……我明白了。
-maid (sad): 殿下既然堅持，那……請跟我來吧。
+maid (crying): ……我明白了。
+maid (crying): 殿下既然堅持，那……請跟我來吧。
 
 [wait time="0.8"]
 
@@ -174,7 +174,7 @@ princess: （越往下走，空氣越沉。王宮裡的花香被甩在身後，�
 
 [wait time="0.8"]
 
-maid (tearful): 殿下，我們真的只看一眼就回去，好不好？
+maid (crying): 殿下，我們真的只看一眼就回去，好不好？
 
 [wait time="0.5"]
 
@@ -217,8 +217,8 @@ princess: （甚至比他在書房裡描述的還要慘烈百倍。）
 
 [wait time="0.8"]
 
-maid (tearful): 殿下，我們已經看過了……我們回去好不好？
-maid (tearful): 求求您，我們快點回城堡吧……
+maid (crying): 殿下，我們已經看過了……我們回去好不好？
+maid (crying): 求求您，我們快點回城堡吧……
 
 [wait time="0.7"]
 
@@ -241,7 +241,7 @@ princess: （我們現在只走了一半。我要繼續往前，還是聽她的�
 label return_to_castle
 
 princess (sad): ……好吧。我們回去。
-maid (relieved): 謝謝殿下！謝謝殿下！
+maid (grateful): 謝謝殿下！謝謝殿下！
 
 [wait time="0.8"]
 
@@ -323,7 +323,7 @@ princess (determined): 我要去你家看看。我想親眼看看你們平時是
 
 [wait time="0.5"]
 
-maid (tearful): 殿下……不……
+maid (crying): 殿下……不……
 
 [wait time="0.6"]
 
@@ -341,7 +341,7 @@ princess: （那是一間破舊的木屋，門縫漏風，桌腳墊著舊布，�
 
 [wait time="0.8"]
 
-maid (sad): 殿下先坐……莉娜去幫您泡茶。
+maid (forced_smile): 殿下先坐……莉娜去幫您泡茶。
 
 [wait time="0.8"]
 
@@ -369,8 +369,8 @@ princess: （她的手抖得連茶水都灑了出來。）
 
 [wait time="0.8"]
 
-maid (tearful): 殿下……
-maid (tearful): 這茶的味道感覺不太對……我們還是不要喝了，好不好？
+maid (crying): 殿下……
+maid (crying): 這茶的味道感覺不太對……我們還是不要喝了，好不好？
 
 [wait time="0.8"]
 
@@ -384,8 +384,8 @@ princess (sad): 莉娜。是宰相嗎？
 
 [wait time="0.8"]
 
-maid (shocked): ……！
-maid (shocked): 殿、殿下……
+maid (confused): ……！
+maid (confused): 殿、殿下……
 
 [wait time="0.6"]
 
@@ -407,7 +407,7 @@ princess (sad): 希望他不會為難你。
 
 princess: （我端起茶杯，仰頭一飲而盡。）
 
-maid (tearful): 殿下——！！
+maid (crying): 殿下——！！
 
 [signal arg="camera_shake"]
 

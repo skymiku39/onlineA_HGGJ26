@@ -139,19 +139,19 @@ label chancellor_study
 
 join chancellor right
 
-chancellor (smiling): 哎呀，殿下。您今天氣色看起來不太好，是昨晚沒睡好嗎？
+chancellor (default): 哎呀，殿下。您今天氣色看起來不太好，是昨晚沒睡好嗎？
 
 [wait time="0.5"]
 
 princess: （他仍然用那種溫和的聲音叫我。光是聽見這個聲音，我緊繃的肩膀就稍微放鬆了一點。）
 princess (sad): 宰相大人……我做了一個很可怕的夢。
 
-chancellor (smiling): 夢？
+chancellor (default): 夢？
 princess (sad): 我夢到城破了，父王死了，大家都不在了……我也死了。
 
 [wait time="1.0"]
 
-chancellor (serious): 殿下，夢有時候是神明的警示。
+chancellor (concerned): 殿下，夢有時候是神明的警示。
 
 [wait time="0.5"]
 
@@ -161,54 +161,54 @@ princess: （他只是皺起眉，像真的把我的恐懼當成一件重要的�
 
 [wait time="0.8"]
 
-chancellor (sad): 其實，臣最近也一直心神不寧。
-chancellor (sad): 殿下既然親自來了，或許這就是神明給我們的機會。
+chancellor (concerned): 其實，臣最近也一直心神不寧。
+chancellor (concerned): 殿下既然親自來了，或許這就是神明給我們的機會。
 
 [wait time="0.5"]
 
 princess (confused): 機會？
-chancellor (serious): 臣想讓您看些東西。
+chancellor (concerned): 臣想讓您看些東西。
 
 [wait time="0.8"]
 
 princess: （他從抽屜裡拿出一本厚厚的帳冊。紙頁邊緣被翻得發軟，上面密密麻麻全是我看不太懂的數字與印章。）
 
-chancellor (serious): 這是國庫的帳本。
-chancellor (serious): 陛下最近以「準備邊防」為名，加徵了極重的稅，甚至強行徵用了下城區所有的草藥和糧食。
+chancellor (concerned): 這是國庫的帳本。
+chancellor (concerned): 陛下最近以「準備邊防」為名，加徵了極重的稅，甚至強行徵用了下城區所有的草藥和糧食。
 
 [wait time="0.6"]
 
-chancellor (serious): 但這些資源，並沒有送到邊境。
+chancellor (concerned): 但這些資源，並沒有送到邊境。
 
 [wait time="0.8"]
 
 princess (shocked): 什麼？父王為什麼要這麼做？
-chancellor (sad): 這也是臣想知道的。
-chancellor (sad): 不僅如此，因為這些嚴苛的政策，平民正在受苦。
+chancellor (concerned): 這也是臣想知道的。
+chancellor (concerned): 不僅如此，因為這些嚴苛的政策，平民正在受苦。
 
 [wait time="0.5"]
 
 princess: （父王很嚴厲，也很少向我解釋政務。可我從沒想過，他會讓自己的人民受苦。）
 
-chancellor (serious): 進來吧。
+chancellor (concerned): 進來吧。
 
 [wait time="0.6"]
 
 join mob_leader left
 
-mob_leader (sad): 殿、殿下……
+mob_leader (grieving): 殿、殿下……
 
 [wait time="0.5"]
 
 princess: （一個穿著粗布衣服的男人走進來，低著頭，雙手不安地絞在一起。）
 princess: （他看起來不像能站在王宮裡的人，更不像會被允許靠近我的人。）
 
-mob_leader (sad): 我的妻子……昨天病死了。
-mob_leader (sad): 城裡所有的草藥都被軍隊徵走，我們連一帖退燒藥都買不到。
+mob_leader (grieving): 我的妻子……昨天病死了。
+mob_leader (grieving): 城裡所有的草藥都被軍隊徵走，我們連一帖退燒藥都買不到。
 
 [wait time="0.8"]
 
-mob_leader (sad): 大家都在說，國王瘋了，要為了自己的野心把我們都逼死……
+mob_leader (grieving): 大家都在說，國王瘋了，要為了自己的野心把我們都逼死……
 
 [wait time="0.8"]
 
@@ -223,18 +223,18 @@ leave mob_leader
 
 [wait time="0.8"]
 
-chancellor (sad): 臣也希望這一切都是誤會。
-chancellor (serious): 所以，臣需要殿下的幫忙。
+chancellor (concerned): 臣也希望這一切都是誤會。
+chancellor (concerned): 所以，臣需要殿下的幫忙。
 
 princess (confused): 我的幫忙？
 
-chancellor (serious): 陛下書房的暗格裡，有一份真正的密令。
-chancellor (serious): 只要能拿到那份密令，我們就能知道陛下到底在計畫什麼，或許還能阻止悲劇發生。
+chancellor (concerned): 陛下書房的暗格裡，有一份真正的密令。
+chancellor (concerned): 只要能拿到那份密令，我們就能知道陛下到底在計畫什麼，或許還能阻止悲劇發生。
 
 [wait time="0.6"]
 
-chancellor (sad): 但那裡只有殿下能輕易進出而不被懷疑。
-chancellor (serious): 為了王國，您願意幫忙嗎？
+chancellor (concerned): 但那裡只有殿下能輕易進出而不被懷疑。
+chancellor (concerned): 為了王國，您願意幫忙嗎？
 
 [wait time="1.0"]
 
@@ -272,15 +272,15 @@ princess: （我把文件藏在披肩底下，像逃跑一樣離開父王的書�
 [background arg="res://art/backgrounds/chancellor_study.png" fade="1.0"]
 [wait time="1.0"]
 
-chancellor (smiling): 殿下，您做得很好。
+chancellor (default): 殿下，您做得很好。
 
 [wait time="0.5"]
 
 princess: （宰相接過文件時，臉上露出了欣慰的笑容。）
 princess: （那笑容讓我緊繃了一整天的心終於鬆了一點。也許我真的做對了。）
 
-chancellor (smiling): 這對王國來說是極大的貢獻。
-chancellor (smiling): 您一定累壞了，喝杯茶壓壓驚吧。這是我特地為您準備的。
+chancellor (default): 這對王國來說是極大的貢獻。
+chancellor (default): 您一定累壞了，喝杯茶壓壓驚吧。這是我特地為您準備的。
 
 [wait time="0.6"]
 
@@ -316,12 +316,12 @@ princess: （胸口沒有被劍刺穿的痛，卻有一種窒息的冰冷正在�
 
 [wait time="1.0"]
 
-chancellor (sad): 我也是身不由己。
-chancellor (sad): 你在我心裡一直是當女兒對待的孩子。
+chancellor (concerned): 我也是身不由己。
+chancellor (concerned): 你在我心裡一直是當女兒對待的孩子。
 
 [wait time="0.8"]
 
-chancellor (sad): 不要怪我。
+chancellor (concerned): 不要怪我。
 
 [background arg="res://art/backgrounds/darkness.png" fade="1.5"]
 

@@ -127,7 +127,7 @@ princess: （像在替我即將打響的戰爭擂鼓。）
 
 join chancellor right
 
-chancellor (smiling): 殿下，早安。您今天打扮得如此莊重，是要去哪裡呢？
+chancellor (default): 殿下，早安。您今天打扮得如此莊重，是要去哪裡呢？
 
 [wait time="0.5"]
 
@@ -140,14 +140,14 @@ princess (determined): 我要去見父王。
 
 [wait time="0.6"]
 
-chancellor (smiling): 哦？真難得。殿下最近不是都不太愛出門嗎？
+chancellor (default): 哦？真難得。殿下最近不是都不太愛出門嗎？
 
 [wait time="0.5"]
 
 princess: （他的笑容沒有變。）
 princess: （可是周圍的空氣像是忽然冷了一點。）
 
-chancellor (smiling): ……殿下今天沒有戴那條項鍊。
+chancellor (default): ……殿下今天沒有戴那條項鍊。
 
 [wait time="0.7"]
 
@@ -155,7 +155,7 @@ princess (determined): 今天不需要。
 
 [wait time="0.8"]
 
-chancellor (serious): ……
+chancellor (concerned): ……
 
 [wait time="0.8"]
 
@@ -164,7 +164,7 @@ princess: （那一瞬間，我幾乎以為他會伸手攔住我。）
 
 [wait time="0.6"]
 
-chancellor (smiling): 既然如此，臣祝殿下一切順利。
+chancellor (default): 既然如此，臣祝殿下一切順利。
 
 [wait time="0.5"]
 

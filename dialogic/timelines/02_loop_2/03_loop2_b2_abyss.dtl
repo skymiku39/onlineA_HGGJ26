@@ -71,7 +71,7 @@ label shopping_plan
 
 [wait time="0.8"]
 
-princess (smiling): 莉娜，今天集市日。我想去挑點布料。
+princess (default): 莉娜，今天集市日。我想去挑點布料。
 
 [wait time="0.5"]
 
@@ -84,7 +84,7 @@ princess: （逛市集、挑布料、試衣服，這些都像一個公主會做�
 
 [wait time="0.6"]
 
-princess (smiling): 不過我想自己試衣服，不用人在旁邊伺候。
+princess (default): 不過我想自己試衣服，不用人在旁邊伺候。
 maid (default): 好、好的，那莉娜在外頭幫殿下挑就好！
 
 [wait time="0.8"]
@@ -120,7 +120,7 @@ princess (determined): 妳在外面幫我挑幾條搭配的緞帶好嗎？
 
 [wait time="0.5"]
 
-maid (smiling): 好的殿下，我就在外面，有事叫我喔！
+maid (default): 好的殿下，我就在外面，有事叫我喔！
 
 [wait time="0.8"]
 
@@ -175,7 +175,7 @@ princess: （爐火還在燒，鐵錘落下的聲音一下一下砸在街巷裡�
 
 join mob_leader right
 
-mob_leader (confused): 妳是誰？這裡不賣女人的小玩意。
+mob_leader (default): 妳是誰？這裡不賣女人的小玩意。
 
 [wait time="0.5"]
 
@@ -185,8 +185,8 @@ princess (determined): 布魯諾。
 
 [wait time="0.6"]
 
-mob_leader (shocked): ……！
-mob_leader (shocked): 殿下？！妳怎麼會穿成這樣……妳身邊的侍衛呢？
+mob_leader (hesitant): ……！
+mob_leader (hesitant): 殿下？！妳怎麼會穿成這樣……妳身邊的侍衛呢？
 
 [wait time="0.6"]
 
@@ -208,8 +208,8 @@ princess (determined): 那裡的牆，是不是有問題？
 
 princess: （他盯著那條價值連城的項鍊，又看了看我孤身一人的打扮，眼神複雜。）
 
-mob_leader (serious): 殿下，知道太多會死的。
-mob_leader (serious): 尤其是那些在夜裡推車的人……他們連自己的聲音都沒有。
+mob_leader (default): 殿下，知道太多會死的。
+mob_leader (default): 尤其是那些在夜裡推車的人……他們連自己的聲音都沒有。
 
 [wait time="0.8"]
 
@@ -218,17 +218,17 @@ princess (determined): 這條項鍊夠你買下整個藥房的草藥了。
 
 [wait time="1.0"]
 
-mob_leader (serious): ……妳用這東西換一句話，值不值，自己想。
+mob_leader (default): ……妳用這東西換一句話，值不值，自己想。
 
 [wait time="0.6"]
 
-mob_leader (serious): 窄巷最深處，有一段比別處厚了三尺的牆。
-mob_leader (serious): 老流民都知道晚上要避開那裡，因為那裡會「吞人」。
+mob_leader (default): 窄巷最深處，有一段比別處厚了三尺的牆。
+mob_leader (default): 老流民都知道晚上要避開那裡，因為那裡會「吞人」。
 
 [wait time="0.6"]
 
-mob_leader (serious): 那些黑甲人，都是從那裡冒出來的。
-mob_leader (serious): 他們會裝成補給車進出，車輪聲很輕，腳步卻很齊。
+mob_leader (default): 那些黑甲人，都是從那裡冒出來的。
+mob_leader (default): 他們會裝成補給車進出，車輪聲很輕，腳步卻很齊。
 
 [wait time="0.8"]
 
@@ -237,8 +237,8 @@ princess (determined): 這項鍊是你的了。
 
 [wait time="0.6"]
 
-mob_leader (serious): 我不保妳活著回來。
-mob_leader (serious): 我只保我現在說的都是真的。
+mob_leader (default): 我不保妳活著回來。
+mob_leader (default): 我只保我現在說的都是真的。
 
 leave mob_leader
 
