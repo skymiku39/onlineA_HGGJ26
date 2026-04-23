@@ -118,7 +118,7 @@ join loyal_retainer right
 
 princess: （他看見我，先要行禮。我搖頭，指了指廊柱後面。）
 
-princess: （莉娜這時候應該還在西側庫房找披肩。很好。）
+princess: （莉娜這時候應該還在西側庫房找披肩，一時半刻不會回來。）
 princess: （今天不能把她放在門口，也不能讓她替我擋任何人的視線。）
 
 [wait time="0.6"]
@@ -193,7 +193,7 @@ princess (determined): 第三，下一次朝堂上，盯死宰相。盯他的人
 
 [wait time="0.6"]
 
-princess (determined): 先做到這兩件。剩下的，我來補。
+princess (determined): 先做到這三件。剩下的，我來補。
 
 [wait time="0.8"]
 
@@ -422,7 +422,7 @@ loyal_retainer (default): 殿下，不經陛下命令直接拿人——
 
 princess: 來不及了。再慢一步，他今晚就會跑。
 
-loyal_retainer (serious): ……遵命。
+loyal_retainer (default): ……遵命。
 
 [wait time="0.8"]
 
@@ -579,11 +579,19 @@ chancellor (cold): 看來臣從一開始，就把殿下看得太淺了。
 
 [wait time="1.2"]
 
+princess: （他沒有試圖逃跑，也沒有開口辯解。）
+princess: （他從袖中取出一只小瓶，仰頭飲盡，然後靜靜地站在原地，等候著。）
+
+[wait time="1.5"]
+
 [sound path="res://audio/sfx/vial_break.ogg" bus="SFX"]
 
-[wait time="0.8"]
+princess: （小瓶從他的指縫間滑落，在地板上碎成了幾片。）
 
-princess: （他倒下去了。毒。）
+[wait time="0.5"]
+
+princess: （他倒下去的時候，臉上還帶著那個笑容，像一切都仍在他的掌握之中。）
+princess: （就連選擇用哪種方式死去，他也不讓任何人替他決定。）
 
 [wait time="1.5"]
 

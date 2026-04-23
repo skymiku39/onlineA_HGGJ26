@@ -11,7 +11,7 @@ princess (determined): 呼——
 
 [wait time="0.6"]
 
-princess: （沒有驚訝，沒有尖叫。）
+princess: （我沒有驚訝，也沒有尖叫。）
 princess: （我深吸了一口氣，平靜地坐了起來。）
 
 [wait time="0.8"]
@@ -22,7 +22,7 @@ princess: （現在，我只差最後一步——把這件事告訴唯一能解�
 
 [wait time="1.0"]
 
-princess: （父王。）
+princess: （那個人，只能是父王。）
 princess: （賽拉斯死前說過，只有父王知道更多。）
 princess: （只要能讓父王相信我，或許就能查到宰相到底在王宮裡布下了多少棋。）
 
@@ -304,7 +304,7 @@ chancellor: （微弱而平靜的聲音）臣冤枉……
 [wait time="1.0"]
 
 princess: （宰相的聲音太平靜了。）
-princess: （像是早就知道事情會變成這樣。）
+princess: （他說話的樣子，像是早就知道事情會變成這樣。）
 
 # === 小房間的毒茶 ===
 [background arg="res://art/backgrounds/darkness.png" fade="1.0"]
@@ -344,9 +344,9 @@ princess (shocked): ……！
 
 [wait time="0.5"]
 
-princess: （蜂蜜。）
-princess: （玫瑰。）
-princess: （還有一點點苦澀。）
+princess: （先是蜂蜜的甜味。）
+princess: （接著是玫瑰的香氣。）
+princess: （最後是那一點點說不清楚的苦澀。）
 
 [wait time="0.8"]
 

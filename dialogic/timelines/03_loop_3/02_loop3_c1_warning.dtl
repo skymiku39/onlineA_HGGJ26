@@ -7,7 +7,7 @@
 
 join princess left
 
-princess: （助手不在。就這幾分鐘。）
+princess: （助手不在，就只有這幾分鐘的空檔。）
 
 [wait time="0.5"]
 
@@ -81,7 +81,7 @@ princess: （我什麼都沒說。）
 	princess: （達爾和那個助手，像一起從宮裡被抹掉了。）
 	[wait time="0.5"]
 
-princess: （我叫他去查。然後人就沒了。）
+princess: （我請他去查，然後他就這樣從宮裡消失了。）
 
 [wait time="0.8"]
 
@@ -164,7 +164,7 @@ leave king
 
 [wait time="0.8"]
 
-princess: （可被關起來，從來不叫得救。）
+princess: （可是被關起來這件事，從來都不等於得救。）
 
 [wait time="0.6"]
 

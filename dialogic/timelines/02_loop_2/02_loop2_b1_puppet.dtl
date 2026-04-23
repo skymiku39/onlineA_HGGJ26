@@ -51,8 +51,8 @@ princess: （今天，我要讓所有人都看見我乖乖戴著它。）
 [wait time="0.6"]
 
 - 先對鏡笑了一下
-    princess: （先把這張臉練好。）
-    princess: （不能像知道自己在被監視，也不能像刻意討好。）
+    princess: （先把自己這張臉練好再說。）
+    princess: （表情不能像是知道自己在被監視的樣子，也不能像是刻意討好。）
     jump puppet_after_smile
 
 - 先整了整鍊子的位置
@@ -76,7 +76,7 @@ label puppet_ready
 
 princess: （臉和鍊子都要對。）
 princess: （今天我得像一個什麼都沒發現的人。）
-princess (determined): （先去找宰相。像請教，不像興師問罪。）
+princess (determined): （今天先去找宰相，態度要像請教，而不是像興師問罪。）
 
 [wait time="0.8"]
 
@@ -100,6 +100,12 @@ chancellor (default): 殿下，您今天真是光彩照人。這條項鍊非常�
 princess: （他的視線在我的頸部滿意地停留了一瞬，才抬頭看我。）
 
 princess (default): 宰相大人，早安。
+
+[wait time="0.4"]
+
+princess: （他最擅長的事，是傾聽脆弱的人。）
+princess: （所以今天，我替自己準備了一份脆弱，讓他好好聽進去。）
+
 princess (sad): 我昨晚做了一個夢。
 
 [wait time="0.5"]
@@ -276,7 +282,7 @@ label anomaly_both_done
 
 [wait time="0.8"]
 
-princess (determined): （人是眼，巷是線。）
+princess (determined): （那些人是眼睛，那條巷子是界線。）
 princess (determined): （這一路根本不是護送，是看守。）
 
 [wait time="0.6"]
@@ -290,7 +296,7 @@ princess: （城門明明在王國手裡，這裡卻像另一套規矩。）
 
 [wait time="0.8"]
 
-princess (determined): （先記下來。方向、站位、繞路的習慣。）
+princess (determined): （先把這些全記下來：方向、站位，還有繞路的習慣。）
 
 leave princess
 
@@ -384,7 +390,7 @@ princess: （宰相還是照樣對我笑，也沒攔我借書，沒攔我見達�
 
 [wait time="0.8"]
 
-princess (determined): （……放得太輕了。）
+princess (determined): （……他放得太輕了。）
 princess: （他不是沒看見。）
 princess: （他只是在等我碰到真正不該碰的那一塊。）
 
@@ -429,7 +435,7 @@ princess: （蜂蜜、玫瑰、苦澀。）
 
 [wait time="0.8"]
 
-princess (sad): （原來不是放任。）
+princess (sad): （原來他並不是真的在放任我。）
 princess (sad): （他只是在等我碰到真正不該碰的那一塊。）
 
 [wait time="0.8"]

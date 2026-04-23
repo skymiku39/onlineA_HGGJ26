@@ -7,7 +7,7 @@
 
 join princess left
 
-princess: （我照規矩遞牌子。要書房，要單獨，不要宰相。）
+princess: （我照規矩遞牌子，請求在書房單獨見父王，不帶宰相在場。）
 
 [wait time="0.6"]
 
@@ -41,7 +41,7 @@ king: ……說。
 
 princess: （密道、私兵、簽署路線，還有達爾是怎麼被抹掉的。）
 
-princess: （不哭，也不求。）
+princess: （我沒有哭，也沒有苦求。）
 
 princess (cold): 這些都是我看見的事。父王若要查，比任何人都查得快。
 
@@ -191,7 +191,7 @@ join princess left
 
 # === 茶水再現 ===
 
-princess: （又是那個味道。）
+princess: （又是那個熟悉的味道。）
 
 princess: （這次我沒有碰。）
 
@@ -226,7 +226,7 @@ princess: （可它們終於被接成同一個破口。）
 
 princess: （以前總是別人替我動手。）
 
-princess: （這一次，輪到我自己。）
+princess: （這一次，是輪到我自己來做決定了。）
 
 [wait time="0.6"]
 

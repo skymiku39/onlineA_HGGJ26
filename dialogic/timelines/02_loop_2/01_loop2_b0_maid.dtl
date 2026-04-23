@@ -125,7 +125,7 @@ maid (forced_smile): 萬一出了事，莉娜真的擔不起呀……
 
 [wait time="0.8"]
 
-princess: （她不是單純不想去。她是怕。）
+princess: （她不是單純不想去。她是真的在害怕。）
 princess: （怕下城區，怕宰相，還是怕我看見什麼不該看的東西？）
 
 [wait time="0.5"]
@@ -192,7 +192,7 @@ princess: （她嘴裡說的，和她真正做的，不一樣。）
 
 - 先想起那些帳本
     princess: （我先想到宰相拿給我的那些紙上數字。）
-    princess: （加徵、徵收、軍需、邊防。字都寫得很整齊，可那些字根本寫不出這裡的味道。）
+    princess: （加徵、徵收、軍需、邊防——那些字都寫得很整齊，可它們根本寫不出這裡的味道。）
     jump city_after_ledgers
 
 label city_after_people
@@ -259,7 +259,7 @@ princess: （盛怒的父王隔著門吼了一句「我是在保護你」，然�
 [wait time="0.8"]
 
 princess: （世界一下子縮得很小。）
-princess: （窗、床、桌子、侍從送來又收走的餐盤。）
+princess: （眼前只剩下窗、床、桌子，還有侍從送來又收走的餐盤。）
 
 [background arg="res://art/backgrounds/princess_room.png" fade="1.0"]
 
@@ -270,7 +270,7 @@ princess: （我湊近一聞。）
 
 [wait time="0.6"]
 
-princess (shocked): （蜂蜜、玫瑰、一點苦澀。）
+princess (shocked): （蜂蜜的甜、玫瑰的香，還有那一點苦澀的熟悉味道。）
 princess (determined): 我不會喝的。
 
 [wait time="0.5"]
@@ -375,7 +375,7 @@ maid (crying): 這茶的味道感覺不太對……我們還是不要喝了，�
 [wait time="0.8"]
 
 princess: （我低頭聞了聞。）
-princess: （蜂蜜、玫瑰、一點苦澀。）
+princess: （蜂蜜的甜、玫瑰的香，還有那一點苦澀的熟悉味道。）
 princess: （我全明白了。）
 
 [wait time="0.6"]

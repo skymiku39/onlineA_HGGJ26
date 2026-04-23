@@ -357,11 +357,11 @@ princess: （他勸離了士兵，撐著牆走到我面前。）
 princess: （他的呼吸很重，每一下都像在忍痛。）
 
 loyal_retainer (tearful): 對不起。公主，我……我們失敗了。
-loyal_retainer (tearful): 我知道一直都很聰明的公主一定是察覺了什麼。
+loyal_retainer (tearful): 走廊那次……殿下問臣是否有一道密令，那件事是真的。
 
 [wait time="0.8"]
 
-loyal_retainer (tearful): 但——對不起，我欺騙了你。
+loyal_retainer (tearful): 但那時候，臣沒有辦法如實回答殿下。對不起。
 
 [wait time="0.5"]
 

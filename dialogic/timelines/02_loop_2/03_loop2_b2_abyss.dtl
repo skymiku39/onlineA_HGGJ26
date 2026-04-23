@@ -11,7 +11,7 @@ princess (determined): 呼——
 
 [wait time="0.6"]
 
-princess: （又一次。）
+princess: （又回來了一次。）
 princess: （但我沒有時間發呆了。）
 
 [wait time="0.8"]
@@ -23,7 +23,7 @@ princess: （內城牆，窄巷交界處。那裡藏著宰相最大的秘密。�
 [wait time="0.8"]
 
 princess (determined): （這次不留任何東西在紙上。）
-princess (determined): （不看地圖，不借卷宗，不讓任何人知道我的眼睛停在哪裡。）
+princess (determined): （今天不看地圖，不借卷宗，也不讓任何人察覺我的眼睛究竟停在了哪裡。）
 
 [wait time="0.8"]
 
@@ -158,7 +158,7 @@ princess: （我迅速摘下那條昂貴的寶石項鍊，收進口袋。）
 [wait time="0.6"]
 
 princess: （趁著莉娜背對門口在挑緞帶時，我壓低身子，從後門溜出了店外。）
-princess: （沒有驚動夥計，也沒有觸發街口侍衛的視線。）
+princess: （我沒有驚動夥計，也沒有觸發街口侍衛的視線。）
 princess: （這一次，我只是讓最近的幾道視線慢了半拍。）
 princess: （網還在，只是暫時沒能立刻收緊。）
 
@@ -326,8 +326,8 @@ princess: （風從裡面灌出來，又濕又冷，帶著鏽味。）
 
 [wait time="1.0"]
 
-princess (shocked): （密道……）
-princess (shocked): （足以讓軍隊無聲穿梭的密道！就在內外城牆的交界處！）
+princess (shocked): （這裡……有一條密道。）
+princess (shocked): （足以讓整支軍隊無聲穿梭的密道，就藏在內外城牆的交界處！）
 
 [wait time="0.8"]
 
@@ -366,7 +366,7 @@ princess: （我連一句話都還沒說出口。）
 
 [wait time="0.5"]
 
-princess: （沒有審問，沒有廢話。）
+princess: （他們沒有審問，也沒有廢話。）
 princess: （他們的任務只是維持保密。）
 princess: （劍刃穿透了我的胸口。我倒在冰冷的石板上，血流進了密道的縫隙。）
 
@@ -378,7 +378,7 @@ princess: （原來城牆……早就不是牆了。）
 
 [wait time="0.8"]
 
-princess: （一條項鍊，換來這條路。）
+princess: （用一條項鍊，換來了這條路的線索。）
 
 [wait time="0.8"]
 
