@@ -315,12 +315,12 @@ princess: （胸口沒有被劍刺穿的痛，卻有一種窒息的冰冷正在�
 
 [wait time="1.0"]
 
-chancellor (concerned): 我也是身不由己。
-chancellor (concerned): 你在我心裡一直是當女兒對待的孩子。
+chancellor (concerned): 臣也是身不由己。
+chancellor (concerned): 殿下在臣心裡，一直是當女兒對待的孩子。
 
 [wait time="0.8"]
 
-chancellor (concerned): 不要怪我。
+chancellor (concerned): 不要怪臣。
 
 [background arg="res://art/backgrounds/darkness.png" fade="1.5"]
 

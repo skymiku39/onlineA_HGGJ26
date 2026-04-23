@@ -164,8 +164,32 @@ princess: （病倒、停職、另派人接手。每一個說法都很完整，�
 
 [wait time="0.8"]
 
-princess: （父王知道了。宰相跑了。可民心沒有被接住，術式沒有被修復，兵線也沒有切斷私軍。）
-princess: （原來抓出反派，不等於補上被他拆散的世界。）
+# === 賽拉斯的回報 ===
+
+join loyal_retainer right
+
+loyal_retainer (exhausted): 殿下。臣截了三條補給線，查了兩批黑甲的蹤跡。
+loyal_retainer (exhausted): 可每次趕到，那裡就已經空了。
+
+[wait time="0.8"]
+
+princess: （他臉上是那種見過陣仗的人才有的疲憊。）
+princess: （不是做不到，是每一個「到」都已經比對方晚了一步。）
+
+[wait time="0.6"]
+
+loyal_retainer (exhausted): ……宰相在跑之前，就已經把後路全部關上了。
+
+[wait time="0.8"]
+
+leave loyal_retainer
+
+[wait time="0.6"]
+
+princess: （父王動了，賽拉斯也動了。他們用我說的每一條線去查、去追、去填。）
+princess: （可宰相逃走的那一刻，就等於把他預設的機關全部啟動了。）
+princess: （私軍不需要統帥也知道往哪裡走；達爾的位子換了人，卻沒有人接得住那道術式；供給線被截了三條，可第四條早就改了路。）
+princess: （原來被算計，不是在我開口之後——而是在他還沒逃之前，就已經佈好的局。）
 
 [wait time="0.8"]
 
