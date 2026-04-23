@@ -346,6 +346,8 @@ maid (forced_smile): 殿下先坐……莉娜去幫您泡茶。
 [wait time="0.8"]
 
 princess: （她說「泡茶」時，聲音抖了一下。）
+princess: （轉身進廚房前，她的眼睛往窗縫的方向瞟了一秒。）
+princess: （窗外什麼都沒有。但她那個方向對上去的方式，不像在看風景。）
 
 [wait time="1.0"]
 

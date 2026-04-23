@@ -466,8 +466,18 @@ princess: （但我鎖定了城防的死穴。）
     princess: （我看著碗，看著湯裡浮著的幾片葉子，沒有動。）
     [wait time="0.6"]
     princess: （第二天早上，莉娜換了個說辭，端著點心進來。）
-    princess: （那個味道，我閉著眼睛都認得出來。）
-    princess (sad): （他的網不只是茶。他的網，是我這一天裡所有能入口的東西。）
+    maid (forced_smile): 殿下昨晚沒怎麼動筷子，大人心疼，讓廚房備了您最喜歡的糕點。
+    [wait time="0.5"]
+    princess: （茶推了，晚餐也沒動。）
+    princess: （再不吃，她就要去通報了。）
+    princess (default): 謝謝莉娜。
+    [wait time="0.6"]
+    princess: （第一口下去之後，我才識出來。）
+    princess: （蜂蜜、玫瑰，還有那一點壓進糕點裡的苦澀。）
+    princess (shocked): （他把它藏進點心裡了。）
+    [signal arg="camera_shake"]
+    [wait time="0.5"]
+    princess: （已經來不及了。）
     [background arg="res://art/backgrounds/darkness.png" fade="1.5"]
     [wait time="1.5"]
     [signal arg="intel:intel_mob_manipulation"]
