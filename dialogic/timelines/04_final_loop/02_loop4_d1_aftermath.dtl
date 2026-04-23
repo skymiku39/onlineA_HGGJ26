@@ -18,7 +18,7 @@ princess (sad): 父王呢？
 
 loyal_retainer (relieved): 陛下在南門指揮。他讓臣轉告——
 
-loyal_retainer (relieved): 「朕欠你一個道歉。但朕不後悔保護你。只後悔……低估了你。」
+loyal_retainer (relieved): 「本王欠你一個道歉。但本王不後悔保護你。只後悔……低估了你。」
 
 [wait time="2.0"]
 
@@ -112,7 +112,7 @@ princess: （只說「你來了」，好像他在這裡等了很久。）
 
 [wait time="0.8"]
 
-king: 賽拉斯轉告了朕說的話。
+king: 賽拉斯轉告了本王說的話。
 
 princess: 我聽到了。
 
@@ -128,11 +128,11 @@ king: 你在朝堂說的每一件事，都是對的。
 
 [wait time="0.6"]
 
-king: 但朕當時沒有護住你。
+king: 但本王當時沒有護住你。
 
 [wait time="0.6"]
 
-king: 那個下令把你帶走的人，是朕。
+king: 那個下令把你帶走的人，是本王。
 
 [wait time="1.0"]
 
@@ -148,7 +148,7 @@ princess: 那個我也知道。
 
 [wait time="0.8"]
 
-king: 朕下那道命令的時候，以為是在保護你。
+king: 本王下那道命令的時候，以為是在保護你。
 
 [wait time="0.6"]
 
@@ -174,11 +174,11 @@ king: ……
 
 [wait time="0.8"]
 
-king: 這次守住城的，不是朕。
+king: 這次守住城的，不是本王。
 
 [wait time="0.6"]
 
-king: 朕守了你十七年，最後——是你守了這裡所有的人。
+king: 本王守了你十七年，最後——是你守了這裡所有的人。
 
 [wait time="1.2"]
 
@@ -205,7 +205,7 @@ king: （他把腰帶上的玉璽取下來，放到我手中。）
 [wait time="0.8"]
 
 king: 正式詔書，等城修好之後再宣。
-king: 但從今天起，王女之位，朕屬你。
+king: 但從今天起，王女之位，本王屬你。
 
 [wait time="1.5"]
 
@@ -218,7 +218,7 @@ princess (determined): 謝謝父王。
 
 [wait time="1.0"]
 
-king: 朕不是個好父親。
+king: 本王不是個好父親。
 
 [wait time="0.8"]
 

@@ -15,7 +15,7 @@ if {c2_death_knife}:
 	princess: （手腕還記得那一下。今天這雙手有別的事要做。）
 
 if {c2_death_tea}:
-	princess: （那口苦喝過一次就夠了。今天不會再碰。）
+	princess: （那口苦喝過一次就夠了。今天不會再碰那種茶。）
 
 if {c2_death_window}:
 	princess: （風刮過耳邊的聲音還在。今天我要站在地上。）
@@ -204,7 +204,7 @@ princess (determined): 第三，下一次朝堂上，盯死宰相。盯他的人
 
 [wait time="0.6"]
 
-princess (determined): 先做到這三件。剩下的，我來補。
+princess (determined): 先做到這三件。剩下的事，交給我。
 
 [wait time="0.8"]
 
@@ -682,7 +682,7 @@ dal (default): 好。
 [wait time="0.8"]
 
 princess: （這次達爾說出口的每一個數字，旁邊都有人守著，也有紙面。）
-princess: （不是死在答案旁邊。）
+princess: （這次他不會死在答案旁邊。）
 
 [wait time="1.0"]
 
@@ -762,9 +762,9 @@ loyal_retainer (relieved): 如殿下所料，他們按原定時程行動——�
 
 [wait time="0.5"]
 
-princess (determined): 密道出口都蓋住了？
+princess (determined): 密道出口都守住了？
 
-loyal_retainer (relieved): 全數蓋住。他們一踏出出口就被包圍，沒有機會發難。
+loyal_retainer (relieved): 出口全數守住了。他們一踏出就被包圍，沒有機會發難。
 
 [wait time="0.4"]
 
