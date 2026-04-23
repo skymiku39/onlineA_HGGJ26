@@ -4,9 +4,13 @@
 &"_translation_id": "",
 &"color": Color(0.6, 0.3, 0.2, 1),
 &"custom_info": {
+"prefix": "",
 "sound_mood_default": "",
 "sound_mood_happy": "",
-"sound_mood_sad": ""
+"sound_mood_sad": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
 },
 &"default_portrait": "default",
 &"description": "下城區鐵匠，妻子因徵兵導致藥物短缺而難產身亡。憤怒與絕望交織的受害者。",
@@ -20,22 +24,7 @@
 "image": "res://art/characters/suspect_b_default.png"
 },
 "mirror": false,
-"scale": 1.0,
-"scene": ""
-},
-"angry": {
-"export_overrides": {
-"image": "res://art/characters/suspect_b_default.png"
-},
-"mirror": false,
-"scale": 1.0,
-"scene": ""
-},
-"suspicious": {
-"export_overrides": {
-"image": "res://art/characters/suspect_b_default.png"
-},
-"mirror": false,
+"offset": Vector2(0, 0),
 "scale": 1.0,
 "scene": ""
 },
@@ -44,6 +33,7 @@
 "image": "res://art/characters/suspect_b_default.png"
 },
 "mirror": false,
+"offset": Vector2(0, 0),
 "scale": 1.0,
 "scene": ""
 },
@@ -52,22 +42,7 @@
 "image": "res://art/characters/suspect_b_default.png"
 },
 "mirror": false,
-"scale": 1.0,
-"scene": ""
-},
-"conflicted": {
-"export_overrides": {
-"image": "res://art/characters/suspect_b_default.png"
-},
-"mirror": false,
-"scale": 1.0,
-"scene": ""
-},
-"broken": {
-"export_overrides": {
-"image": "res://art/characters/suspect_b_default.png"
-},
-"mirror": false,
+"offset": Vector2(0, 0),
 "scale": 1.0,
 "scene": ""
 },
@@ -76,14 +51,7 @@
 "image": "res://art/characters/suspect_b_default.png"
 },
 "mirror": false,
-"scale": 1.0,
-"scene": ""
-},
-"shocked": {
-"export_overrides": {
-"image": "res://art/characters/suspect_b_default.png"
-},
-"mirror": false,
+"offset": Vector2(0, 0),
 "scale": 1.0,
 "scene": ""
 }

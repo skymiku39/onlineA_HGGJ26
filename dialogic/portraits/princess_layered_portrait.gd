@@ -19,6 +19,26 @@ const PORTRAIT_PRESETS := {
 		"face": "Sad",
 		"hands": "Folded",
 	},
+	"angry": {
+		"face": "Angry",
+		"hands": "Open",
+	},
+	"determined": {
+		"face": "Determined",
+		"hands": "Folded",
+	},
+	"hollow": {
+		"face": "Sad",
+		"hands": "Folded",
+	},
+	"cold": {
+		"face": "Determined",
+		"hands": "Folded",
+	},
+	"confused": {
+		"face": "Sad",
+		"hands": "Open",
+	},
 	"layer_test_default": {
 		"face": "Smile",
 		"hands": "Folded",
