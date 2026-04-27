@@ -137,7 +137,7 @@ princess (determined): 北牆第三隊上月被臨時召回，文書卻還停在
 
 [wait time="0.4"]
 
-loyal_retainer: 殿下，若無實據，這種話不能——
+loyal_retainer: 殿下，如果沒有實據，這種話不能——
 
 princess (determined): 你左肩甲上那道凹痕，不是演習留下的。那天回防時，運糧車的側板撞過你。
 princess (determined): 調防前的信號位不該出現在下城區南路。可那裡有車轍，也有一條通向內城牆邊界的私軍密道。
@@ -519,7 +519,7 @@ join dal left
 
 dal (default): （他上前一步，把查核記錄放了下來。）
 
-dal (default): 東南象限第三節點，連續六個週期在清場後出現異常衰退。若是自然老化，不會是這種曲線。這些批核，全部走同一條財政署路徑。
+dal (default): 東南象限第三節點，連續六個週期在清場後出現異常衰退。如果是自然老化，不會有這種曲線。這些批核，全部走同一條財政署路徑。
 
 [wait time="0.8"]
 
@@ -576,6 +576,14 @@ chancellor (cold): 密道、帳目、術式、下城區……殿下把這些全�
 [wait time="0.6"]
 
 chancellor (cold): 看來臣從一開始，就把殿下看得太淺了。
+
+[wait time="0.8"]
+
+chancellor (cold): 那個缺口，是臣故意開的。讓對面看見，讓他們以為抓住了機會。進來之後怎麼算——臣早就替他們想好了。
+
+[wait time="0.8"]
+
+chancellor (cold): 臣從來就不覺得，那些糧食和藥材應該分給下城區的人。治國不是靠仁慈，是要讓每個位置都由配得上的人來坐。
 
 [wait time="1.2"]
 
@@ -695,9 +703,17 @@ loyal_retainer (relieved): 「本王欠你一個道歉。但本王不後悔保�
 
 princess: （城下有人在笑，小孩手裡抓著白麵包。莉娜抱著哥哥在哭，遠處還有修房子的敲打聲。）
 
+princess: （莉娜知道些什麼，我一直沒問過。有些問題，等到它不再重要了，才算真的過去了。）
+
 [wait time="1.0"]
 
 # === 口頭密令——以宣誓效忠作收束 ===
+
+princess: （在宰相的盤算裡，賽拉斯的忠誠是讓他陪著父王死的理由。）
+
+[wait time="0.6"]
+
+princess: （序章那夜他握劍時，手是抖的。）
 
 princess (sad): 賽拉斯。那道密令……
 
@@ -729,13 +745,7 @@ princess: （這一次，不需要誰逼他。）
 
 princess (determined): 我收下了。
 
-[wait time="0.6"]
-
-loyal_retainer (relieved): 臣守了您十七年。這是第一次……臣不用再拿劍來守您。
-
-[wait time="1.5"]
-
-[wait time="1.0"]
+[wait time="2.0"]
 
 princess: （今天還有一個地方要去。）
 
@@ -876,7 +886,7 @@ king: （他把腰帶上的玉璽取下來，放到我手中。）
 [wait time="0.8"]
 
 king: 正式詔書，等城修好之後再宣。
-king: 但從今天起，王女之位，本王屬你。
+king: 但從今天起，王女之位，本王傳予你。
 
 [wait time="1.5"]
 
@@ -934,11 +944,68 @@ princess: （風裡終於沒有焦味了。）
 
 [wait time="0.6"]
 
-princess (determined): 你們都安全了。
+princess (determined): （你們都安全了。）
 
 leave princess
 
 [wait time="3.0"]
+
+jump d0_chancellor_letters
+
+
+label d0_chancellor_letters
+
+# 後日談：密信
+
+[background arg="res://art/backgrounds/hallway.png" fade="1.2"]
+[music path="res://audio/bgm/investigation_cold.ogg" fade="3.0" volume="0.28"]
+
+[wait time="1.0"]
+
+join princess left
+
+princess: （清點宰相書房的時候，我自己進去翻了一趟，找到了一疊壓在帳冊最底下的密信。）
+
+[wait time="0.8"]
+
+princess: （信裡說的是這樣一個故事。）
+
+[wait time="0.6"]
+
+princess: （對岸的政局一直不穩，主戰和主和兩派互相壓著。主戰派想打一場勝仗來鞏固地位，宰相就給了他們這個機會——魔法陣的缺口是他故意開的，讓對方的探子看見，讓主戰派相信這是天賜良機。）
+
+[wait time="1.2"]
+
+princess: （但宰相同時跟主和派談好了條件：主戰派的繼承人，會死在這場仗裡。宰相在城內備好了私軍，等他們進來。進去的人出不來，繼承人戰死沙場，對岸的政局從此就是主和派說了算。）
+
+[wait time="1.2"]
+
+princess: （主和派給的交換條件，是承認宰相繼位的合法性。對他們來說，這場仗打贏了是領土，打輸了是對手死掉——怎麼算都是贏。）
+
+[wait time="1.0"]
+
+princess: （宰相只用了一個計畫，就同時把父王、主戰派、繼承問題全部解決。）
+
+[wait time="0.8"]
+
+princess (cold): （他差一點就成了。）
+
+[wait time="0.8"]
+
+princess: （他沒有直接殺掉任何一個真正忠誠的人。他只是讓每個人的本性，走進他替他們準備好的死路。）
+
+[wait time="1.2"]
+
+princess: （我把信折好，收進袖子，沒有叫任何人進來。）
+princess: （這件事要怎麼處理，我需要再想想。）
+
+[wait time="1.0"]
+
+[signal arg="intel:intel_chancellor_correspondence"]
+
+leave princess
+
+[wait time="1.5"]
 
 jump d0_goodend_epilogue
 
@@ -972,6 +1039,10 @@ princess: 「到最後，我終於學會開口說：我需要你。」
 princess (determined): 「迴圈困住的從來不只是時間，還有我以為自己只能怎麼活。」
 
 [wait time="2.5"]
+
+princess (default): 「我不知道你跟著我走到這裡，看見了什麼。」
+
+[wait time="1.5"]
 
 princess (default): 「謝謝你陪我走到這裡。」
 

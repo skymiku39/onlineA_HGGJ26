@@ -18,6 +18,7 @@ princess: （我深吸了一口氣，平靜地坐了起來。）
 
 princess: （這是第三次。）
 princess: （我已經知道是誰殺了我，也知道帳本是假的。）
+princess: （那一夜他舉刀時的眼神是哀傷，不是恨意。城破、密令、我的死——第一次就已經是同一件事。）
 princess: （現在，我只差最後一步——把這件事告訴唯一能解決它的人。）
 
 [wait time="1.0"]
@@ -305,6 +306,15 @@ chancellor: （微弱而平靜的聲音）臣冤枉……
 
 princess: （宰相的聲音太平靜了。）
 princess: （他說話的樣子，像是早就知道事情會變成這樣。）
+
+[wait time="0.6"]
+
+princess: （我突然想到一件事。）
+princess: （宰相和父王，不只是君臣。）
+princess: （他們有血緣關係——這才是父王從來不會懷疑他的真正原因。）
+princess: （而那份血統……讓他本來就站在王位繼承的那條線上。）
+princess (cold): （他不需要謀反。他只需要讓王國先垮掉。）
+[signal arg="intel:intel_chancellor_bloodline"]
 
 # === 小房間的毒茶 ===
 [background arg="res://art/backgrounds/darkness.png" fade="1.0"]

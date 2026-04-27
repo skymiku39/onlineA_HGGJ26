@@ -263,7 +263,7 @@ princess: （這一次，是輪到我自己來做決定了。）
 
 	[wait time="0.8"]
 
-	princess (hollow): （我握住了。）
+	princess (determined): （我握住了。）
 
 	[wait time="1.5"]
 
@@ -293,7 +293,7 @@ princess: （這一次，是輪到我自己來做決定了。）
 	princess (hollow): （茶已經涼了。底下還是甜，上面還是苦。）
 	princess (hollow): （這半年裡熄掉的燈、繞開密道的軍靴、沒有抵達朝堂的報告，都沉在這口苦味裡。）
 
-	princess (hollow): （我還是喝了。）
+	princess (determined): （我還是喝了。）
 
 	[wait time="1.5"]
 
@@ -324,7 +324,7 @@ princess: （這一次，是輪到我自己來做決定了。）
 
 	[wait time="0.8"]
 
-	princess (hollow): （我探了出去。）
+	princess (determined): （我探了出去。）
 
 	[wait time="1.5"]
 

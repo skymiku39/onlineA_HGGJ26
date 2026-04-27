@@ -199,7 +199,7 @@ label city_after_people
 - 再回頭想那些帳本
     princess: （眼前這些人一擺出來，那些紙上的數字就更像假的了。）
     princess: （這些苦難……都是真的。）
-princess: （宰相沒有捏造貧窮，但他改掉了答案。）
+    princess: （宰相沒有捏造貧窮，但他改掉了答案。）
     jump lower_city_walk
 
 label city_after_ledgers
@@ -212,7 +212,7 @@ label lower_city_walk
 
 [wait time="0.8"]
 
-princess (sad): 這些……都是真的。
+princess (sad): （我站在那裡，說不出話來。）
 princess: （宰相的帳本是假的，但他帶來的那些苦難，卻真實存在。）
 princess: （甚至比他在書房裡描述的還要慘烈百倍。）
 
