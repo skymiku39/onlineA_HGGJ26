@@ -156,7 +156,7 @@ princess: （我連門都還沒進。）
 
 join king center
 
-king: ……你在高塔裡，是本王能護住你的最後辦法。
+king: ……先回你的房間。在本王查清楚之前，不准離開。
 
 [wait time="0.5"]
 
@@ -196,7 +196,7 @@ princess: （茶又送來了。還是那個味道。）
     [signal arg="intel:intel_chancellor_treason"]
     [signal arg="intel:intel_narrative_flip"]
     [signal arg="intel:intel_king_defense_line"]
-    [signal arg="death_context:{'death_message': '你試著衝出高塔，卻被衛兵壓回。父王的「保護」連逃跑的路也一起封死了。', 'intel_reward': ['intel_chancellor_treason', 'intel_narrative_flip', 'intel_king_defense_line'], 'killer': 'chancellor', 'advance_loop': true, 'next_timeline': '03_loop3_c2_king'}"]
+    [signal arg="death_context:{'death_message': '你試著衝出房間，卻被門外的衛兵壓回。父王的「保護」連逃跑的路也一起封死了。', 'intel_reward': ['intel_chancellor_treason', 'intel_narrative_flip', 'intel_king_defense_line'], 'killer': 'chancellor', 'advance_loop': true, 'next_timeline': '03_loop3_c2_king'}"]
     [signal arg="trigger_death"]
 
 - 沉默坐著等

@@ -310,11 +310,10 @@ princess: （他說話的樣子，像是早就知道事情會變成這樣。）
 [wait time="0.6"]
 
 princess: （我突然想到一件事。）
-princess: （宰相和父王，不只是君臣。）
-princess: （他們有血緣關係——這才是父王從來不會懷疑他的真正原因。）
-princess: （而那份血統……讓他本來就站在王位繼承的那條線上。）
-princess (cold): （他不需要謀反。他只需要讓王國先垮掉。）
-[signal arg="intel:intel_chancellor_bloodline"]
+princess: （宰相在這座宮裡待了幾十年。從我出生前就在了。）
+princess: （父王信任他，不是因為證據，而是因為太久了——久到連懷疑的念頭都不會冒出來。）
+princess (cold): （他不需要謀反。他只需要讓王國先垮掉，再讓外面的人把位子給他。）
+[signal arg="intel:intel_chancellor_infiltration_depth"]
 
 # === 小房間的毒茶 ===
 [background arg="res://art/backgrounds/darkness.png" fade="1.0"]

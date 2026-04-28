@@ -231,8 +231,8 @@ mob_leader (grieving): 殿、殿下……
 princess: （一個穿著粗布衣服的男人走進來，低著頭，雙手不安地絞在一起。）
 princess: （他看起來不像能站在王宮裡的人，更不像會被允許靠近我的人。）
 
-mob_leader (grieving): 我的妻子……昨天病死了。
-mob_leader (grieving): 城裡所有的草藥都被軍隊徵走，我們連一帖退燒藥都買不到。
+mob_leader (grieving): 我的妻子……難產死了。
+mob_leader (grieving): 城裡所有的草藥都被軍隊徵走，我們連一帖止血的藥都買不到。
 
 [wait time="0.8"]
 

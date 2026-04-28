@@ -506,6 +506,11 @@ loyal_retainer: （他上前一步，點頭。）
 
 princess (determined): 第二件。下城區帳上寫過的糧和藥，很多沒有到過下城。今天早上的第一批物資，則由賽拉斯親押，不經第二手。
 
+princess (determined): 第二件的證人已在殿外等候。賽拉斯，請他進來。
+loyal_retainer: （他向門口點頭，衛兵放行了一個穿著粗布的男人。）
+
+[wait time="0.6"]
+
 mob_leader (default): 我查過。帳目、署名、倉口庫存，對不上。
 mob_leader (default): 但今天到的糧藥是真的。不是宰相府的恩典，是被截走的東西回到該去的地方。
 
