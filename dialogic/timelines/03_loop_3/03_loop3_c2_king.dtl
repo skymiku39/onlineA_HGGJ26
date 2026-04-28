@@ -39,19 +39,48 @@ king: ……說。
 
 [wait time="0.5"]
 
-princess: （密道、私兵、簽署路線，還有達爾是怎麼被抹掉的。）
-
-princess: （我沒有哭，也沒有苦求。）
-
-princess (cold): 這些都是我看見的事。父王若要查，比任何人都查得快。
-
-[wait time="2.0"]
-
-king: ……
+princess (cold): 城南城牆有一條密道。私兵從那裡進出，不經任何正規守衛。
 
 [wait time="1.0"]
 
-princess: （他很久都沒說話。）
+king: ……不可能。
+
+[wait time="0.6"]
+
+king: 宰相……他是本王最信任的人。這種事，你知道自己在說什麼嗎？
+
+[wait time="0.8"]
+
+princess: （他的第一反應不是憤怒。是困惑。）
+princess: （像有人告訴他，腳下站了十五年的地板是空的。）
+
+[wait time="0.6"]
+
+princess (cold): 私兵、簽署路線、財政署批核，還有達爾是怎麼被從技術線上抹掉的。
+
+princess: （我沒有哭，也沒有苦求。只是一件一件攤出來。）
+
+[wait time="1.0"]
+
+king: ……這些，都是真的？
+
+[wait time="0.8"]
+
+princess: （他的語氣變了。不再是「不可能」，是「不敢信」。）
+princess: （他的手指在桌面上無意識地收緊，又鬆開。）
+
+[wait time="0.6"]
+
+princess (cold): 每一件，父王若要查，比任何人都查得快。
+
+[wait time="1.5"]
+
+king: ……
+
+[wait time="1.5"]
+
+princess: （他很久都沒說話。沉默裡，他的眼神從我臉上移開，落在書桌上某個地方。）
+princess: （我不知道他在看什麼。也許是宰相送過的文書，也許是什麼都沒在看。）
 
 [wait time="0.8"]
 

@@ -544,7 +544,35 @@ princess: （話一出口，賽拉斯沒有退，達爾也沒有收紙。）
 
 king: ……
 
-[wait time="2.0"]
+[wait time="1.0"]
+
+princess: （父王沒有立刻開口。）
+
+[wait time="0.8"]
+
+king: ……不可能。
+
+[wait time="0.6"]
+
+princess: （他又說了這三個字。和上一次一模一樣。）
+
+[wait time="0.6"]
+
+king: 本王與他……共事十五年。
+
+[wait time="0.8"]
+
+princess: （他轉向宰相。眼神裡帶著一種不是質問、而是在等對方否認的東西。）
+
+king: 莫里昂。這些……
+
+[wait time="0.6"]
+
+chancellor (cold): 陛下，這不過是——
+
+princess (determined): 父王。請先看完。
+
+[wait time="0.8"]
 
 princess: （父王先看我，再看賽拉斯。）
 
@@ -552,11 +580,25 @@ loyal_retainer: （賽拉斯朝他點了頭。）
 
 [wait time="0.8"]
 
+princess: （他又看了達爾攤在桌上的紀錄，再看布魯諾。）
+princess: （四個人，四條線，全部指向同一個名字。）
+
+[wait time="1.0"]
+
+king: ……竟然還有這些事。
+
+[wait time="0.6"]
+
+princess: （他的手慢慢握緊了扶手。）
+princess: （不是疑惑，不是懷疑了。是一個把後背交給人十五年的人，發現那個人一直拿著刀。）
+
+[wait time="1.2"]
+
 king: 查。
 
-[wait time="1.5"]
+[wait time="0.6"]
 
-princess: （夠了。）
+princess: （只有一個字。可那個字裡壓的，比憤怒還重。）
 
 [wait time="0.8"]
 
@@ -870,6 +912,36 @@ king: 本王守了你十七年，最後——是你守了這裡所有的人。
 
 princess: （他沒有試圖拿「父女合力」來美化它。）
 princess: （他只是說，就是你。）
+
+[wait time="1.0"]
+
+king: ……但本王不知道，你是怎麼走到今天這一步的。
+
+[wait time="0.8"]
+
+king: 朝堂上你說的那些——密道、帳冊、術式、下城區——每一件都精準到不像一個被保護在城堡裡的公主能說出口的話。
+
+[wait time="0.8"]
+
+princess: （他的聲音變低了。不是王在說話，是父親。）
+
+[wait time="0.6"]
+
+king: 你到底經歷了什麼，才學會那樣說話的？
+
+[wait time="1.2"]
+
+princess: （我沒有回答。）
+princess: （有些事，不是不能說——是說了以後，他只會更難原諒自己。）
+
+[wait time="1.0"]
+
+king: ……算了。也許本王不該問。
+
+[wait time="0.8"]
+
+princess: （他嘆了一口氣。那口氣裡有心疼，也有一種很深的、接近驕傲但更接近哀傷的東西。）
+princess: （他是見證結果的人，卻不曾見過過程。）
 
 [wait time="0.8"]
 
