@@ -101,19 +101,19 @@
 > 檔名對照提醒：
 > 目前資料夾內已有 `maid_confusion.png`、`maid_cry.png`、`maid_surprise.png`，但這三張名字和程式使用的 key 對不上。正式交圖請優先以 `maid_confused.png`、`maid_tearful.png`、`maid_shocked.png` 為準。
 
-### 2.5 鐵匠 布魯諾 `mob_leader`
+### 2.5 鐵匠 布魯諾 `bruno`
 
 | 表情 key | 正式檔名 | 狀態 | 優先級 | 畫面重點 |
 |---|---|---|---|---|
-| `default` | `mob_leader_default.png` | 佔位，現共用 `suspect_b_default.png` | 高 | 粗硬、戒備、像隨時要爆炸 |
-| `angry` | `mob_leader_angry.png` | 佔位 | 高 | 把怒火頂在最前面的版本 |
-| `suspicious` | `mob_leader_suspicious.png` | 佔位 | 高 | 不信王室、不信公主 |
-| `grieving` | `mob_leader_grieving.png` | 佔位 | 高 | 提到亡妻時壓住的痛 |
-| `hesitant` | `mob_leader_hesitant.png` | 佔位 | 高 | 被說動一點點，但仍不放心 |
-| `conflicted` | `mob_leader_conflicted.png` | 佔位 | 中 | 內心已經開始分裂 |
-| `broken` | `mob_leader_broken.png` | 佔位 | 中 | 走到最壞路線時的崩解 |
-| `hopeful` | `mob_leader_hopeful.png` | 佔位 | 中 | 真結局線被重新點燃希望 |
-| `shocked` | `mob_leader_shocked.png` | 佔位 | 低 | 聽到真正證據時的失語 |
+| `default` | `bruno_default.png` | 佔位，現共用 `suspect_b_default.png` | 高 | 粗硬、戒備、像隨時要爆炸 |
+| `angry` | `bruno_angry.png` | 佔位 | 高 | 把怒火頂在最前面的版本 |
+| `suspicious` | `bruno_suspicious.png` | 佔位 | 高 | 不信王室、不信公主 |
+| `grieving` | `bruno_grieving.png` | 佔位 | 高 | 提到亡妻時壓住的痛 |
+| `hesitant` | `bruno_hesitant.png` | 佔位 | 高 | 被說動一點點，但仍不放心 |
+| `conflicted` | `bruno_conflicted.png` | 佔位 | 中 | 內心已經開始分裂 |
+| `broken` | `bruno_broken.png` | 佔位 | 中 | 走到最壞路線時的崩解 |
+| `hopeful` | `bruno_hopeful.png` | 佔位 | 中 | 真結局線被重新點燃希望 |
+| `shocked` | `bruno_shocked.png` | 佔位 | 低 | 聽到真正證據時的失語 |
 
 ### 2.6 達爾 `dal`
 
@@ -220,7 +220,7 @@
 | `maid_npc.png` | 已上線 | 中 | 侍女 NPC | 目前已有 sheet，但場景尚未大量使用 |
 | `general_npc.png` | 已上線但偏泛用 | 低 | 泛用男性 NPC / 目前兼作國王佔位 | 正式版建議拆出獨立 `king_npc.png` |
 | `minister_npc.png` | 已上線但偏泛用 | 低 | 泛用官員 NPC / 目前兼作老婦人佔位 | 正式版建議拆乾淨 |
-| `mob_leader_npc.png` | 待補 | 中 | 布魯諾探索場景 | 終章或下城區自由移動可用 |
+| `bruno_npc.png` | 待補 | 中 | 布魯諾探索場景 | 終章或下城區自由移動可用 |
 | `dal_npc.png` | 待補 | 中 | 達爾探索場景 | 若達爾有實際走位或站位演出時需要 |
 | `king_npc.png` | 待補 | 低 | 國王探索或事件站位 | 若國王只在 VN 對質出現，可不做 |
 | `citizen_npc_a.png` | 待補 | 低 | 下城區平民 | 裝飾用，可共用色差變體 |
@@ -247,9 +247,9 @@
 1. `maid_forced_smile.png`
 2. `maid_tearful.png`
 3. `maid_confused.png`
-4. `mob_leader_default.png`
-5. `mob_leader_angry.png`
-6. `mob_leader_grieving.png`
+4. `bruno_default.png`
+5. `bruno_angry.png`
+6. `bruno_grieving.png`
 7. `dal_default.png`
 8. `king_default.png`
 9. `princess_hollow.png`
@@ -285,6 +285,6 @@
 如果美術時間很緊，優先順序就是：
 
 1. 先把 `hallway / hallway2 / restaurant / throne_room_gj / window` 這幾張 placeholder 替掉
-2. 再把 `maid`、`mob_leader`、`dal`、`king` 的正式立繪補齊
+2. 再把 `maid`、`bruno`、`dal`、`king` 的正式立繪補齊
 3. 最後做 `cg_title`、`cg_lower_city_pressure`、`cg_dal_workshop_death`、`cg_dawn_oath` 四張關鍵 CG
 

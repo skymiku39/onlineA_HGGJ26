@@ -19,7 +19,7 @@
 |---|---|---|---|---|
 | [x] | 國王 | `king.dch` | `general_npc.png` | `king_default.png` |
 | [x] | 達爾 | `dal.dch` | `suspect_a_default.png` | `dal_default.png` |
-| [x] | 布魯諾 | `mob_leader.dch` | `suspect_b_default.png` | `mob_leader_default.png` |
+| [x] | 布魯諾 | `bruno.dch` | `suspect_b_default.png` | `bruno_default.png` |
 | [x] | 暴民乙 | 無獨立 `.dch`；被動員暴民群眾變體 | `suspect_c_default.png` | `mob_npc_default.png` |
 | [x] | 暴民丙 | 無獨立 `.dch`；被動員暴民群眾變體 | `suspect_c_default.png` | `mob_npc_default.png` |
 | [x] | 老婦人 | `old_woman.dch` | `minister_npc.png` | `old_woman_default.png` |
@@ -63,20 +63,20 @@ A-1 推演需要「表情變了一瞬，立刻恢復」的防備感。
 | [ ] | `exhausted` | 佔位中，指向 `retainer_serious.png` | `retainer_exhausted.png` |
 | [x] | `relieved` | 沿用 `retainer_tearful.png`（確認符合語意） | — |
 
-### 布魯諾（`mob_leader.dch`）
+### 布魯諾（`bruno.dch`）
 
 所有表情暫用 `suspect_b_default.png`，正式圖到位後逐一替換。
 
 | 狀態 | 表情名 | 待補圖片 |
 |---|---|---|
-| [ ] | `angry` | `mob_leader_angry.png` |
-| [ ] | `suspicious` | `mob_leader_suspicious.png` |
-| [ ] | `grieving` | `mob_leader_grieving.png` |
-| [ ] | `hesitant` | `mob_leader_hesitant.png` |
-| [ ] | `conflicted` | `mob_leader_conflicted.png` |
-| [ ] | `broken` | `mob_leader_broken.png` |
-| [ ] | `hopeful` | `mob_leader_hopeful.png` |
-| [ ] | `shocked` | `mob_leader_shocked.png` |
+| [ ] | `angry` | `bruno_angry.png` |
+| [ ] | `suspicious` | `bruno_suspicious.png` |
+| [ ] | `grieving` | `bruno_grieving.png` |
+| [ ] | `hesitant` | `bruno_hesitant.png` |
+| [ ] | `conflicted` | `bruno_conflicted.png` |
+| [ ] | `broken` | `bruno_broken.png` |
+| [ ] | `hopeful` | `bruno_hopeful.png` |
+| [ ] | `shocked` | `bruno_shocked.png` |
 
 ---
 

@@ -706,7 +706,7 @@
 
 | 情報 ID                           | 來源                             | 敘事意義                                                   |
 | ---- | ---- | ---- |
-| `intel_city_fall`                 | LOOP 0                           | 三個月後城破——公主的時限                                   |
+| `intel_city_fall`                 | LOOP 0                           | 約 180 天後城破——公主的時限                                |
 | `intel_assassination`             | LOOP 0                           | 賽拉斯的密令——最終輪迴收服他的關鍵                         |
 | `intel_magic_core_sabotage`       | LOOP 0                           | 魔法陣被內部破壞——LOOP 3 的調查起點                        |
 | `intel_chancellor_betrayal`       | LOOP 1 A-0                       | 「不要怪臣」＋茶的氣味——最初的懷疑種子                     |
@@ -730,4 +730,4 @@
 | `intel_narrative_flip`            | LOOP 3 C-1                       | 技術行為可被翻成叛國——終章須奪話語權                       |
 | `intel_partial_leak`              | LOOP 3 C-2                       | 父王以父信女、以王囚女——高塔隔離仍非終局；體制反應即線索   |
 | `intel_inner_outer_link`          | LOOP 3 C-2 後段                  | 公主從高塔看見鄰國軍隊與宰相私軍／叛軍接上——終章必須拆開外患、私軍與暴民三層處理 |
-| `intel_dal_blinded_by_chancellor` | LOOP 3 C-1（選用，接舊設定）     | 達爾舊創傷／人證——強化情感與動機                           |
+| ~~`intel_dal_blinded_by_chancellor`~~ | ~~LOOP 3 C-1~~ | **已廢棄**——現行 C-1 改用清場與消失處理達爾，不再使用致盲設定 |

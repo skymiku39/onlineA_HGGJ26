@@ -36,7 +36,7 @@ directories/dch_directory={
 "king": "res://dialogic/characters/king.dch",
 "loyal_retainer": "res://dialogic/characters/loyal_retainer.dch",
 "maid": "res://dialogic/characters/maid.dch",
-"mob_leader": "res://dialogic/characters/mob_leader.dch",
+"bruno": "res://dialogic/characters/bruno.dch",
 "narrator": "res://dialogic/characters/narrator.dch",
 "npc": "res://dialogic/characters/npc.dch",
 "old_woman": "res://dialogic/characters/old_woman.dch",

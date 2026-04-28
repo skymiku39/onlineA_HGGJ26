@@ -55,7 +55,7 @@
 | 公主被近身武器格殺 | 宰相不需要親自到場，現場也能被布置成技術事故 |
 | 工作室被嫁禍 | 只看見真相還不夠，還必須保護能證明真相的人 |
 
-**獲得情報：** `intel_array_structural_passage`、`intel_chancellor_treason`（初稿）
+**獲得情報：** `intel_array_structural_passage`、`intel_chancellor_treason`
 
 ---
 

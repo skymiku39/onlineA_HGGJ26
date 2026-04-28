@@ -173,9 +173,9 @@ princess: （網還在，只是暫時沒能立刻收緊。）
 princess: （我一路直奔下城區的鐵匠鋪。）
 princess: （爐火還在燒，鐵錘落下的聲音一下一下砸在街巷裡。）
 
-join mob_leader right
+join bruno right
 
-mob_leader (default): 妳是誰？這裡不賣女人的小玩意。
+bruno (default): 妳是誰？這裡不賣女人的小玩意。
 
 [wait time="0.5"]
 
@@ -185,8 +185,8 @@ princess (determined): 布魯諾。
 
 [wait time="0.6"]
 
-mob_leader (hesitant): ……！
-mob_leader (hesitant): 殿下？！妳怎麼會穿成這樣……妳身邊的侍衛呢？
+bruno (hesitant): ……！
+bruno (hesitant): 殿下？！妳怎麼會穿成這樣……妳身邊的侍衛呢？
 
 [wait time="0.6"]
 
@@ -208,8 +208,8 @@ princess (determined): 那裡的牆，是不是有問題？
 
 princess: （他盯著那條價值連城的項鍊，又看了看我孤身一人的打扮，眼神複雜。）
 
-mob_leader (default): 殿下，知道太多會死的。
-mob_leader (default): 尤其是那些在夜裡推車的人……他們連自己的聲音都沒有。
+bruno (default): 殿下，知道太多會死的。
+bruno (default): 尤其是那些在夜裡推車的人……他們連自己的聲音都沒有。
 
 [wait time="0.8"]
 
@@ -218,17 +218,17 @@ princess (determined): 這條項鍊夠你買下整個藥房的草藥了。
 
 [wait time="1.0"]
 
-mob_leader (default): ……妳用這東西換一句話，值不值，自己想。
+bruno (default): ……妳用這東西換一句話，值不值，自己想。
 
 [wait time="0.6"]
 
-mob_leader (default): 窄巷最深處，有一段比別處厚了三尺的牆。
-mob_leader (default): 老流民都知道晚上要避開那裡，因為那裡會「吞人」。
+bruno (default): 窄巷最深處，有一段比別處厚了三尺的牆。
+bruno (default): 老流民都知道晚上要避開那裡，因為那裡會「吞人」。
 
 [wait time="0.6"]
 
-mob_leader (default): 那些黑甲人，都是從那裡冒出來的。
-mob_leader (default): 他們會裝成補給車進出，車輪聲很輕，腳步卻很齊。
+bruno (default): 那些黑甲人，都是從那裡冒出來的。
+bruno (default): 他們會裝成補給車進出，車輪聲很輕，腳步卻很齊。
 
 [wait time="0.8"]
 
@@ -237,10 +237,10 @@ princess (determined): 這項鍊是你的了。
 
 [wait time="0.6"]
 
-mob_leader (default): 我不保妳活著回來。
-mob_leader (default): 我只保我現在說的都是真的。
+bruno (default): 我不保妳活著回來。
+bruno (default): 我只保我現在說的都是真的。
 
-leave mob_leader
+leave bruno
 
 [wait time="1.0"]
 

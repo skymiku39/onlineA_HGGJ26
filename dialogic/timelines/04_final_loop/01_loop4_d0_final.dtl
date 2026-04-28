@@ -167,11 +167,11 @@ loyal_retainer: ……
 
 princess: （他連呼吸都停了一瞬。）
 
-princess (determined): 你執行過一次。我知道。
+princess (determined): 你不會拒絕那道命令。可你會哭。
 
-loyal_retainer (exhausted): ……殿下怎麼會知道？
+loyal_retainer (exhausted): ……殿下怎麼會……
 
-princess (determined): 因為這世上只有你，會為了殺我而哭。
+princess (determined): 因為這世上只有你，會為了殺一個人而覺得自己才是該死的那個。
 
 [wait time="1.5"]
 
@@ -237,11 +237,11 @@ princess: （空氣裡都是炭灰味，牆上的字一筆一畫都帶火氣。�
 
 [wait time="0.6"]
 
-join mob_leader right
+join bruno right
 
 princess: （他從鐵砧後抬眼，先把我當成來做戲的人。）
 
-mob_leader: 殿下。
+bruno: 殿下。
 
 princess: （聲音不大，也不客氣。）
 
@@ -251,7 +251,7 @@ princess: （聲音不大，也不客氣。）
 
 princess (determined): 今天早上，第一批糧和藥已經到南路倉口。押送的人是賽拉斯，不經第二手，也不掛宰相府的名。
 
-mob_leader (hesitant): ……殿下跟我說這些，想幹什麼？
+bruno (hesitant): ……殿下跟我說這些，想幹什麼？
 
 princess (determined): 我看過下城區的賑濟卷宗，也查過徵糧和草藥的批核。財政署怎麼走帳、東西怎麼被截住，我心裡大概有數。
 
@@ -259,13 +259,13 @@ princess (determined): 我想請你，這幾天自己去核。帳目、署名、
 
 [wait time="0.8"]
 
-mob_leader: 殿下怎麼會知道這些？
+bruno: 殿下怎麼會知道這些？
 
 princess (determined): 我看過紙，也看過人。你老婆的事，我知道不只是一句「時局如此」就能帶過去。
 
 [wait time="0.6"]
 
-mob_leader (angry): 知道又怎樣？我老婆也不會回來。
+bruno (angry): 知道又怎樣？我老婆也不會回來。
 
 princess: （他話裡全是火，可眼睛底下更像累。）
 
@@ -285,20 +285,20 @@ princess (determined): 如果你願意，那個人可以是你。
 
 [wait time="1.0"]
 
-mob_leader (hesitant): 妳這話的意思，是叫我替王室說話？
+bruno (hesitant): 妳這話的意思，是叫我替王室說話？
 
 princess (determined): 不是。是要你替你自己開口。
 
 [wait time="1.2"]
 
-mob_leader: （他盯著我看了好一會兒，最後轉身繼續打鐵。）
+bruno: （他盯著我看了好一會兒，最後轉身繼續打鐵。）
 
 [wait time="0.8"]
 
 princess: （我沒逼他，只站了一會兒就轉身離開。）
 
 leave princess
-leave mob_leader
+leave bruno
 
 [wait time="0.5"]
 
@@ -511,8 +511,8 @@ loyal_retainer: （他向門口點頭，衛兵放行了一個穿著粗布的男�
 
 [wait time="0.6"]
 
-mob_leader (default): 我查過。帳目、署名、倉口庫存，對不上。
-mob_leader (default): 但今天到的糧藥是真的。不是宰相府的恩典，是被截走的東西回到該去的地方。
+bruno (default): 我查過。帳目、署名、倉口庫存，對不上。
+bruno (default): 但今天到的糧藥是真的。不是宰相府的恩典，是被截走的東西回到該去的地方。
 
 [wait time="0.8"]
 

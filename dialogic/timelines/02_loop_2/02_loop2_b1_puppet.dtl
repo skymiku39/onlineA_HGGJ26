@@ -210,10 +210,10 @@ princess: （苦難沒有被偽造，被篡改的，是「誰該為此負責」�
 princess: （最後，隊伍停在鐵匠鋪。）
 princess: （爐火熱得嚇人，走出來的男人比火還硬。）
 
-join mob_leader right
+join bruno right
 
-mob_leader (grieving): 殿下……多謝您來看我們。
-mob_leader (grieving): 也替我們謝過宰相大人。
+bruno (grieving): 殿下……多謝您來看我們。
+bruno (grieving): 也替我們謝過宰相大人。
 
 [wait time="0.5"]
 
@@ -223,21 +223,21 @@ princess (sad): 你最近過得好嗎？
 
 [wait time="0.6"]
 
-mob_leader (grieving): 我的妻子……難產死了。
-mob_leader (grieving): 本來只要一帖止血的草藥……但徵糧隊把所有藥材都帶走了。
+bruno (grieving): 我的妻子……難產死了。
+bruno (grieving): 本來只要一帖止血的草藥……但徵糧隊把所有藥材都帶走了。
 
 [wait time="0.8"]
 
 princess: （他握緊了拳頭，聲音裡帶著強壓的火氣。）
 
-mob_leader (grieving): 要不是——
+bruno (grieving): 要不是——
 
 [wait time="0.5"]
 
 princess: （他突然看了一眼侍衛，把剩下的話吞了回去。）
 
-mob_leader (grieving): ……算了。
-mob_leader (grieving): 這裡風大，殿下還是早點回去吧。
+bruno (grieving): ……算了。
+bruno (grieving): 這裡風大，殿下還是早點回去吧。
 
 [wait time="0.8"]
 
@@ -245,7 +245,7 @@ princess: （他把後半句吞回去了。）
 princess: （那個侍衛站的位置，讓他不能往下說。）
 princess: （但我記住了。）
 
-leave mob_leader
+leave bruno
 
 [wait time="1.0"]
 
