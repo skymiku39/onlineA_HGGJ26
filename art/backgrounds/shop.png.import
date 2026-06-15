@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy04gr3se2ixd"
-path="res://.godot/imported/maid_confusion.png-3c8323d3d6f3d486ca46ba69ca018aad.ctex"
+uid="uid://ecb4alhsk02k"
+path="res://.godot/imported/shop.png-f0281a7fd018b12d86e9f804e81d5902.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/characters/maid_confusion.png"
-dest_files=["res://.godot/imported/maid_confusion.png-3c8323d3d6f3d486ca46ba69ca018aad.ctex"]
+source_file="res://art/backgrounds/shop.png"
+dest_files=["res://.godot/imported/shop.png-f0281a7fd018b12d86e9f804e81d5902.ctex"]
 
 [params]
 

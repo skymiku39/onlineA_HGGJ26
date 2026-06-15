@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvg3jidrjh66c"
-path="res://.godot/imported/maid_portrait.png-7946d7f52f67612c21a266953f204de2.ctex"
+uid="uid://c60wgnkbjf6oj"
+path="res://.godot/imported/lower_district.png-e6b68082b1ad9b6ddf0d4c287370411d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/characters/maid_portrait.png"
-dest_files=["res://.godot/imported/maid_portrait.png-7946d7f52f67612c21a266953f204de2.ctex"]
+source_file="res://art/backgrounds/lower_district.png"
+dest_files=["res://.godot/imported/lower_district.png-e6b68082b1ad9b6ddf0d4c287370411d.ctex"]
 
 [params]
 

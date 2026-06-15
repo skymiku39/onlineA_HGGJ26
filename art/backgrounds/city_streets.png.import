@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds02skvs0ndvh"
-path="res://.godot/imported/maid_cry.png-9267a7f86a26743ecd9d0fcb670308f3.ctex"
+uid="uid://bxilkgech0anu"
+path="res://.godot/imported/city_streets.png-d78eaefaf8b958f769f1dc18ffdaa700.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/characters/maid_cry.png"
-dest_files=["res://.godot/imported/maid_cry.png-9267a7f86a26743ecd9d0fcb670308f3.ctex"]
+source_file="res://art/backgrounds/city_streets.png"
+dest_files=["res://.godot/imported/city_streets.png-d78eaefaf8b958f769f1dc18ffdaa700.ctex"]
 
 [params]
 

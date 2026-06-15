@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdp548adxrnfs"
-path="res://.godot/imported/maid_surprise.png-6cf330ca045509f0469cfa50444b7328.ctex"
+uid="uid://fedf0lfdwhwb"
+path="res://.godot/imported/garden.png-60450e8df8bc1e1435160310f66cce85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/characters/maid_surprise.png"
-dest_files=["res://.godot/imported/maid_surprise.png-6cf330ca045509f0469cfa50444b7328.ctex"]
+source_file="res://art/backgrounds/garden.png"
+dest_files=["res://.godot/imported/garden.png-60450e8df8bc1e1435160310f66cce85.ctex"]
 
 [params]
 

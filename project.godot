@@ -31,12 +31,12 @@ DialogicAudioHotfix="*res://autoload/dialogic_audio_hotfix.gd"
 [dialogic]
 
 directories/dch_directory={
+"bruno": "res://dialogic/characters/bruno.dch",
 "chancellor": "res://dialogic/characters/chancellor.dch",
 "dal": "res://dialogic/characters/dal.dch",
 "king": "res://dialogic/characters/king.dch",
 "loyal_retainer": "res://dialogic/characters/loyal_retainer.dch",
 "maid": "res://dialogic/characters/maid.dch",
-"bruno": "res://dialogic/characters/bruno.dch",
 "narrator": "res://dialogic/characters/narrator.dch",
 "npc": "res://dialogic/characters/npc.dch",
 "old_woman": "res://dialogic/characters/old_woman.dch",

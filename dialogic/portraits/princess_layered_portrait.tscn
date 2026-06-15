@@ -7,8 +7,9 @@
 [ext_resource type="Texture2D" path="res://art/characters/princese/hand/princess_HD.png" id="5_hand_folded"]
 [ext_resource type="Texture2D" path="res://art/characters/princese/hand/princess_OH.png" id="6_hand_open"]
 
-[node name="PrincessLayeredPortrait" type="CanvasGroup"]
+[node name="PrincessLayeredPortrait" type="Node2D"]
 script = ExtResource("1_script")
+fix_offset = false
 
 [node name="Body" type="Sprite2D" parent="."]
 position = Vector2(0, 0)
